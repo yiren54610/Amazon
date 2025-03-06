@@ -1,0 +1,1809 @@
+Category,New_Category
+FLASH_MEMORY,Electronics
+HEADPHONES,Electronics
+DISHWARE_BOWL,Home and Kitchen
+SHAVING_AGENT,Beauty and Personal Care
+COMPUTER_PROCESSOR,Electronics
+COMPUTER_ADD_ON,Electronics
+AMAZON_TABLET,Electronics
+APPAREL_BELT,"Clothing, Shoes, and Jewelry"
+PORTABLE_ELECTRONIC_DEVICE_STAND,Electronics
+IMMERSION_HEATER,Home and Kitchen
+BODY_LUBRICANT,Beauty and Personal Care
+INPUT_MOUSE,Electronics
+CELLULAR_PHONE_CASE,Electronics
+BODY_POSITIONER,Home and Kitchen
+HANDBAG,"Clothing, Shoes, and Jewelry"
+UNDERPANTS,"Clothing, Shoes, and Jewelry"
+TAPE_MEASURE,Home and Kitchen
+AMAZON_TABLET_ACCESSORY,Electronics
+COMPUTER_DRIVE_OR_STORAGE,Electronics
+TOOTH_CLEANING_AGENT,Beauty and Personal Care
+TOILET_PAPER,Home and Kitchen
+MOUTHWASH,Beauty and Personal Care
+ELECTRONIC_CABLE,Electronics
+SCREWDRIVER,Home and Kitchen
+GIFT_CARD,Home and Kitchen
+EDIBLE_OIL_VEGETABLE,Food
+SIM_CARD,Electronics
+BED_FRAME,Home and Kitchen
+HERB,Food
+MEAT,Food
+DAIRY_BASED_BUTTER,Food
+DAIRY_BASED_CHEESE,Food
+JERKY,Food
+SEXUAL_STIMULATION_DEVICE,Beauty and Personal Care
+FILE_FOLDER,Office Product
+SCREEN_PROTECTOR,Electronics
+PORTABLE_ELECTRONIC_DEVICE_COVER,Electronics
+MEMORY_CARD_READER,Electronics
+STORAGE_BAG,Home and Kitchen
+INKJET_PRINTER_INK,Office Product
+CHAIR,Home and Kitchen
+CONSUMER_ELECTRONICS,Electronics
+CELLULAR_PHONE,Electronics
+VIDEO_GAME_CONSOLE,Electronics
+FLAT_SCREEN_DISPLAY_MOUNT,Electronics
+GROCERY,Food
+FOOD,Food
+POULTRY,Food
+JUICE_AND_JUICE_DRINK,Food
+WIRELESS_ACCESSORY,Electronics
+SUGAR_SUBSTITUTE,Food
+PET_FOOD,Pet Supplies
+TOWEL,Home and Kitchen
+TIMER,Home and Kitchen
+WRIST_REST,Office Product
+HEALTH_PERSONAL_CARE,Beauty and Personal Care
+CULINARY_SALT,Food
+SKIN_CLEANING_WIPE,Beauty and Personal Care
+SANITARY_NAPKIN,Beauty and Personal Care
+SKIN_CLEANING_AGENT,Beauty and Personal Care
+SHAMPOO,Beauty and Personal Care
+BEAUTY,Beauty and Personal Care
+BATHWATER_ADDITIVE,Beauty and Personal Care
+SNACK_CHIP_AND_CRISP,Food
+SURFACE_CLEANING_WIPE,Home and Kitchen
+FACIAL_TISSUE,Home and Kitchen
+SAUCE,Food
+CONDITIONER,Beauty and Personal Care
+ABIS_BOOK,Books
+PANTS,"Clothing, Shoes, and Jewelry"
+PLUMBING_FIXTURE,Home and Kitchen
+ELECTRONIC_ADAPTER,Electronics
+ITEM_STAND,Home and Kitchen
+COSMETIC_CASE,Beauty and Personal Care
+PET_SUPPLIES,Pet Supplies
+LIP_BALM,Beauty and Personal Care
+EYEBROW_COLOR,Beauty and Personal Care
+LOCK,Home and Kitchen
+LAMP,Home and Kitchen
+FURNITURE_COVER,Home and Kitchen
+TOY_FIGURE,Toys and Games
+GUILD_BEAUTY_GROOMING,Beauty and Personal Care
+POPCORN,Food
+SALAD_DRESSING,Food
+TEA,Food
+CEREAL,Food
+CRACKER,Food
+COOKIE,Food
+DRINK_FLAVORED,Food
+TOOTHBRUSH,Beauty and Personal Care
+FOOD_STORAGE_BAG,Home and Kitchen
+PAPER_TOWEL,Home and Kitchen
+BAKING_MIX,Food
+PROFESSIONAL_HEALTHCARE,Beauty and Personal Care
+PLANT_SEED,Home and Kitchen
+SWEATSHIRT,"Clothing, Shoes, and Jewelry"
+PEST_CONTROL_DEVICE,Home and Kitchen
+TOYS_AND_GAMES,Toys and Games
+INSECT_REPELLENT,Home and Kitchen
+CHARGING_ADAPTER,Electronics
+HERBAL_SUPPLEMENT,Beauty and Personal Care
+HAT,"Clothing, Shoes, and Jewelry"
+TIGHTS,"Clothing, Shoes, and Jewelry"
+COAT,"Clothing, Shoes, and Jewelry"
+NOTEBOOK_COMPUTER,Electronics
+HAIR_BRUSH,Beauty and Personal Care
+SWEATER,"Clothing, Shoes, and Jewelry"
+SKIN_SERUM,Beauty and Personal Care
+NUTRITIONAL_SUPPLEMENT,Beauty and Personal Care
+BLANK_BOOK,Books
+SKIN_MOISTURIZER,Beauty and Personal Care
+CALENDAR,Office Product
+PLANNER,Office Product
+OFFICE_PRODUCTS,Office Product
+BODY_DEODORANT,Beauty and Personal Care
+WINDOW_FILM,Home and Kitchen
+NAIL_POLISH,Beauty and Personal Care
+MEDICATION,Beauty and Personal Care
+HARDWARE_HANDLE,Home and Kitchen
+AREA_DEODORIZER,Home and Kitchen
+GARMENT_STEAMER,Home and Kitchen
+FLASHLIGHT,Home and Kitchen
+MOP_BUCKET_SET,Home and Kitchen
+TEMPORARY_GATE,Home and Kitchen
+INCENSE,Home and Kitchen
+SKIRT,"Clothing, Shoes, and Jewelry"
+SHIRT,"Clothing, Shoes, and Jewelry"
+DRESS,"Clothing, Shoes, and Jewelry"
+BONDING_ADHESIVES,Home and Kitchen
+WALL_ART,Home and Kitchen
+HANGING_ROD,Home and Kitchen
+FORK,Home and Kitchen
+FOOD_SPATULA,Home and Kitchen
+ABIS_HOME,Home and Kitchen
+UMBRELLA,"Clothing, Shoes, and Jewelry"
+EARPLUG,Beauty and Personal Care
+TOOTHBRUSH_HOLDER,Home and Kitchen
+PET_PEST_CONTROL,Pet Supplies
+HOME,Home and Kitchen
+HAIR_CLIP,Beauty and Personal Care
+NUTS,Food
+NAIL_FILE,Beauty and Personal Care
+EYELID_COLOR,Beauty and Personal Care
+CANDLE,Home and Kitchen
+YARN,Home and Kitchen
+KNITTING_NEEDLE,Home and Kitchen
+TUNIC,"Clothing, Shoes, and Jewelry"
+MICROCURRENT_FACIAL_MACHINE,Beauty and Personal Care
+FOOD_STORAGE_CONTAINER,Home and Kitchen
+HAND_SEWING_NEEDLE,Home and Kitchen
+APPAREL_GLOVES,"Clothing, Shoes, and Jewelry"
+SOCKS,"Clothing, Shoes, and Jewelry"
+STICKER_DECAL,Home and Kitchen
+ENVELOPE,Office Product
+POWER_CORD,Electronics
+STRING_LIGHT,Home and Kitchen
+ART_MEDIA_PAPER,Home and Kitchen
+ART_AND_CRAFT_SUPPLY,Home and Kitchen
+ORTHOPEDIC_BRACE,Beauty and Personal Care
+AIR_PURIFIER,Home and Kitchen
+SHOES,"Clothing, Shoes, and Jewelry"
+PITCHER,Home and Kitchen
+PLANTER,Home and Kitchen
+SOIL,Home and Kitchen
+LIGHT_BULB,Home and Kitchen
+DAIRY_BASED_ICE_CREAM,Food
+DISHWARE_PLATE,Home and Kitchen
+FRUIT,Food
+VEGETABLE,Food
+SHOWERHEAD,Home and Kitchen
+LAUNDRY_HAMPER,Home and Kitchen
+TRASH_CAN,Home and Kitchen
+PINBOARD,Home and Kitchen
+DESK,Home and Kitchen
+HVAC_AIR_FILTER,Home and Kitchen
+POWER_STRIP,Electronics
+UTILITY_SPONGE,Home and Kitchen
+VITAMIN,Beauty and Personal Care
+BATTERY,Electronics
+CLOTHES_PIN,Home and Kitchen
+APRON,Home and Kitchen
+SELF_STICK_NOTE,Office Product
+SHARP_PIN,Home and Kitchen
+SHOVEL_SPADE,Home and Kitchen
+HOME_LIGHTING_ACCESSORY,Home and Kitchen
+STORAGE_RACK,Home and Kitchen
+HARDWARE_TUBING,Home and Kitchen
+HARDWARE_HINGE,Home and Kitchen
+FLOUR,Food
+FERTILIZER,Home and Kitchen
+BLUE_LIGHT_BLOCKING_EYEGLASSES,Beauty and Personal Care
+ROLLING_PIN,Home and Kitchen
+BROOM,Home and Kitchen
+BREAD,Food
+DAIRY_BASED_DRINK,Food
+RAW_MATERIALS,Home and Kitchen
+COFFEE_MAKER,Home and Kitchen
+FLAVORED_DRINK_CONCENTRATE,Food
+CLOTHES_HANGER,Home and Kitchen
+GARLAND,Home and Kitchen
+DISPLAY_ALBUM,Home and Kitchen
+ICE_CUBE_TRAY,Home and Kitchen
+ADHESIVE_TAPES,Home and Kitchen
+MINERAL_SUPPLEMENT,Beauty and Personal Care
+MANUAL_SHAVING_RAZOR,Beauty and Personal Care
+CUTTING_BOARD,Home and Kitchen
+HOME_BED_AND_BATH,Home and Kitchen
+COSMETIC_BRUSH,Beauty and Personal Care
+SKIN_EXFOLIANT,Beauty and Personal Care
+SKIN_TREATMENT_MASK,Beauty and Personal Care
+SUNGLASSES,"Clothing, Shoes, and Jewelry"
+PACKAGED_SOUP_AND_STEW,Food
+DISPOSABLE_INCONTINENCE_SURFACE_PROTECTOR,Beauty and Personal Care
+ART_SUPPLIES,Home and Kitchen
+CADDY,Home and Kitchen
+PERSONAL_PILL_DISPENSER,Beauty and Personal Care
+MARKING_PEN,Office Product
+WINDOW_SHADE,Home and Kitchen
+CARRIER_BAG_CASE,Home and Kitchen
+SKIN_PROTECTANT,Beauty and Personal Care
+JEWELRY_FINDING,"Clothing, Shoes, and Jewelry"
+BRA,"Clothing, Shoes, and Jewelry"
+STORAGE_HOOK,Home and Kitchen
+HAIR_COMB,Beauty and Personal Care
+PILLOWCASE,Home and Kitchen
+CURTAIN,Home and Kitchen
+BUILDING_MATERIAL,Home and Kitchen
+MAKE_UP,Beauty and Personal Care
+ITEM_CONTAINER,Home and Kitchen
+ASTRINGENT_SUBSTANCE,Beauty and Personal Care
+HUMIDIFIER,Home and Kitchen
+SPORT_ACTIVITY_GLOVE,Sports and Outdoors
+UTILITY_KNIFE,Home and Kitchen
+ARTIFICIAL_TREE,Home and Kitchen
+ART_CRAFT_KIT,Home and Kitchen
+GIFT_WRAP,Home and Kitchen
+TREE_TOPPER,Home and Kitchen
+PHYSICAL_VIDEO_GAME_SOFTWARE,Electronics
+PET_BED_MAT,Pet Supplies
+GAME_DICE,Toys and Games
+TABLETOP_GAME,Toys and Games
+HOME_LIGHTING_AND_LAMPS,Home and Kitchen
+FACE_SHAPING_MAKEUP,Beauty and Personal Care
+LIP_COLOR,Beauty and Personal Care
+SWEATBAND,Sports and Outdoors
+SHORTS,"Clothing, Shoes, and Jewelry"
+LINT_REMOVER,Home and Kitchen
+FUNNEL,Home and Kitchen
+HONEY,Food
+THICKENING_AGENT,Food
+PASTRY,Food
+ANIMAL_COLLAR,Pet Supplies
+ANIMAL_HARNESS,Pet Supplies
+THERAPEUTIC_THERMAL_COMPRESS,Beauty and Personal Care
+NAIL_TREATMENT,Beauty and Personal Care
+WALLET,"Clothing, Shoes, and Jewelry"
+DAIRY_BASED_CREAM,Food
+BREAKFAST_CEREAL,Food
+DAIRY_BASED_YOGURT,Food
+CURTAIN_FASTENER,Home and Kitchen
+PROTEIN_DRINK,Food
+MAKEUP_PRIMER,Beauty and Personal Care
+HAIR_CLEANER_CONDITIONER,Beauty and Personal Care
+MASSAGER,Beauty and Personal Care
+PET_ACTIVITY_STRUCTURE,Pet Supplies
+COSMETIC_NAIL_SET,Beauty and Personal Care
+NAIL_POLISH_REMOVER,Beauty and Personal Care
+CONDIMENT,Food
+SUGAR,Food
+LEGUME,Food
+NOODLE,Food
+NAIL_DRILL,Beauty and Personal Care
+ANIMAL_CAGE,Pet Supplies
+WASTE_BAG,Home and Kitchen
+ANIMAL_VITAMIN,Pet Supplies
+OUTDOOR_LIVING,Home and Kitchen
+SOAP_DISH,Home and Kitchen
+HAIR_REMOVAL_AGENT,Beauty and Personal Care
+INCENSE_HOLDER,Home and Kitchen
+CLEANING_BRUSH,Home and Kitchen
+HOME_MIRROR,Home and Kitchen
+NIGHTGOWN_NIGHTSHIRT,"Clothing, Shoes, and Jewelry"
+KITCHEN,Home and Kitchen
+KITCHEN_TOOLS,Home and Kitchen
+CELL_PHONE_HOLSTER,Electronics
+COFFEE,Food
+SAUTE_FRY_PAN,Home and Kitchen
+BLANKET,Home and Kitchen
+BEDDING_SET,Home and Kitchen
+MEASURING_CUP,Home and Kitchen
+SUGAR_CANDY,Food
+UNDERWEAR,"Clothing, Shoes, and Jewelry"
+WOUND_DRESSING,Beauty and Personal Care
+TEXTILE_DEODORIZER,Home and Kitchen
+STORAGE_BOX,Home and Kitchen
+NUT_BUTTER,Food
+FRUIT_SNACK,Food
+DISPOSABLE_NAPKIN,Home and Kitchen
+TOILET_PAPER_HOLDER,Home and Kitchen
+THERMOMETER,Home and Kitchen
+PILLOW,Home and Kitchen
+FOOD_STRAINER,Home and Kitchen
+SPRAY_BOTTLE,Home and Kitchen
+FINENECKLACEBRACELETANKLET,"Clothing, Shoes, and Jewelry"
+HUMIDITY_METER,Home and Kitchen
+SCULPTING_MATERIAL,Home and Kitchen
+FITTED_SHEET,Home and Kitchen
+PAINT,Home and Kitchen
+TABLE,Home and Kitchen
+MEAL_REPLACEMENT_BEVERAGE,Food
+BACKPACK,"Clothing, Shoes, and Jewelry"
+BOOT,"Clothing, Shoes, and Jewelry"
+VACUUM_CLEANER,Home and Kitchen
+BINOCULAR,Sports and Outdoors
+PRETZEL,Food
+SAFETY_MASK,Beauty and Personal Care
+SANDER,Home and Kitchen
+PUZZLES,Toys and Games
+ABRASIVES,Home and Kitchen
+SLEEPWEAR,"Clothing, Shoes, and Jewelry"
+BOARD_GAME,Toys and Games
+BRACELET,"Clothing, Shoes, and Jewelry"
+NON_RIDING_TOY_VEHICLE,Toys and Games
+JEWELRY_SET,"Clothing, Shoes, and Jewelry"
+PET_TOY,Pet Supplies
+LADDER,Home and Kitchen
+SKIN_FOUNDATION_CONCEALER,Beauty and Personal Care
+BRA_UNDERWEAR_SET,"Clothing, Shoes, and Jewelry"
+APPAREL,"Clothing, Shoes, and Jewelry"
+PICTURE_FRAME,Home and Kitchen
+RUG,Home and Kitchen
+TOOTH_WHITENER,Beauty and Personal Care
+TEETHER,Beauty and Personal Care
+FOOT_SCRAPER,Beauty and Personal Care
+DUMBBELL,Sports and Outdoors
+FAUCET,Home and Kitchen
+TOILET_SEAT,Home and Kitchen
+PERSONAL_FRAGRANCE,Beauty and Personal Care
+PICKLE,Food
+CLEANING_AGENT,Home and Kitchen
+PAPER_TOWEL_HOLDER,Home and Kitchen
+COTTON_PAD,Beauty and Personal Care
+FIGURINE,Home and Kitchen
+HOME_FURNITURE_AND_DECOR,Home and Kitchen
+CANDLE_HOLDER,Home and Kitchen
+SPORTING_GOODS,Sports and Outdoors
+VIRTUAL_REALITY_HEADSET,Electronics
+BATHING_SPONGE,Beauty and Personal Care
+GAS_SMOKE_FIRE_ALARM,Home and Kitchen
+SEXUAL_WELLNESS,Beauty and Personal Care
+CLOTHES_RACK,Home and Kitchen
+STORAGE_BINDER,Home and Kitchen
+WRITING_PAPER,Office Product
+CARD_STOCK,Office Product
+ELECTRIC_CIRCUIT_TESTING_DEVICE,Electronics
+NECKLACE,"Clothing, Shoes, and Jewelry"
+SHARPS_DISPOSAL_CONTAINER,Home and Kitchen
+MAILBOX,Home and Kitchen
+SIGNAGE,Home and Kitchen
+LAUNDRY_DETERGENT,Home and Kitchen
+RAZOR_BLADE_CARTRIDGE,Beauty and Personal Care
+HAIR_TIE,Beauty and Personal Care
+WRITING_INSTRUMENT,Office Product
+RECIPROCATING_HEDGE_TRIMMER,Home and Kitchen
+SHEET_PAPER,Office Product
+GREETING_CARD,Home and Kitchen
+INSTRUMENT_PARTS_AND_ACCESSORIES,Electronics
+IRON_ON_TRANSFER_DESIGN,Home and Kitchen
+COSTUME_HEADWEAR,"Clothing, Shoes, and Jewelry"
+TEXTILE_IRON,Home and Kitchen
+BED_LINEN_SET,Home and Kitchen
+SKIN_CARE_AGENT,Beauty and Personal Care
+DRINK_COASTER,Home and Kitchen
+AUTO_KEY_SHELL,Electronics
+SAFETY_GLASSES,Beauty and Personal Care
+DUFFEL_BAG,"Clothing, Shoes, and Jewelry"
+PORTABLE_ELECTRONIC_DEVICE_MOUNT,Electronics
+HAIRBAND,Beauty and Personal Care
+HAIR_COLORING_AGENT,Beauty and Personal Care
+HAIR_DRYER,Beauty and Personal Care
+HAIR_STYLING_AGENT,Beauty and Personal Care
+MOISTURIZING_SOCK_GLOVE,Beauty and Personal Care
+DRAFT_STOPPER,Home and Kitchen
+POPCORN_POPPER,Home and Kitchen
+AUTO_ACCESSORY,Electronics
+DIGITAL_DEVICE_3,Electronics
+ELECTROSHOCK_WEAPON,Sports and Outdoors
+COMPUTER_INPUT_DEVICE,Electronics
+VEHICLE_LIGHT_BULB,Electronics
+VEHICLE_LIGHTING_CONVERSION_KIT,Electronics
+CUTTING_TOOLS,Home and Kitchen
+SCISSORS,Home and Kitchen
+LIQUID_INK,Office Product
+PROTECTIVE_GLOVE,Home and Kitchen
+VIDEO_GAME_CONTROLLER,Electronics
+PERSONAL_COMPUTER,Electronics
+SECURITY_CAMERA,Electronics
+VACUUM_FILTER,Home and Kitchen
+CHOCOLATE_CANDY,Food
+SCULPTURE,Home and Kitchen
+ESSENTIAL_OIL,Beauty and Personal Care
+DECORATIVE_SIGNAGE,Home and Kitchen
+DECORATIVE_CUTOUT,Home and Kitchen
+CHEWING_GUM,Food
+DRINKING_CUP,Home and Kitchen
+PHYSICAL_MOVIE,Electronics
+WIND_CHIME,Home and Kitchen
+ELECTRONIC_GIFT_CARD,Electronics
+BANNER,Home and Kitchen
+NETWORKING_ROUTER,Electronics
+MODEM,Electronics
+BAKING_PAN,Home and Kitchen
+ABIS_DVD,Electronics
+COOKWARE_SET,Home and Kitchen
+SHOE_INSERT,"Clothing, Shoes, and Jewelry"
+PHYSICAL_TV_SERIES,Electronics
+THERMOPLASTIC_FILAMENT,Electronics
+CONTROLLER,Electronics
+3D_PRINTER,Electronics
+MECHANICAL_COMPONENTS,Electronics
+PAINT_BRUSH,Home and Kitchen
+MECHANICAL_FASTENERS,Home and Kitchen
+ARTIFICIAL_PLANT,Home and Kitchen
+POTABLE_WATER_FILTER,Home and Kitchen
+SAW_BLADE,Home and Kitchen
+RING,"Clothing, Shoes, and Jewelry"
+ENGINE_AIR_FILTER,Electronics
+VEHICLE_WIND_DEFLECTOR,Electronics
+ABIS_GIFT_CARD,Electronics
+CANDY,Food
+SNACK_MIX,Food
+PAJAMAS,"Clothing, Shoes, and Jewelry"
+GUN_HOLSTER,"Clothing, Shoes, and Jewelry"
+ABIS_MUSIC,Electronics
+CARRYING_CASE_OR_BAG,"Clothing, Shoes, and Jewelry"
+ORCA_SHIRT,"Clothing, Shoes, and Jewelry"
+CLOCK,Home and Kitchen
+LAWN_MOWER,Home and Kitchen
+MEDICAL_COMPRESSION_GARMENT,Beauty and Personal Care
+ROASTING_PAN,Home and Kitchen
+PET_FEEDER,Pet Supplies
+INTEGRATED_STEREO_SYSTEM,Electronics
+SLIPPER,"Clothing, Shoes, and Jewelry"
+JEWELRY_STORAGE,"Clothing, Shoes, and Jewelry"
+ACCESSORY,"Clothing, Shoes, and Jewelry"
+HARDWARE,Home and Kitchen
+BABY_CARRIER,Home and Kitchen
+HANDRAIL,Home and Kitchen
+SPORT_EQUIPMENT_BAG_CASE,Sports and Outdoors
+INFANT_TODDLER_CAR_SEAT,Home and Kitchen
+TOOTHBRUSH_HEAD,Beauty and Personal Care
+MULTITOOL,Home and Kitchen
+ELECTRIC_SHAVER,Beauty and Personal Care
+STATIONARY_BICYCLE,Sports and Outdoors
+SERVEWARE,Home and Kitchen
+INPUT_PEN,Electronics
+MICROPHONE,Electronics
+GARDEN_SHEAR_SCISSORS,Home and Kitchen
+CONTACT_LENS_CLEANER,Beauty and Personal Care
+VIDEO_DISC_PLAYER,Electronics
+HOOK_LOOP_FASTENER,Home and Kitchen
+BODY_STRAP,"Clothing, Shoes, and Jewelry"
+VIDEO_GAME_ACCESSORIES,Electronics
+DUVET_COVER,Home and Kitchen
+TOOLS,Home and Kitchen
+HEARING_AMPLIFIER,Beauty and Personal Care
+TEAPOT,Home and Kitchen
+EARMUFF,"Clothing, Shoes, and Jewelry"
+COUNTERTOP_GRIDDLE_APPLIANCE,Home and Kitchen
+BOOK_DOCUMENT_STAND,Home and Kitchen
+BATHTUB_SHOWER_MAT,Home and Kitchen
+TABLET_COMPUTER,Electronics
+MOUSE_PAD,Electronics
+VEHICLE_TIRE,Electronics
+GUILD_HOME,Home and Kitchen
+WATCH_BAND,"Clothing, Shoes, and Jewelry"
+THERMOS,Home and Kitchen
+LAB_SUPPLY,Home and Kitchen
+CLIPBOARD,Office Product
+SPEAKERS,Electronics
+FURNITURE_FLOOR_PROTECTOR,Home and Kitchen
+SYRINGE,Beauty and Personal Care
+WRITING_BOARD,Office Product
+GLUCOSE_METER,Beauty and Personal Care
+ERASER,Office Product
+DIGITAL_PICTURE_FRAME,Electronics
+HAND_STRENGTHENER,Sports and Outdoors
+COOKTOP,Home and Kitchen
+SPOON,Home and Kitchen
+PERSONAL_CARE_APPLIANCE,Beauty and Personal Care
+PHONE_ACCESSORY,Electronics
+NETWORK_INTERFACE_CONTROLLER_ADAPTER,Electronics
+RUBBER_STAMP,Office Product
+FOOD_PROCESSOR,Home and Kitchen
+RESPIRATOR,Beauty and Personal Care
+FASTENER_DRIVE_BIT,Home and Kitchen
+COMPUTER_COMPONENT,Electronics
+BOTTLE,Home and Kitchen
+TWEEZER,Beauty and Personal Care
+SAFETY_MASK_STRAP_EXTENDER,Beauty and Personal Care
+KEYCHAIN,"Clothing, Shoes, and Jewelry"
+HAIR_EXTENSION,Beauty and Personal Care
+CIRCUIT_BREAKER,Electronics
+VDO_DEVICES,Electronics
+KEYBOARDS,Electronics
+NON_DAIRY_CREAM,Food
+DOWNLOADABLE_VIDEO_GAME,Electronics
+CONSOLE_VIDEO_GAMES,Electronics
+INTERNAL_MEMORY,Electronics
+COMPUTER_CHASSIS,Electronics
+AMAZON_BOOK_READER,Electronics
+VIDEO_CARD,Electronics
+ELECTRONIC_COMPONENT_FAN,Electronics
+AMAZON_BOOK_READER_ACCESSORY,Electronics
+AIR_CONDITIONER,Home and Kitchen
+MONITOR,Electronics
+SHELF,Home and Kitchen
+PENCIL_SHARPENER,Office Product
+CAMCORDER,Electronics
+HAIR_TRIMMER,Beauty and Personal Care
+CABLE_TIE,Home and Kitchen
+KEYBOARD_MOUSE_SET,Electronics
+UTILITY_MAGNET,Home and Kitchen
+ICE_CREAM_MAKER,Home and Kitchen
+SYSTEM_POWER_DEVICE,Electronics
+SINK,Home and Kitchen
+SANDAL,"Clothing, Shoes, and Jewelry"
+SKIN_CLEANING_BRUSH,Beauty and Personal Care
+SWIMWEAR,"Clothing, Shoes, and Jewelry"
+SUNSCREEN,Beauty and Personal Care
+SOUND_CARD,Electronics
+CANNED_AIR,Home and Kitchen
+FOOD_OR_BEVERAGE_WARMER,Home and Kitchen
+TEMPORARY_HANGER_HOOK,Home and Kitchen
+FOOTREST,Home and Kitchen
+ALCOHOLIC_BEVERAGE,Food
+BACKDROP,Home and Kitchen
+DIGITAL_DEVICE_3_ACCESSORY,Electronics
+CARGO_STRAP,Home and Kitchen
+PHYSICAL_SOFTWARE,Electronics
+OPTICAL_DISC_DRIVE,Electronics
+BUNGEE_CORD,Home and Kitchen
+HANGING_ORNAMENT,Home and Kitchen
+PET_PLAYPEN,Pet Supplies
+NOISE_MACHINE,Home and Kitchen
+LABEL,Office Product
+COOKIE_CUTTER,Home and Kitchen
+COOKING_CONTAINER,Home and Kitchen
+ANIMAL_INCONTINENCE_PROTECTOR,Pet Supplies
+SANDBOX,Home and Kitchen
+INCONTINENCE_PROTECTOR,Beauty and Personal Care
+COSTUME_OUTFIT,"Clothing, Shoes, and Jewelry"
+KITCHEN_KNIFE,Home and Kitchen
+WEIGH_SCALE,Home and Kitchen
+MATTRESS_COVER,Home and Kitchen
+EYEGLASS_CASE,"Clothing, Shoes, and Jewelry"
+LASER_PRINTER_TONER,Office Product
+LITTER_BOX,Pet Supplies
+PRETEND_PLAY_TOY,Toys and Games
+SWING,Home and Kitchen
+SEWING_MACHINE_NEEDLE,Home and Kitchen
+REMOTE_CONTROL,Electronics
+DOORSTOP,Home and Kitchen
+PAPER_PRODUCT,Office Product
+ELECTRIC_LIGHT,Home and Kitchen
+MATTRESS,Home and Kitchen
+SEALANT,Home and Kitchen
+ZIPPER_FASTENER,Home and Kitchen
+MENSTRUAL_CUP,Beauty and Personal Care
+MAJOR_HOME_APPLIANCES,Home and Kitchen
+STORAGE_DRAWER,Home and Kitchen
+PLAYHOUSE,Home and Kitchen
+CABLE_OR_ADAPTER,Electronics
+VEHICLE_LIGHT_ASSEMBLY,Electronics
+ANTENNA,Electronics
+MECHANICAL_BELT,Home and Kitchen
+ANIMAL_NUTRITIONAL_SUPPLEMENT,Pet Supplies
+MUSCLE_ROLLER,Sports and Outdoors
+SNACK_FOOD_BAR,Food
+ROBOTIC_VACUUM_CLEANER,Home and Kitchen
+LEASH,Pet Supplies
+BOTTLE_RACK,Home and Kitchen
+STANDALONE_STREAMING_MEDIA_PLAYER,Electronics
+MEDICAL_TEST_STRIP,Beauty and Personal Care
+EXERCISE_MAT,Sports and Outdoors
+ANIMAL_FUR_CLEANER_CONDITIONER,Pet Supplies
+SLOW_COOKER,Home and Kitchen
+UTILITY_CART_WAGON,Home and Kitchen
+EARRING,"Clothing, Shoes, and Jewelry"
+LIGHT_FIXTURE,Home and Kitchen
+SHEET_PAN,Home and Kitchen
+ELECTRONIC_SWITCH,Electronics
+TOASTER,Home and Kitchen
+HOSE_PIPE_FITTING,Home and Kitchen
+BASKET,Home and Kitchen
+HARDWARE_STAPLE,Home and Kitchen
+PICTURE_HANGER,Home and Kitchen
+FABRIC,Home and Kitchen
+SLED,Home and Kitchen
+DISHWASHER_DETERGENT,Home and Kitchen
+MASCARA,Beauty and Personal Care
+DRAIN_OPENER_SUBSTANCE,Home and Kitchen
+AIR_COMPRESSOR,Home and Kitchen
+WATER_PURIFICATION_UNIT,Home and Kitchen
+EYELASH_CURLER,Beauty and Personal Care
+PROTEIN_SUPPLEMENT_POWDER,Food
+HARDWARE_CLAMP_VISE,Home and Kitchen
+CAMERA_STAGE_LIGHTING_MODIFIER,Electronics
+MAGNIFIER,Home and Kitchen
+CARD_DOCUMENT_SLEEVE,Office Product
+WATER,Food
+VINEGAR,Food
+RICE_MIX,Food
+LEAVENING_AGENT,Food
+BAKING_CUP,Home and Kitchen
+MILK_SUBSTITUTE,Food
+NUT_AND_SEED,Food
+FABRIC_SOFTENER,Home and Kitchen
+DRINKING_STRAW,Home and Kitchen
+CHOPSTICK,Home and Kitchen
+DUST_REMOVAL_TOOL,Home and Kitchen
+BLOOD_OXYGEN_MONITOR,Beauty and Personal Care
+COFFEE_FILTER,Home and Kitchen
+COMPOST_BIN,Home and Kitchen
+TRIVET,Home and Kitchen
+ELECTRIC_FOOD_MILL_GRINDER,Home and Kitchen
+SAFE,Home and Kitchen
+ELECTRIC_WATER_BOILER,Home and Kitchen
+DISH_DRYING_MAT,Home and Kitchen
+INSTALLATION_SERVICES,Home and Kitchen
+BED,Home and Kitchen
+LAB_CHEMICAL,Home and Kitchen
+SKIN_CARE_PRODUCT,Beauty and Personal Care
+ART_EASEL,Home and Kitchen
+BENCH,Home and Kitchen
+CARPET_UPHOLSTERY_CLEANING_MACHINE,Home and Kitchen
+BODY_CARE_PRODUCT,Beauty and Personal Care
+TREADMILL,Sports and Outdoors
+DRESSER,Home and Kitchen
+BOOKMARK,Home and Kitchen
+SAFETY_SUPPLY,Home and Kitchen
+TRAMPOLINE,Sports and Outdoors
+DIETARY_SUPPLEMENTS,Beauty and Personal Care
+IRRIGATION_SPRINKLER,Home and Kitchen
+ELECTRIC_FAN,Home and Kitchen
+DIGITAL_DEVICE_4,Electronics
+WATERING_CAN,Home and Kitchen
+CLIMBING_PLANT_SUPPORT_STRUCTURE,Home and Kitchen
+CAKE,Food
+TOWEL_HOLDER,Home and Kitchen
+ROBE,"Clothing, Shoes, and Jewelry"
+APPENDAGE_WARMER,"Clothing, Shoes, and Jewelry"
+ELECTRIC_HEATING_PAD,Home and Kitchen
+LAMINATOR,Office Product
+AUDIO_MIXING_CONSOLE,Electronics
+SOUND_AND_RECORDING_EQUIPMENT,Electronics
+DRILL_BITS,Home and Kitchen
+VIDEO_PROJECTOR,Electronics
+UTILITY_JACK,Home and Kitchen
+SYRUP,Food
+OUTDOOR_RECREATION_PRODUCT,Sports and Outdoors
+FISHING_NET,Sports and Outdoors
+FIRST_AID_KIT,Home and Kitchen
+COSTUME_MASK,"Clothing, Shoes, and Jewelry"
+ELECTRONIC_FINDER,Electronics
+CE_ACCESSORY,Electronics
+INDUSTRIAL_CASTERS,Home and Kitchen
+BABY_PRODUCT,Home and Kitchen
+BABY_BOTTLE,Home and Kitchen
+HANGING_MOBILE,Home and Kitchen
+NASAL_ASPIRATOR,Beauty and Personal Care
+CHANGING_PAD_COVER,Home and Kitchen
+SLEEP_MASK,Beauty and Personal Care
+SHOELACE,"Clothing, Shoes, and Jewelry"
+FURNITURE_EDGE_BUMPER,Home and Kitchen
+BOTTLE_NIPPLE,Home and Kitchen
+SLEEPING_BAG,Home and Kitchen
+BATTERY_CHARGER,Electronics
+AIR_MATTRESS,Home and Kitchen
+TENT,Home and Kitchen
+PERSONAL_FLOTATION_DEVICE,Sports and Outdoors
+EDUCATIONAL_SUPPLIES,Home and Kitchen
+MEAL_HOLDER,Home and Kitchen
+TWO_WAY_RADIO,Electronics
+WATCH,"Clothing, Shoes, and Jewelry"
+APPAREL_HEAD_NECK_COVERING,"Clothing, Shoes, and Jewelry"
+RECREATION_BALL,Sports and Outdoors
+SAFETY_MASK_REPLACEMENT_FILTER,Beauty and Personal Care
+HEADPHONE_EARPAD,Electronics
+WIRELESS_AUDIO_ADAPTER,Electronics
+CONDOM,Beauty and Personal Care
+FIDGET_TOY_SPINNER,Toys and Games
+KNEE_PAD,Sports and Outdoors
+SEASONING,Food
+WEIGHT_RACK,Sports and Outdoors
+COUNTERTOP_FOOD_STEAMER,Home and Kitchen
+FOOTWEAR_CARE_KIT,"Clothing, Shoes, and Jewelry"
+SURVIVAL_KIT,Home and Kitchen
+HAIR_IRON,Beauty and Personal Care
+LEOTARD,"Clothing, Shoes, and Jewelry"
+BALLOON,Home and Kitchen
+TABLECLOTH,Home and Kitchen
+AIR_PUMP,Home and Kitchen
+PARTY_DECORATION_PACK,Home and Kitchen
+VEHICLE_SEAT_COVER,Electronics
+WAIST_CINCHER,"Clothing, Shoes, and Jewelry"
+FALSE_NAIL,Beauty and Personal Care
+SEWING_TOOL_SET,Home and Kitchen
+ELECTRONIC_SIGNAL_CONVERTER,Electronics
+TONG_UTENSIL,Home and Kitchen
+SYSTEM_CABINET,Home and Kitchen
+BAKEWARE_SET,Home and Kitchen
+TREE_SKIRT,Home and Kitchen
+MACHINE_LUBRICANT,Home and Kitchen
+FLASH_DRIVE,Electronics
+CONCENTRATED_FLAVORING_SUBSTANCE,Food
+FOOD_WRAP,Home and Kitchen
+BATH_SAFETY_SEATING,Home and Kitchen
+FISH,Food
+SECURITY_ELECTRONICS,Electronics
+LANDLINE_PHONE,Electronics
+SHELLFISH,Food
+ELECTRONIC_WIRE,Electronics
+AV_SIGNAL_SWITCH,Electronics
+MULTIPORT_HUB,Electronics
+RULER,Office Product
+CORRECTIVE_EYEGLASSES,"Clothing, Shoes, and Jewelry"
+FOOD_SLICER,Home and Kitchen
+TOY_GUN,Toys and Games
+WALKER,Home and Kitchen
+ABIS_DOWNLOADABLE_SOFTWARE,Electronics
+PRINTER,Electronics
+DECORATIVE_PILLOW_COVER,Home and Kitchen
+TOY_BUILDING_BLOCK,Toys and Games
+TEACHING_EQUIPMENT,Home and Kitchen
+COORDINATED_OUTFIT,"Clothing, Shoes, and Jewelry"
+TOY_FIGURE_PLAYSET,Toys and Games
+SQUEEZE_TOY,Toys and Games
+LOOSE_CUT_GEM,"Clothing, Shoes, and Jewelry"
+CHARM,"Clothing, Shoes, and Jewelry"
+LICENSE_PLATE_ATTACHMENT,Electronics
+VEHICLE_MIRROR,Electronics
+ASHTRAY,Home and Kitchen
+BABY_RATTLE,Toys and Games
+BAKING_PAPER,Home and Kitchen
+COSMETIC_POWDER,Beauty and Personal Care
+TASK_TRAY,Home and Kitchen
+STORAGE_COVER,Home and Kitchen
+FALSE_EYELASH,Beauty and Personal Care
+ONBOARD_CAMERA,Electronics
+FLASH_CARD,Office Product
+NAIL_CLIPPER,Beauty and Personal Care
+CRAFT_BEAD,Home and Kitchen
+DYE,Home and Kitchen
+AIR_FRYER,Home and Kitchen
+CAULKS,Home and Kitchen
+CRAFT_MOLD,Home and Kitchen
+CAMERA_CONTINUOUS_LIGHT,Electronics
+FASHIONEARRING,"Clothing, Shoes, and Jewelry"
+FOOD_MIXER,Home and Kitchen
+JAR,Home and Kitchen
+INDUSTRIAL_HOSE,Home and Kitchen
+DAILY_LIVING_AIDS,Home and Kitchen
+FIDGET_TOY,Toys and Games
+FASHIONOTHER,"Clothing, Shoes, and Jewelry"
+MISC_OTHER,Home and Kitchen
+PARTY_FAVOR,Home and Kitchen
+LUXURY_BEAUTY,Beauty and Personal Care
+SELF_DEFENSE_SPRAY,Beauty and Personal Care
+TONNEAU_COVER,Electronics
+LUGGAGE,"Clothing, Shoes, and Jewelry"
+BICYCLE_CARGO_RACK,Electronics
+WATER_FLOTATION_DEVICE,Sports and Outdoors
+SPLASH_POOL,Home and Kitchen
+PORTABLE_ELECTRONIC_DEVICE_ARMBAND,Electronics
+BICYCLE,Sports and Outdoors
+BICYCLE_LIGHT,Electronics
+VEHICLE_BAG,Electronics
+KNIFE_BLOCK,Home and Kitchen
+FURNITURE_LEG,Home and Kitchen
+POWER_BANK,Electronics
+BAKING_MAT,Home and Kitchen
+HIP_FLASK,Home and Kitchen
+SEWING_PATTERN,Home and Kitchen
+CAN_OPENER,Home and Kitchen
+CUP_HOLDER,Home and Kitchen
+COOKWARE,Home and Kitchen
+SOUS_VIDE_MACHINE,Home and Kitchen
+FIRE_PIT,Home and Kitchen
+CYCLING_TIRE,Electronics
+BICYCLE_BRAKE_PAD,Electronics
+VEHICLE_BODY_PANEL,Electronics
+FOOD_SERVICE_SUPPLY,Home and Kitchen
+CONTAINER_LID,Home and Kitchen
+MOUTH_GUARD,Sports and Outdoors
+FOOD_DEHYDRATOR,Home and Kitchen
+WASHER,Home and Kitchen
+SPORT_HELMET,Sports and Outdoors
+FURNITURE_LINER,Home and Kitchen
+GARDEN_TOOL_SET,Home and Kitchen
+BLOOD_LANCET,Beauty and Personal Care
+BLOOD_PRESSURE_MONITOR,Beauty and Personal Care
+PACIFIER,Home and Kitchen
+MONEY_BANK,Home and Kitchen
+SUSPENDER,"Clothing, Shoes, and Jewelry"
+BREAST_PUMP,Beauty and Personal Care
+BABY_FORMULA,Food
+BED_RAIL,Home and Kitchen
+BATH_TOY,Home and Kitchen
+BICYCLE_PEDAL,Electronics
+BICYCLE_BELL,Electronics
+PESTICIDE,Home and Kitchen
+PIPING_TIP,Home and Kitchen
+BRASS_AND_WOODWIND_INSTRUMENTS,Electronics
+VEHICLE_BRAKE_PAD,Electronics
+HOPPING_TOY,Toys and Games
+FOOD_GRATER,Home and Kitchen
+STEP_STOOL,Home and Kitchen
+EXERCISE_BAND,Sports and Outdoors
+BAKING_CHOCOLATE,Food
+FOOD_PREPARATION_MOLD,Home and Kitchen
+CRAFT_WOOD,Home and Kitchen
+ROTATING_TRAY,Home and Kitchen
+WIG,"Clothing, Shoes, and Jewelry"
+EYEGLASS_FRAME,"Clothing, Shoes, and Jewelry"
+MILK_FROTHER,Home and Kitchen
+SCIENCE_FUNDAMENTALS_KIT,Home and Kitchen
+PLACEMAT,Home and Kitchen
+REUSABLE_INCONTINENCE_SURFACE_PROTECTOR,Beauty and Personal Care
+BALANCE_BOARD,Sports and Outdoors
+MOUNT_BRACKET,Home and Kitchen
+TOY_VEHICLE_SET,Toys and Games
+BUBBLE_MAKER,Home and Kitchen
+EXERCISE_BLOCK,Sports and Outdoors
+ANIMAL_LITTER,Pet Supplies
+ELECTRICAL_PLUG,Electronics
+ANIMAL_PERCH,Pet Supplies
+PUMP_DISPENSER,Home and Kitchen
+COSMETIC_SPONGE,Beauty and Personal Care
+CELL_PHONE_GRIP,Electronics
+WIPER_BLADE,Electronics
+TRAY,Home and Kitchen
+ANIMAL_CARRIER,Pet Supplies
+TELEVISION,Electronics
+AROMA_DIFFUSER,Home and Kitchen
+STEAM_CLEANER,Home and Kitchen
+CAMERA_TRIPOD,Electronics
+DRILL,Home and Kitchen
+TOOL_BELT,Home and Kitchen
+MECHANICAL_LIGHTER,Home and Kitchen
+OVERALLS,"Clothing, Shoes, and Jewelry"
+WEATHER_STRIPPING,Home and Kitchen
+VEHICLE_COVER,Electronics
+WATER_HEATER,Home and Kitchen
+HVAC_CONTROL_THERMOSTAT,Home and Kitchen
+PLUG_STOPPER,Home and Kitchen
+WRENCH,Home and Kitchen
+KAYAK,Sports and Outdoors
+GREENHOUSE,Home and Kitchen
+AUTO_PART,Electronics
+DEHUMIDIFIER,Home and Kitchen
+FUSE,Electronics
+SPACE_HEATER,Home and Kitchen
+DRAIN_STRAINER,Home and Kitchen
+TRACTION_CLEAT,Sports and Outdoors
+ELECTRONIC_COMPONENT,Electronics
+ROLLING_PAPER,Home and Kitchen
+GASKETS,Home and Kitchen
+VALVE,Home and Kitchen
+MP3_PLAYER,Electronics
+PRINT_COPY_PAPER,Office Product
+BEVERAGE,Food
+ELLIPTICAL_TRAINER,Sports and Outdoors
+WIRELESS_SIGNAL_REPEATER,Electronics
+COMPUTER,Electronics
+REFRIGERATOR,Home and Kitchen
+AV_FURNITURE,Home and Kitchen
+RADIO,Electronics
+PIZZA,Food
+DENTAL_FLOSS,Beauty and Personal Care
+BOTTLE_OPENER,Home and Kitchen
+FUEL_PUMP,Electronics
+PACKING_MATERIAL,Home and Kitchen
+VEHICLE_EMBLEM,Electronics
+COLLECTIBLE_CARD,Home and Kitchen
+TURNTABLE,Electronics
+PIERCING_JEWELRY,"Clothing, Shoes, and Jewelry"
+WEBCAM,Electronics
+GRAPHIC_TABLET,Electronics
+SINGLE_BOARD_COMPUTER,Electronics
+BINDER_DIVIDER,Office Product
+STOVETOP_KETTLE,Home and Kitchen
+LEG_SLEEVE,"Clothing, Shoes, and Jewelry"
+PICNIC_HOLDER,Home and Kitchen
+STRENGTH_TRAINING_MACHINE,Sports and Outdoors
+RANGEFINDER,Sports and Outdoors
+WEIGHTLIFTING_BELT,Sports and Outdoors
+BREAST_PETAL,"Clothing, Shoes, and Jewelry"
+FABRIC_APPLIQUE_PATCH,Home and Kitchen
+TAMPON,Beauty and Personal Care
+SMOKING_PIPE,Home and Kitchen
+NECKTIE,"Clothing, Shoes, and Jewelry"
+CAPO,Electronics
+TELESCOPE,Sports and Outdoors
+FLATWARE,Home and Kitchen
+TRADING_CARDS_CARDS_SETS,Home and Kitchen
+ORAL_IRRIGATOR,Beauty and Personal Care
+RELAY,Electronics
+STROLLER,Home and Kitchen
+SPORT_MITT,Sports and Outdoors
+PHONE,Electronics
+MUSICAL_INSTRUMENTS,Electronics
+SOFA,Home and Kitchen
+FIREPLACE,Home and Kitchen
+POWER_CONVERTER,Electronics
+BIOMETRIC_MONITOR,Beauty and Personal Care
+ANIMAL_RECOVERY_COLLAR_CONE,Pet Supplies
+CAMERA_OTHER_ACCESSORIES,Electronics
+ANIMAL_WATER_DISPENSER,Pet Supplies
+TOTE_BAG,"Clothing, Shoes, and Jewelry"
+TRANSPORT_RACK,Home and Kitchen
+WEARABLE_COMPUTER,Electronics
+BASE_LAYER_APPAREL_SET,"Clothing, Shoes, and Jewelry"
+SOCKSHOSIERY,"Clothing, Shoes, and Jewelry"
+FASHIONNECKLACEBRACELETANKLET,"Clothing, Shoes, and Jewelry"
+DUTCH_OVENS,Home and Kitchen
+CORE_PIT_REMOVER,Home and Kitchen
+CRAFT_WRAPPING_TISSUE_PAPER,Home and Kitchen
+BUTTER_DISH,Home and Kitchen
+FURNITURE,Home and Kitchen
+PALETTE_PUTTY_KNIFE,Home and Kitchen
+HOLE_PUNCH,Office Product
+PET_PLACEMAT,Pet Supplies
+CAMERA_DIGITAL,Electronics
+FURNITURE_SLIDER,Home and Kitchen
+CABINET,Home and Kitchen
+BADGE_HOLDER,Office Product
+PUFFED_SNACK,Food
+REINFORCED_ART_SURFACE,Home and Kitchen
+FOOD_SCOOP,Home and Kitchen
+TILE,Home and Kitchen
+LIGHT_BOX,Home and Kitchen
+HAMMER_MALLET,Home and Kitchen
+MAPS,Home and Kitchen
+BODY_PAINT,Beauty and Personal Care
+GLITTER,Home and Kitchen
+DRIED_PLANT,Home and Kitchen
+ART,Home and Kitchen
+AQUARIUM_POND_WATER_TREATMENT,Pet Supplies
+ANIMAL_STAIR,Pet Supplies
+LAP_DESK,Home and Kitchen
+ELASTIC_BAND,Home and Kitchen
+INK_OR_TONER,Office Product
+SELF_TANNER,Beauty and Personal Care
+DESK_PAD,Office Product
+POT_HOLDER,Home and Kitchen
+BUCKET,Home and Kitchen
+PORTABLE_AUDIO,Electronics
+HEAT_SINK,Electronics
+PRIME,Electronics
+WALL_PLATE,Home and Kitchen
+AIR_GUN_PROJECTILE,Sports and Outdoors
+HAIR_ROLLER,Beauty and Personal Care
+HAIR_TRIMMING_KIT,Beauty and Personal Care
+SCREWS,Home and Kitchen
+SPORT_BAT,Sports and Outdoors
+VACUUM_CLEANER_BAG,Home and Kitchen
+SQUEEGEE,Home and Kitchen
+TOGGLE_SWITCH,Electronics
+POOL_VACUUM,Home and Kitchen
+STEERING_WHEEL_COVER,Electronics
+MUSICAL_INSTRUMENT_TOY,Toys and Games
+HAMMOCK,Home and Kitchen
+SCARF,"Clothing, Shoes, and Jewelry"
+CORSET,"Clothing, Shoes, and Jewelry"
+RUG_PAD,Home and Kitchen
+SNORKELING_SET,Sports and Outdoors
+FUEL_LAMP,Home and Kitchen
+NAVIGATION_COMPASS,Sports and Outdoors
+FLAME_WICK,Home and Kitchen
+DEEP_FRYER,Home and Kitchen
+WIRE,Electronics
+ONE_PIECE_OUTFIT,"Clothing, Shoes, and Jewelry"
+HOBBIES,Home and Kitchen
+GUILD_JEWELRY,"Clothing, Shoes, and Jewelry"
+PUPPET,Toys and Games
+PRESSURE_COOKER,Home and Kitchen
+SOLID_FIRE_FUEL,Home and Kitchen
+PORTABLE_STOVE,Home and Kitchen
+SKATEBOARD,Sports and Outdoors
+MOP,Home and Kitchen
+BOTTLE_STOPPER,Home and Kitchen
+KNIFE_SHARPENER,Home and Kitchen
+BRAKE_KIT,Electronics
+TEA_INFUSER,Home and Kitchen
+DECORATIVE_MAGNET,Home and Kitchen
+FOOD_BIB,Home and Kitchen
+SHOWER_CAP,Beauty and Personal Care
+TAPE_LABEL_DISPENSER,Office Product
+FOOD_SHAKER,Home and Kitchen
+DRY_SHAMPOO,Beauty and Personal Care
+PET_APPAREL,Pet Supplies
+SPORT_RACKET,Sports and Outdoors
+DECORATIVE_POM_POM,Home and Kitchen
+SUITCASE,"Clothing, Shoes, and Jewelry"
+MINIATURE_TOY_FURNISHING,Toys and Games
+SWIM_CAP,Sports and Outdoors
+DISHWARE_PLACE_SETTING,Home and Kitchen
+SKIN_BLEMISH_REMOVAL_TOOL,Beauty and Personal Care
+CAMERA_LENSES,Electronics
+OUTERWEAR,"Clothing, Shoes, and Jewelry"
+CAMERA_FILM,Electronics
+KEYBOARD_INSTRUMENTS,Electronics
+FITNESS_HOOP,Sports and Outdoors
+GRILL_SMOKER_COVER,Home and Kitchen
+BISS,Electronics
+CURTAIN_SWAG_HOLDER,Home and Kitchen
+PAPER_SHREDDER,Office Product
+STAPLER,Office Product
+BAR_CODE_READER,Electronics
+WATER_PUMP,Home and Kitchen
+MICROSCOPES,Electronics
+HARD_DRIVE_ENCLOSURE,Electronics
+THREAD_CORD,Home and Kitchen
+UNMANNED_AERIAL_VEHICLE,Electronics
+PLAY_SLIDE,Home and Kitchen
+ELECTRIC_LANTERN,Home and Kitchen
+HEADBOARD,Home and Kitchen
+VEHICLE_SAFETY_CAMERA,Electronics
+TRANSFORMER,Electronics
+JUICER,Home and Kitchen
+WAIST_PACK,"Clothing, Shoes, and Jewelry"
+PHOTOGRAPHIC_FILM,Electronics
+DECORATIVE_RIBBON_TRIM,Home and Kitchen
+ABIS_DRUGSTORE,Beauty and Personal Care
+FOOD_MASHER,Home and Kitchen
+JUMP_ROPE,Sports and Outdoors
+FACIAL_STEAMER,Beauty and Personal Care
+BATH_PILLOW,Home and Kitchen
+TV_TUNER_CARD,Electronics
+POLISHING_BUFFING_TOOL,Home and Kitchen
+NAIL_POLISH_BRUSH,Beauty and Personal Care
+WILDLIFE_FEEDER,Home and Kitchen
+SWIMMING_POOL,Home and Kitchen
+FACE_SHIELD,Beauty and Personal Care
+MEDIA_STORAGE,Electronics
+BLADED_FOOD_PEELER,Home and Kitchen
+BEER,Food
+GARMENT_PROTECTOR_COVER,Home and Kitchen
+OFFICE_ELECTRONICS,Electronics
+FOUNTAIN,Home and Kitchen
+CORD_MANAGEMENT_COVER,Home and Kitchen
+SEASONING_MILL,Home and Kitchen
+SNAP_FASTENER,Home and Kitchen
+GAMES,Toys and Games
+MOTHERBOARD,Electronics
+BED_CURTAIN,Home and Kitchen
+EGG,Food
+PLECTRUM,Electronics
+GUITARS,Electronics
+CLINICAL_DIAGNOSTIC_TESTING_KIT,Beauty and Personal Care
+PUMP_SPRAYER,Home and Kitchen
+SAW,Home and Kitchen
+ANCHOR_STAKE,Home and Kitchen
+CAMERA_LENS_FILTERS,Electronics
+WEED_MOSS_CONTROL_AGENT,Home and Kitchen
+CASSEROLES,Home and Kitchen
+GUN_SLING,"Clothing, Shoes, and Jewelry"
+ICE_CHEST,Home and Kitchen
+VEHICLE_MOLDING,Electronics
+BICYCLE_TRAINER,Electronics
+ANIMAL_SHELTER,Pet Supplies
+ELECTRONIC_SENSOR,Electronics
+FOOD_BLENDER,Home and Kitchen
+HANDLEBAR,Electronics
+KNIFE,Home and Kitchen
+TARP,Home and Kitchen
+DIMENSIONAL_MEASUREMENT_CALIPER,Home and Kitchen
+GUN_CLEANING_KIT,"Clothing, Shoes, and Jewelry"
+AUTO_OIL,Electronics
+CHAINSAW,Home and Kitchen
+SHIN_GUARD,Sports and Outdoors
+TRACK_SUIT,"Clothing, Shoes, and Jewelry"
+WINDING_REEL,Home and Kitchen
+BOXING_GLOVE,Sports and Outdoors
+MESS_KIT,Home and Kitchen
+HYDRATION_PACK,Sports and Outdoors
+POWER_INVERTER,Electronics
+NAIL_POWDER,Beauty and Personal Care
+COSTUME_EYEWEAR,"Clothing, Shoes, and Jewelry"
+SEWING_BUTTON,Home and Kitchen
+EXERCISE_STRAP,Sports and Outdoors
+BABY_SEAT,Home and Kitchen
+CHANGING_PAD,Home and Kitchen
+BAR_TOOL_SET,Home and Kitchen
+ABIS_VIDEO,Electronics
+CAMERA_CLEANER,Electronics
+SHIPPING_BOX,Home and Kitchen
+MANUAL_FOOD_MILL_GRINDER,Home and Kitchen
+COOKING_POT,Home and Kitchen
+PAPER_CLIP_CLAMP,Office Product
+CHAIR_MAT,Home and Kitchen
+AUDIO_MIDI_INTERFACE,Electronics
+BEVERAGE_INSULATOR,Home and Kitchen
+EYEGLASS_REPAIR_KIT,"Clothing, Shoes, and Jewelry"
+KEYCAP,Electronics
+BATHTUB,Home and Kitchen
+DRYING_RACK,Home and Kitchen
+TOY_SLIME,Toys and Games
+VIDEO_GAME_HARDWARE,Electronics
+TEMPLATE_STENCIL,Home and Kitchen
+BASKETBALL_HOOP,Sports and Outdoors
+PLIERS,Home and Kitchen
+ABDOMINAL_EXERCISER,Sports and Outdoors
+YO_YO,Toys and Games
+ELECTRONIC_DEVICE_DOCKING_STATION,Electronics
+CONSUMABLES_EMAIL_GIFT_CARD,Electronics
+APPAREL_PIN,"Clothing, Shoes, and Jewelry"
+BUCKLE,"Clothing, Shoes, and Jewelry"
+UTILITY_HOLSTER_POUCH,Home and Kitchen
+GUILD_TOYS_AND_GAMES,Toys and Games
+MORTAR_AND_PESTLE_SET,Home and Kitchen
+ARM_SLEEVE,"Clothing, Shoes, and Jewelry"
+GAMING_EQUIPMENT_ENCLOSURE,Electronics
+GUITAR_EFFECT_DEVICE,Electronics
+PROJECTILE_BOW,Sports and Outdoors
+RAKE,Home and Kitchen
+TRASH_COMPACTOR,Home and Kitchen
+TOY_MODEL_VEHICLE_TRACK,Toys and Games
+TABLE_RUNNER,Home and Kitchen
+KNIFE_BLOCK_SET,Home and Kitchen
+FACIAL_TISSUE_HOLDER,Home and Kitchen
+PORTABLE_TOOL_BOX,Home and Kitchen
+FLAT_SHEET,Home and Kitchen
+PANTRY,Home and Kitchen
+ELECTRONIC_DEVICE_COOLING_PAD,Electronics
+INSULATION,Home and Kitchen
+PET_DOOR,Pet Supplies
+CORD_ROPE,Home and Kitchen
+SUSPENSION_LIFT_SUPPORT,Electronics
+WEARABLE_WEIGHT,Sports and Outdoors
+TOPICAL_HAIR_REGROWTH_TREATMENT,Beauty and Personal Care
+RAMP,Home and Kitchen
+MARBLE_TRACK,Toys and Games
+COLLAPSIBLE_PLAY_STRUCTURE,Home and Kitchen
+PORTABLE_FREESTANDING_SHELTER,Home and Kitchen
+BLAZER,"Clothing, Shoes, and Jewelry"
+PUNCHING_BAG,Sports and Outdoors
+COUNTERTOP_BURNER,Home and Kitchen
+MOUNTED_STORAGE_SYSTEM_KIT,Home and Kitchen
+RIDE_ON_TOY,Toys and Games
+LIGHTED_OUTDOOR_DISPLAY,Home and Kitchen
+CAKE_TOPPER,Home and Kitchen
+ELECTRONIC_LEARNING_TOY,Toys and Games
+SNOW_GLOBE,Home and Kitchen
+VIVARIUM,Pet Supplies
+SPINNING_TOY_TOP,Toys and Games
+PINATA,Home and Kitchen
+DARTBOARD,Sports and Outdoors
+ELECTRONIC_DEVICE_SKIN,Electronics
+PEN_MARKER_INK_CARTRIDGE_REFILL,Office Product
+ADVENT_CALENDAR,Home and Kitchen
+TEMPORARY_TATTOO,Beauty and Personal Care
+HELMET,Sports and Outdoors
+EDIBLE_OIL_ANIMAL,Food
+JEWELRY,"Clothing, Shoes, and Jewelry"
+MASSAGE_STICK,Beauty and Personal Care
+ACCESSORY_OR_PART_OR_SUPPLY,Electronics
+SPOON_REST,Home and Kitchen
+CHEMICAL_TEST_STRIP,Beauty and Personal Care
+STOOL_SEATING,Home and Kitchen
+ENEMA_DOUCHE,Beauty and Personal Care
+WALLPAPER,Home and Kitchen
+BARBECUE_GRILL,Home and Kitchen
+WHISK_UTENSIL,Home and Kitchen
+BREAD_MAKING_MACHINE,Home and Kitchen
+AUDIO_OR_VIDEO,Electronics
+VIDEO_GAME_PERIPHERAL_SET,Electronics
+ELECTRONIC_DEVICE_FACEPLATE,Electronics
+SPIRITS,Food
+PASTRY_BASTING_BRUSH,Home and Kitchen
+STORE_FIXTURES_AND_EQUIPMENT,Home and Kitchen
+DISPLAY_ENCLOSURE,Home and Kitchen
+PET_HEALTH_CARE,Pet Supplies
+SEWING_MACHINE,Home and Kitchen
+ADHESIVES_AND_SEALANTS,Home and Kitchen
+PRESSURE_WASHER,Home and Kitchen
+CAPACITOR,Electronics
+PROTECTED_COLLECTION,Home and Kitchen
+MOTOR_STARTER,Electronics
+ELECTRIC_MOTOR,Electronics
+BOOKS_1973_AND_LATER,Books
+PARTY_SUPPLIES,Home and Kitchen
+PLAY_WORKSTATION,Home and Kitchen
+DOLL_CLOTHING,Toys and Games
+BATHTUB_SHOWER_TRIM_KIT,Home and Kitchen
+KICK_SCOOTER,Sports and Outdoors
+ROLLER_SKATE,Sports and Outdoors
+WEATHER_STATION,Home and Kitchen
+WEIGHT_PLATE,Sports and Outdoors
+HOT_GLUE_GUN,Home and Kitchen
+HAIR_CARE_AGENT,Beauty and Personal Care
+CROCHET_HOOK,Home and Kitchen
+GRIDDLE_PLATE,Home and Kitchen
+BARBECUE_TOOL_SET,Home and Kitchen
+HOOKAH,Home and Kitchen
+PASTA_MAKER,Home and Kitchen
+DRIP_IRRIGATION_KIT,Home and Kitchen
+FISHING_ROD_REEL_COMBO,Sports and Outdoors
+FISHING_HOOK,Sports and Outdoors
+CAMERA_SUPPORT,Electronics
+CAMERA,Electronics
+POWER_SUPPLY,Electronics
+VOICE_RECORDER,Electronics
+RANGE,Home and Kitchen
+COIN_PURSE_POUCH,"Clothing, Shoes, and Jewelry"
+UNDERGARMENT_THIGH_SLIMMER,"Clothing, Shoes, and Jewelry"
+LIGHT_SOURCE,Electronics
+WIRE_STRIPPER,Home and Kitchen
+FOOD_GLITTER_SPRINKLE,Food
+VEHICLE_ACCENT_LIGHT,Electronics
+VEHICLE_GRILLE,Electronics
+VEHICLE_SCAN_TOOL,Electronics
+BARBELL,Sports and Outdoors
+FITNESS_BENCH,Sports and Outdoors
+SLEEPING_MAT,Home and Kitchen
+WEAPON_CASE,"Clothing, Shoes, and Jewelry"
+MOTOR_ENGINE_FUEL_TANK,Electronics
+MICROPHONE_STAND,Electronics
+VIDEO_DEVICE,Electronics
+PROJECTION_SCREEN,Electronics
+AIMING_SCOPE_SIGHT,Sports and Outdoors
+GUN_GRIP,"Clothing, Shoes, and Jewelry"
+WATER_DISPENSER,Home and Kitchen
+SOLAR_PANEL,Home and Kitchen
+HARDWARE_BEARING,Home and Kitchen
+HAND_SANITIZER,Beauty and Personal Care
+STRING_TRIMMER,Home and Kitchen
+RICE_COOKERS,Home and Kitchen
+VEHICLE_INTERIOR_SHADE,Electronics
+FOOD_SMOKER,Home and Kitchen
+VIDEO_DVD,Electronics
+DIE_CUT_MACHINE,Home and Kitchen
+CRIB,Home and Kitchen
+BASSINET,Home and Kitchen
+BABY_BATHTUB,Home and Kitchen
+WATER_PLAY_SPRINKLER,Home and Kitchen
+MAKEUP_VANITY,Beauty and Personal Care
+PHYSICAL_GIFT_CARD,Electronics
+CONFETTI,Home and Kitchen
+BABY_JUMPER_WALKER,Home and Kitchen
+CRAFT_EYE,Home and Kitchen
+TARGET_TOSSING_GAME,Toys and Games
+POWER_TOOL_SET,Home and Kitchen
+BATHROOM_CONTAINER_SET,Home and Kitchen
+MEMORY_READER,Electronics
+DIGITAL_DEVICE_4_ACCESSORY,Electronics
+DIGITAL_DEVICE_21_ACCESSORY,Electronics
+DOOR_CLOSER,Home and Kitchen
+COMPUTER_COOLING_DEVICE,Electronics
+HOUSEHOLD_VARNISH,Home and Kitchen
+HAIR_CARE_PRODUCT,Beauty and Personal Care
+SHOE_TREE,"Clothing, Shoes, and Jewelry"
+FISHING_LINE,Sports and Outdoors
+ABRASIVE_WHEELS,Home and Kitchen
+ROTARY_TOOL,Home and Kitchen
+CHISEL,Home and Kitchen
+OLIVE,Food
+CULINARY_MUSHROOM,Food
+ANTI_FATIGUE_FLOOR_MAT,Home and Kitchen
+ROWING_MACHINE,Sports and Outdoors
+PET_SEAT,Pet Supplies
+MUSICAL_INSTRUMENT_STRING,Electronics
+STRINGED_INSTRUMENTS,Electronics
+CRIMPING_PLIERS,Home and Kitchen
+SNOW_PANT,"Clothing, Shoes, and Jewelry"
+BOOKEND,Home and Kitchen
+ENGINE_EXHAUST_PIPE,Electronics
+PLAYARD,Home and Kitchen
+SUIT,"Clothing, Shoes, and Jewelry"
+GARLIC_PRESS,Home and Kitchen
+DRYER,Home and Kitchen
+JUMP_STARTER,Electronics
+EXERCISE_MACHINE,Sports and Outdoors
+DOOR,Home and Kitchen
+SHADE_SAIL,Home and Kitchen
+ELECTRONIC_COMPONENT_TERMINAL,Electronics
+UNINTERRUPTIBLE_POWER_SUPPLY,Electronics
+ANIMAL_MEDICATION,Pet Supplies
+SODA_MAKER,Home and Kitchen
+GPS_OR_NAVIGATION_ACCESSORY,Electronics
+PORTABLE_VIDEO_DISC_PLAYER,Electronics
+CARABINER,Home and Kitchen
+BED_SKIRT,Home and Kitchen
+PRECISION_MEASURING,Home and Kitchen
+NETWORKING_DEVICE,Electronics
+SHOE_ACCESSORY,"Clothing, Shoes, and Jewelry"
+GOLF_CLUB,Sports and Outdoors
+HOME_ORGANIZERS_AND_STORAGE,Home and Kitchen
+COCKTAIL_SHAKER,Home and Kitchen
+WHEEL,Electronics
+COMPUTER_INPUT_DEVICE_ACCESSORY,Electronics
+SONAR_FATHOMETER,Electronics
+GRAVITY_BEVERAGE_DISPENSER,Home and Kitchen
+ABRASIVE_BRUSH,Home and Kitchen
+ENGINE_COMPONENT_CAP,Electronics
+MUSICAL_INSTRUMENT_AMPLIFIER,Electronics
+OIL_FILTER,Electronics
+POWERSPORTS_VEHICLE_PART,Electronics
+MATERIAL_HANDLING,Home and Kitchen
+VEHICLE_SEAT,Electronics
+INPUT_OUTPUT_CARD,Electronics
+OTTOMAN,Home and Kitchen
+BICYCLE_SEAT,Electronics
+BATTERY_CHARGER_OR_TESTER,Electronics
+OTC_MEDICATION,Beauty and Personal Care
+ELECTROMECHANICAL_GAUGE,Electronics
+CHILDRENS_COSTUME,"Clothing, Shoes, and Jewelry"
+UNDERGARMENT_SLIP,"Clothing, Shoes, and Jewelry"
+COUNTERTOP_OVEN,Home and Kitchen
+ICE_MAKER,Home and Kitchen
+DISHWASHER,Home and Kitchen
+CALCULATOR,Electronics
+FIRE_SCREEN,Home and Kitchen
+LEAF_BLOWER,Home and Kitchen
+LIGHT_BULB_SOCKET,Electronics
+TECHNICAL_SPORT_SHOE,Sports and Outdoors
+GUILD_APPAREL,"Clothing, Shoes, and Jewelry"
+CARGO_NET,Home and Kitchen
+SCREW_GUN,Home and Kitchen
+MICROWAVE_OVEN,Home and Kitchen
+AUTO_BATTERY,Electronics
+TOILET,Home and Kitchen
+HARDWARE_PLANER,Home and Kitchen
+CALISTHENICS_STAND,Sports and Outdoors
+VACUUM_SEALER_MACHINE,Home and Kitchen
+REFRIGERATION_APPLIANCE,Home and Kitchen
+NETTING_COVER,Home and Kitchen
+AV_RECEIVER,Electronics
+GLOBE,Home and Kitchen
+ABRASIVE_SHEETS,Home and Kitchen
+SURVEILANCE_SYSTEMS,Electronics
+BLOWTORCH,Home and Kitchen
+SOLDERING_IRON,Home and Kitchen
+POTPOURRI_SACHET,Home and Kitchen
+VEHICLE_CONTROL_ARM,Electronics
+BED_SLATS,Home and Kitchen
+FAUCET_WATER_AERATOR,Home and Kitchen
+CONSUMER_SERVICES_SUBSCRIPTION,Electronics
+IGNITION_COIL,Electronics
+DART_FLIGHT,Sports and Outdoors
+SPORT_TABLE_GAME,Sports and Outdoors
+MATERIAL_HANDLING_TRUCK,Home and Kitchen
+WHEEL_CUTTER,Home and Kitchen
+CYCLING_TIRE_TUBE,Electronics
+BICYCLE_BASKET,Electronics
+JANITORIAL_SUPPLY,Home and Kitchen
+SNOW_BLOWER,Home and Kitchen
+ANIMAL_MUZZLE,Pet Supplies
+NAPKIN_HOLDER,Home and Kitchen
+LAMPSHADE,Home and Kitchen
+MAGAZINES,Books
+PRESSER_FOOT,Home and Kitchen
+STETHOSCOPE,Beauty and Personal Care
+IRONING_BOARD,Home and Kitchen
+CRAFT_HOOP_FRAME,Home and Kitchen
+VASE,Home and Kitchen
+VEHICLE_CARGO_CARRIER,Electronics
+PUSH_PULL_TOY,Toys and Games
+WREATH,Home and Kitchen
+BLANK_MEDIA,Electronics
+BLANK_STORAGE_MEDIA,Electronics
+SEEDS_AND_PLANTS,Home and Kitchen
+SKEWER,Home and Kitchen
+GARDEN_EDGING,Home and Kitchen
+LAUNDRY_APPLIANCE,Home and Kitchen
+FREESTANDING_SHELTER,Home and Kitchen
+BOOK,Books
+FRESH_CUT_FLOWERS_PLANTS,Home and Kitchen
+WINE,Food
+CLOTH_NAPKIN,Home and Kitchen
+FINERING,"Clothing, Shoes, and Jewelry"
+TOY_STROLLER,Toys and Games
+TIRE_VALVE_STEM_CAP,Electronics
+DINNERWARE,Home and Kitchen
+NETWORK_SWITCH,Electronics
+SPARK_PLUG,Electronics
+MOTION_DETECTOR_DEVICE,Electronics
+DOWNLOADABLE_TV_SEASON,Electronics
+RICE_WINE,Food
+BOOK_COVER,Books
+NON_DAIRY_CHEESE,Food
+BEAN_BAG_CHAIR,Home and Kitchen
+ALARM,Electronics
+BEARINGS_AND_BUSHINGS,Home and Kitchen
+GOURMET_FOOD,Food
+VEST,"Clothing, Shoes, and Jewelry"
+FISHING_REEL,Sports and Outdoors
+FISHING_EQUIPMENT,Sports and Outdoors
+TOOL_CHUCK,Home and Kitchen
+ABIS_SPORTS,Sports and Outdoors
+HARDWARE_PIN,Home and Kitchen
+WASHERS,Home and Kitchen
+ELECTRICAL_OUTLET,Electronics
+FURNITURE_CART,Home and Kitchen
+POOL_COVER,Home and Kitchen
+HOT_TUB,Home and Kitchen
+INDOOR_GROW_ENCLOSURE,Home and Kitchen
+SOLDERING_STATION,Home and Kitchen
+FLEXIBLE_MAGNET,Home and Kitchen
+KETTLEBELL,Sports and Outdoors
+CARBURETOR,Electronics
+BAKEWARE,Home and Kitchen
+SCANNER,Electronics
+BLEACH,Home and Kitchen
+PRINTS_AND_POSTERS,Home and Kitchen
+GOLF_PRACTICE_MAT,Sports and Outdoors
+HAIR_REMOVAL_AND_SHAVING_PRODUCT,Beauty and Personal Care
+ABIS_TOY,Toys and Games
+GUILD_ACCESSORIES,"Clothing, Shoes, and Jewelry"
+HEAT_TRANSFER_MATERIAL,Home and Kitchen
+HEAT_PRESS,Home and Kitchen
+ROUTER_POWER_TOOL,Home and Kitchen
+ROUTER_BIT,Home and Kitchen
+SURVEILLANCE_RECORDER_SYSTEM,Electronics
+POOL_SPA_WATER_TREATMENT,Home and Kitchen
+SOFTWARE_GAMES,Electronics
+STREAMING_MUSIC_SUBSCRIPTION,Electronics
+DIGITAL_DEVICE_12_ACCESSORY,Electronics
+VEHICLE_MAT,Electronics
+HARDWARE_NAIL,Home and Kitchen
+VEHICLE_BUMPER,Electronics
+WALKING_STICK,Home and Kitchen
+LEVEL,Home and Kitchen
+CUTLERY,Home and Kitchen
+FUEL_FILTER,Electronics
+LIGHTER_FLUID,Home and Kitchen
+NICOTINE_REPLACEMENT,Beauty and Personal Care
+PILL_CUTTER,Beauty and Personal Care
+HUBCAP_WHEEL_COVER,Electronics
+EPILATOR,Beauty and Personal Care
+CAR_ALARM,Electronics
+VEHICLE_WRAP,Electronics
+SPORT_GOAL,Sports and Outdoors
+SURFACE_PROTECTION_WAX,Home and Kitchen
+COOLING_RACK,Home and Kitchen
+VEHICLE_SPOILER,Electronics
+CUFF_LINK,"Clothing, Shoes, and Jewelry"
+CLEANING_PRODUCT,Home and Kitchen
+POWER_SUPPLIES_OR_PROTECTION,Electronics
+SPEAKER_AMPLIFIER_STAND,Electronics
+SOIL_TILLER_CULTIVATOR,Home and Kitchen
+ABIS_VIDEO_GAMES,Electronics
+AUTOMOTIVE_HELMET,Sports and Outdoors
+MOTORCYCLE_ACCESSORY,Electronics
+FITNESS_STEPPER,Sports and Outdoors
+MEAT_ALTERNATIVE,Food
+SAFETY_HARNESS,Sports and Outdoors
+PREPARED_DOUGH,Food
+NON_DAIRY_ICE_CREAM,Food
+VEHICLE_HORN,Electronics
+AWNING,Home and Kitchen
+AMAZON_DEVICE,Electronics
+LIQUID_FUEL_CONTAINER,Home and Kitchen
+MUFFLER,Electronics
+MANNEQUIN_CLOTHING_FORM,"Clothing, Shoes, and Jewelry"
+SNOWSHOE,Sports and Outdoors
+BRAKE_ROTOR,Electronics
+PILLOW_PROTECTOR,Home and Kitchen
+CORRECTION_MATERIAL,Home and Kitchen
+CAR_ELECTRONICS,Electronics
+RIVET,Home and Kitchen
+PAW_HOOF_PROTECTOR,Pet Supplies
+NAIL_DRYER,Beauty and Personal Care
+AXE,Home and Kitchen
+GUN_SUPPORT,"Clothing, Shoes, and Jewelry"
+CAMERA_ENCLOSURE,Electronics
+FISHING_ROD_HOLDER,Sports and Outdoors
+THREADING_TAPS,Home and Kitchen
+ELECTRICITY_GENERATOR,Home and Kitchen
+EYEWEAR,"Clothing, Shoes, and Jewelry"
+HAND_FAN,Home and Kitchen
+CABLE_ASSEMBLY,Electronics
+METAL_DETECTOR,Home and Kitchen
+POWERSPORT_VEHICLE_FOOTREST,Electronics
+BOLTS,Home and Kitchen
+ENGINE_WATER_PUMP,Electronics
+DRAWER_SLIDE,Home and Kitchen
+GIFT_XXRD,Electronics
+ELECTRONIC_GIFT_XXRD,Electronics
+PULL_UP_BAR,Sports and Outdoors
+ABIS_KITCHEN,Home and Kitchen
+MINIATURE_TOY_BUILDING,Toys and Games
+MUSIC_POPULAR,Electronics
+EXERCISE_STEP_PLATFORM,Sports and Outdoors
+SMALL_HOME_APPLIANCES,Home and Kitchen
+BLOWER_INFLATED_DECORATION,Home and Kitchen
+INFLATABLE_BOUNCER,Home and Kitchen
+KEYBOARD_TRAY,Home and Kitchen
+FLOOR_COVER,Home and Kitchen
+CISTERN,Home and Kitchen
+IMPACT_PROTECTION_GEAR,Sports and Outdoors
+CAMERA_LENS_ACCESSORY,Electronics
+ELECTRONIC_COMPONENT_AMPLIFIER,Electronics
+BODYSTOCKING,"Clothing, Shoes, and Jewelry"
+GPS_OR_NAVIGATION_SYSTEM,Electronics
+FOOD_COLORING,Food
+HOME_ENTERTAINMENT_SERVICES,Electronics
+FREEZER,Home and Kitchen
+OUTBUILDING,Home and Kitchen
+FASHIONRING,"Clothing, Shoes, and Jewelry"
+ELECTRONIC_BOOK_READER,Electronics
+TERMINAL_BLOCK,Electronics
+VEHICLE_RAIL,Electronics
+TUNER,Electronics
+AIR_COOLER,Home and Kitchen
+PROTOTYPING_BOARD,Electronics
+ELECTRONIC_COMPONENT_LAMP_HOLDER,Electronics
+IRRIGATION_EQUIPMENT,Home and Kitchen
+ADULT_COSTUME,"Clothing, Shoes, and Jewelry"
+SATELLITE_RECEIVER,Electronics
+ABIS_LAWN_AND_GARDEN,Home and Kitchen
+UNION_SUIT,"Clothing, Shoes, and Jewelry"
+VENT_HOOD,Home and Kitchen
+HOME_PARTS,Home and Kitchen
+TIRES,Electronics
+HANDLEBAR_GRIP,Electronics
+CLIMBING_HOLD,Home and Kitchen
+AIR_GUN,Sports and Outdoors
+CARD_SHUFFLER,Home and Kitchen
+CAMPING_EQUIPMENT,Home and Kitchen
+SPORT_TARGET,Sports and Outdoors
+FENCE_PANEL,Home and Kitchen
+ROOM_DIVIDER,Home and Kitchen
+HOT_MELT,Home and Kitchen
+CAMERA_FLASH,Electronics
+CIGARETTE_CASE,Home and Kitchen
+BIRDBATH,Home and Kitchen
+COLLECTIBLES,Home and Kitchen
+ELECTRICAL_HOUSING,Electronics
+BICYCLE_SEATPOST,Electronics
+TOW_HITCH,Electronics
+BAKING_STONE,Home and Kitchen
+CHAINSAW_CHAIN,Home and Kitchen
+GREASE_GUN,Home and Kitchen
+SHOCK_ABSORBER,Electronics
+SHOE_BAG,"Clothing, Shoes, and Jewelry"
+KINDLE_UNLIMITED_MEMBERSHIP,Electronics
+FRAGRANCE,Beauty and Personal Care
+SHOE_POLISH,"Clothing, Shoes, and Jewelry"
+SPORT_FACE_MASK,Sports and Outdoors
+COLLECTIBLE_COINS,Home and Kitchen
+COSTUME_FACIAL_HAIR,"Clothing, Shoes, and Jewelry"
+KARAOKE_MACHINE,Electronics
+WIND_SPINNER,Home and Kitchen
+END_MILLS,Home and Kitchen
+SALWAR_SUIT_SET,"Clothing, Shoes, and Jewelry"
+ROLLER_CHAIN,Home and Kitchen
+TRAILER_HITCH_COVER,Electronics
+WORKBENCH,Home and Kitchen
+FISHING_WEIGHT,Sports and Outdoors
+Health and Beauty,Beauty and Personal Care
+Misc.,Home and Kitchen
+Paperback,Books
+Kitchen,Home and Kitchen
+HOUSEHOLD_STAIN,Home and Kitchen
+PULLEYS,Home and Kitchen
+FISHING_ROD,Sports and Outdoors
+SPORT_NET,Sports and Outdoors
+GOLF_CLUB_COVER,Sports and Outdoors
+NETWORK_ACCESSORY,Electronics
+SNOWSUIT,"Clothing, Shoes, and Jewelry"
+TOFU,Food
+NON_DAIRY_YOGURT,Food
+SWORD,Sports and Outdoors
+WHEELCHAIR,Home and Kitchen
+ABIS_BEAUTY,Beauty and Personal Care
+STAMPS,Home and Kitchen
+DIVE_MASK,Sports and Outdoors
+SHAVING_BRUSH,Beauty and Personal Care
+GOLF_CLUB_BAG,Sports and Outdoors
+SELF_BALANCING_ELECTRIC_VEHICLE,Electronics
+TOPICALS,Beauty and Personal Care
+ABIS_PC,Electronics
+ACCELERATION_SENSOR,Electronics
+DIP_SWITCH,Electronics
+CE_CARRYING_CASE_OR_BAG,Electronics
+SWIM_FIN,Sports and Outdoors
+HANDLE_GRIP,Home and Kitchen
+PHOTOGRAPHIC_STUDIO_ITEMS,Electronics
+CUTICLE_PUSHER,Beauty and Personal Care
+GROMMETS,Home and Kitchen
+SPORTS_DRINK,Food
+DAIRY_BASED_PUDDING,Food
+PERCUSSION_INSTRUMENTS,Electronics
+AUDIO_MIDI_CONTROLLER,Electronics
+BULLION,Home and Kitchen
+MATERIAL_CERTIFICATION,Home and Kitchen
+FINEEARRING,"Clothing, Shoes, and Jewelry"
+KIMONO,"Clothing, Shoes, and Jewelry"
+MEDICAL_DEVICE,Beauty and Personal Care
+PRINTED_PRODUCT,Home and Kitchen
+O_RINGS,Home and Kitchen
+LINEAR_GUIDES_AND_RAILS,Home and Kitchen
+POWERSPORTS_RIDING_APPAREL,Sports and Outdoors
+DISC_GRINDER_TOOL,Home and Kitchen
+KITE,Home and Kitchen
+RECEIVER_OR_AMPLIFIER,Electronics
+DONUT,Food
+CARPETING,Home and Kitchen
+RADAR_DETECTOR,Electronics
+CAMERA_POWER_SUPPLY,Electronics
+SNOW_CHAIN,Electronics
+SNOWBOARD_BOOT,Sports and Outdoors
+NAPKIN_RING,Home and Kitchen
+BICYCLE_TRAILER,Electronics
+MEDICAL_SCRUB_SET,"Clothing, Shoes, and Jewelry"
+SEAFOOD,Food
+POWERSPORTS_PROTECTIVE_GEAR,Sports and Outdoors
+CYCLING_WHEEL,Electronics
+HAMMOCK_STAND,Home and Kitchen
+PA_SYSTEM,Electronics
+ENTERTAINMENT_MEMORABILIA,Home and Kitchen
+APPLIANCE_ACCESSORY,Home and Kitchen
+HEATING_STOVE,Home and Kitchen
+DIGITAL_DEVICE_7,Electronics
+WINDSHIELD_SNOW_COVER,Electronics
+GUILD_PET_SUPPLIES,Pet Supplies
+ELECTRONIC_CONTROLLER,Electronics
+SPORT_WETSUIT,Sports and Outdoors
+LOCATION_TRACKER,Electronics
+DIGITAL_VIDEO_RECORDER,Electronics
+LETTER_OPENER,Home and Kitchen
+VIDEO_VHS,Electronics
+AUDIO_CD_PLAYER,Electronics
+PADDLEBOARD,Sports and Outdoors
+PET_FUR_DEODORIZER,Pet Supplies
+INCUBATOR,Home and Kitchen
+ABIS_ELECTRONICS,Electronics
+SPORTS_MEMORABILIA,Sports and Outdoors
+THREADED_RODS_AND_STUDS,Home and Kitchen
+CAR_AUDIO_OR_THEATER,Electronics
+NON_DAIRY_PUDDING,Food
+ETHNIC_WEAR,"Clothing, Shoes, and Jewelry"
+KURTA,"Clothing, Shoes, and Jewelry"
+TOW_SPORTS_LINE,Sports and Outdoors
+TIRE_COVER,Electronics
+URN,Home and Kitchen
+CYCLING_COMPUTER,Electronics
+ARTIFICIAL_SNOW,Home and Kitchen
+TRANSISTOR,Electronics
+HOME_THEATER_SYSTEM_OR_HTIB,Electronics
+SAREE,"Clothing, Shoes, and Jewelry"
+PORTABLE_AV_DEVICE,Electronics
+WIRELESS_SERVICE_PLAN,Electronics
+BAG,"Clothing, Shoes, and Jewelry"
+STREAMING_VIDEO_SUBSCRIPTION,Electronics
+FUDGE,Food
+VEHICLE_EXTERIOR_GUARD,Electronics
+LIGHT_EMITTING_DIODE,Electronics
+BELTS,"Clothing, Shoes, and Jewelry"
+COMPRESSION_SPRINGS,Home and Kitchen
+3D_PRINTING_PEN,Electronics
+MODEL,Home and Kitchen
+DIGITAL_DEVICE_19_ACCESSORY,Electronics
+ELECTRONIC_CIGARETTE,Electronics
+SECURITY_SYSTEM,Electronics
+AGILITY_LADDER,Sports and Outdoors
+PORTABLE_ELECTRONICS,Electronics
+FOOTWEAR,"Clothing, Shoes, and Jewelry"
+DOWNLOADABLE_TV_SERIES,Electronics
+DVD_PLAYER_OR_RECORDER,Electronics
+PHOTOGRAPHIC_PAPER,Electronics
+HARDWARE_SPACER,Home and Kitchen
+ABIS_HOME_IMPROVEMENT,Home and Kitchen
+ABIS_WIRELESS,Electronics
+POWERSPORTS_VEHICLE,Electronics
+CHOLI,"Clothing, Shoes, and Jewelry"
+TEMPEH,Food
+GLOVES,"Clothing, Shoes, and Jewelry"
+SALAD_SPINNER,Home and Kitchen
+SOFTWARE,Electronics
+PIPET,Home and Kitchen
+STROLLER_PROTECTION_SHIELD,Home and Kitchen
+PHOTOGRAPHIC_LIGHTING,Electronics
+ELECTRICAL_DISTRIBUTION_BOARD,Electronics
+VEHICLE_LIFT_KIT,Electronics
+TOW_HITCH_LOCK,Electronics
+COMPUTER_SPEAKER,Electronics
+PLASTIC_TUBING,Home and Kitchen
+BOX_SPRING,Home and Kitchen
+FLASK,Home and Kitchen
+COSTUME,"Clothing, Shoes, and Jewelry"
+MULTIFUNCTION_DEVICE,Electronics
+DOWNLOADABLE_SOFTWARE,Electronics
+CYCLING_EQUIPMENT,Sports and Outdoors
+PREPARED_AND_PRESERVED_FOOD,Food
+CIGAR_CUTTER,Home and Kitchen
+GARBAGE_DISPOSAL_UNIT,Home and Kitchen
+TRADING_CARDS_FACTORY_SEALED,Home and Kitchen
+DENT_REMOVAL_TOOL,Home and Kitchen
+ABIS_EBOOKS,Electronics
+GUN_RACK,"Clothing, Shoes, and Jewelry"
+WHISTLE,Home and Kitchen
+SNOWBOARD_BINDING,Sports and Outdoors
+BALL_LAUNCHER,Sports and Outdoors
+MISC_WORLD_INSTRUMENTS,Electronics
+SKILL_APPLICATION,Home and Kitchen
+ELECTRONIC_CIGARETTE_LIQUID,Electronics
+BED_LINEN,Home and Kitchen
+CAMERA_PRIVACY_COVER,Electronics
+TRADING_CARDS_MISC_TRADING_CARDS,Home and Kitchen
+WIRELESS_DEVICE,Electronics
+RAM_MEMORY,Electronics
+EXTRACT,Food
+RELISH,Food
+LAB_UTENSIL,Home and Kitchen
+SHOWER_ENCLOSURE,Home and Kitchen
+FOOD_MILL_GRINDER,Home and Kitchen
+ELECTRONIC_KNOB,Electronics
+PIE,Food
+STEERING_WHEEL,Electronics
+METALS,Home and Kitchen
+CLEANING_WIPE_DISPENSER,Home and Kitchen
+INTERCONNECT,Electronics
+AGRICULTURAL_SUPPLIES,Home and Kitchen
+MUSIC_POPULAR_VINYL,Electronics
+MACHINE_THREADING_TOOL,Home and Kitchen
+WASHER_DRYER_COMBINATION,Home and Kitchen
+PRODUCT,Home and Kitchen
+SPORT_BINDING,Sports and Outdoors
+FLOWERS,Home and Kitchen
+DIGITAL_DEVICE_5_ACCESSORY,Electronics
+NONACTIVATED_GIFT_CARD,Electronics
+MOTORCYCLE_PART,Electronics
+OUTBOARD_MOTOR,Electronics
+CAMERA_BAGS_AND_CASES,Electronics
+FOOD_OR_BEVERAGE_ RMER,Home and Kitchen
+THREADSEALING_ADHESIVES,Home and Kitchen
+HORSE_TACK_EQUIPMENT,Home and Kitchen
+BICYCLE_DERAILLEUR,Electronics
+VEHICLE_WINDOW,Electronics
+SHAFT_COLLAR,Home and Kitchen
+MUSIC,Electronics
+POWER_RACK,Sports and Outdoors
+GAME_CALL,Sports and Outdoors
+HUMIDOR,Home and Kitchen
+OPTOELECTRONIC_COMPONENT,Electronics
+COOKING_OVEN,Home and Kitchen
+SASH,"Clothing, Shoes, and Jewelry"
+FASHION_JEWELRY,"Clothing, Shoes, and Jewelry"
+SPORTING_AND_OUTDOOR_GOODS,Sports and Outdoors
+VIBRATION_SENSOR,Electronics
+SEWING_MACHINE_BOBBIN,Home and Kitchen
+SPORT_BOARD_SKI,Sports and Outdoors
+SPORT_POM_POM,Sports and Outdoors
+Sports,Sports and Outdoors
+Tools & Home Improvement,Home and Kitchen
+Electronics,Electronics
+,
+Office Product,Office Product
+WIRELESS_LOCKED_PHONE,Electronics
+POWER_WINCHES,Home and Kitchen
+BEVERAGE_DISPENSING_APPLIANCE,Home and Kitchen
+CONTACT_LENSES,Beauty and Personal Care
+VEGETARIAN_EGG_SUBSTITUTE,Food
+GIFTS_AND_OCCASIONS,Home and Kitchen
+CABLE,Electronics
+PENCIL_LEAD_REFILL,Office Product
+ABRASIVE_DISCS,Home and Kitchen
+FUEL_INJECTOR,Electronics
+WATERCRAFT_PADDLE,Sports and Outdoors
+MEDICAL_SUPPLIES,Beauty and Personal Care
+WINDOW_INSULATION_KIT,Home and Kitchen
+BABY_FOOD,Food
+POWER_TRANSFORMER,Electronics
+SNACK_FOOD,Food
+SOIL_AERATOR,Home and Kitchen
+FLEXIBLE_COUPLINGS,Home and Kitchen
+METAL_TUBING,Home and Kitchen
+CAMERA_STAGE_LIGHTING_FILTER_DIFFUSER,Electronics
+CLOTH_WRAP,Home and Kitchen
+PHOTOGRAPHIC_LIGHT_METER,Electronics
+TRADING_CARDS_UNGRADED_INSERTS,Home and Kitchen
+TEMPERATURE_CONTROLLER,Home and Kitchen
+LAB_PUMP,Home and Kitchen
+Hardcover,Books
+PRINTED_MEDIA,Home and Kitchen
+POWERSPORTS_RIDING_GLOVES,Sports and Outdoors
+ABIS_BABY_PRODUCT,Home and Kitchen
+ANTI_SLIP_BATHTUB_SHOWER_MAT,Home and Kitchen
+CHANGING_TABLE,Home and Kitchen
+TICKET_ROLL,Home and Kitchen
+ZENER_DIODE,Electronics
+FIXED_RESISTOR,Electronics
+DUPATTA,"Clothing, Shoes, and Jewelry"
+PC_BOARD_RELAY,Electronics
+VCR,Electronics
+HOSIERY,"Clothing, Shoes, and Jewelry"
+HEALTH_FOOD,Food
+SEALS,Home and Kitchen
+BABY_COSTUME,"Clothing, Shoes, and Jewelry"
+COCKTAIL_MIX,Food
+VIDEO_PROJECTOR_PART,Electronics
+VEHICLE_BRAKE_CALIPER,Electronics
+VEHICLE_BALL_JOINT,Electronics
+WATCHES,"Clothing, Shoes, and Jewelry"
+FSN_DEVICES,Electronics

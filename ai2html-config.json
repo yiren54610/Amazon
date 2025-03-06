@@ -1,0 +1,22 @@
+{
+    "fonts": [
+        {
+            "aifont": "Impact",
+            "family": "Impact",
+            "weight": "400",
+            "style": ""
+        },
+        {
+            "aifont": "AkayaTelivigala-Regular",
+            "family": "AkayaTelivigala-Regular",
+            "weight": "700",
+            "style": ""
+        },
+        {
+            "aifont": "HelveticaNeue",
+            "family": "Helvetica Neue",
+            "weight": "400",
+            "style": ""
+        }
+    ]
+}

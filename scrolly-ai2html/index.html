@@ -1,0 +1,2792 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Story template</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-rendering: optimizeLegibility;
+        }
+
+        .content {
+            max-width: 640px;
+            margin: auto;
+        }
+
+        .header {
+            padding: 3em 0;
+        }
+
+        a {
+            color: #f05349;
+        }
+
+        .footer {
+            background: #f4f4f4;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 4em;
+            padding: 4em 0;
+        }
+
+        figure {
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+        }
+
+        h1 {
+            font-family: 'Lora', Georgia, serif;
+            font-weight: bold;
+            font-size: 3em;
+            line-height: 1.1;
+        }
+
+        .subhead {
+            font-family: 'Lora', Georgia, serif;
+        }
+
+        iframe,
+        img,
+        video {
+            max-width: 100%;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        .full-width figure {
+            text-align: center;
+        }
+
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
+
+        iframe {
+            padding-bottom: 1.2em;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background: #fff880;
+        }
+
+        /* margin on mobile */
+        @media (max-width: 640px) {
+            body {
+                font-size: 18px;
+            }
+
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+
+        /* Default layout (mobile) */
+    .charts-layout {
+      display: block; /* Stack charts vertically by default */
+    }
+
+    .chart-wrapper {
+      width: 100%; /* Full width for mobile */
+      margin-bottom: 20px; /* Space between stacked charts */
+    }
+
+    /* Desktop/laptop layout (above 699px) */
+    @media (min-width: 700px) {
+      .charts-layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px; /* Space between charts */
+        max-width: 1400px; /* Adjust as needed */
+        margin: 0 auto; /* Center the container */
+      }
+
+      .chart-wrapper {
+        flex: 1 1 calc(50% - 10px); /* Two columns with gap */
+        margin-bottom: 0; /* Remove margin for side-by-side layout */
+      }
+    }
+
+    /* Ensure the charts themselves remain responsive */
+    #g-together-box,
+    #g-bar_chart-box {
+      width: 100%;
+      height: auto;
+    }
+
+
+            /* Base styles for the charts container */
+        .charts-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Space between chart groups */
+        }
+
+        /* Styles for each chart group */
+        .chart-group {
+        display: flex;
+        flex-direction: row; /* Side by side on larger screens */
+        gap: 20px; /* Space between charts */
+        justify-content: space-between; /* Distribute space evenly */
+        }
+
+        /* Responsive styles for screens below 490px */
+        @media (max-width: 489px) {
+        .chart-group {
+            flex-direction: column; /* Vertical alignment on smaller screens */
+        }
+        }
+
+
+    </style>
+    
+
+
+
+    <link href="scrolly-styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>What are richer people buying online?</h1>
+            <p class="subhead">An analysis of over a million purchases on Amazon.</p>
+        </div>
+        <div class="byline">
+            <p>By <a href="https://yiren54610.github.io/MVP/">Yiren Lu</a></p>
+        </div>
+        <p>Have you ever wondered what people with higher incomes spend their money on? 
+            Do they shop on the same platforms as the rest of us, or do their preferences 
+            tell a different story?</p>
+        <p>Thanks to a dataset from the Harvard Dataverse, we can dive into these questions. 
+            The dataset tracks longitudinal purchase data from 5,027 Amazon.com users in the U.S., 
+            spanning from 2018 to 2022.</p>
+
+        <p>
+            Analyzing this data might just challenge your assumptions about how income shapes 
+            lifestyles and shopping habits.
+        </p>
+        <p>This dataset categorizes individuals into different income brackets:</p>
+        <ul>
+            <li>Less than $25,000</li>
+            <li>25,000−49,999</li>
+            <li>50,000−74,999</li>
+            <li>75,000−99,999</li>
+            <li>100,000−149,999</li>
+            <li>$150,000 or more</li>
+        </ul>
+        </div>
+
+        
+        <div class="charts-layout">
+            <div class="chart-wrapper">
+            <div id="g-together-box" class="ai2html ai2html-responsive">
+<!-- Generated by ai2html v0.121.1 - 2025-03-04 23:06 -->
+<!-- ai file: together.ai -->
+<style media="screen,print">
+	#g-together-box ,
+	#g-together-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-together-box p {
+		margin:0;
+	}
+	#g-together-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-together-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-together-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-together-box .g-aiPointText p { white-space: nowrap; }
+	#g-together-full {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-together-full p {
+		font-family:AkayaTelivigala-Regular;
+		font-weight:regular;
+		line-height:17px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:14px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-together-full .g-pstyle0 {
+		font-weight:700;
+		line-height:25px;
+		height:25px;
+		font-size:21px;
+	}
+	#g-together-full .g-pstyle1 {
+		font-weight:700;
+		height:17px;
+	}
+	#g-together-full .g-pstyle2 {
+		font-weight:700;
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+	}
+	#g-together-medium {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-together-medium p {
+		font-family:AkayaTelivigala-Regular;
+		font-weight:regular;
+		line-height:12px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:10px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-together-medium .g-pstyle0 {
+		font-weight:700;
+		line-height:18px;
+		height:18px;
+		font-size:15px;
+	}
+	#g-together-medium .g-pstyle1 {
+		font-weight:700;
+		height:12px;
+	}
+	#g-together-medium .g-pstyle2 {
+		font-weight:700;
+		line-height:10px;
+		height:10px;
+		font-size:9px;
+	}
+	#g-together-mobile {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-together-mobile p {
+		font-family:AkayaTelivigala-Regular;
+		font-weight:regular;
+		line-height:10px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:9px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-together-mobile .g-pstyle0 {
+		font-weight:700;
+		line-height:15px;
+		height:15px;
+		font-size:13px;
+	}
+	#g-together-mobile .g-pstyle1 {
+		font-weight:700;
+		height:10px;
+	}
+	#g-together-mobile .g-pstyle2 {
+		font-weight:700;
+		line-height:9px;
+		height:9px;
+		font-size:7px;
+	}
+
+</style>
+
+<div id="g-together-box" class="ai2html ai2html-responsive">
+
+	<!-- Artboard: full -->
+	<div id="g-together-full" class="g-artboard" style="width:700px; height:700px;" data-aspect-ratio="1" data-min-width="700">
+<div style=""></div>
+		<img id="g-together-full-img" class="g-together-full-img g-aiImg" alt="" src="together-full.png"/>
+		<div id="g-ai0-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:16.8458%;margin-top:-18.9px;left:2.7487%;width:171px;">
+			<p class="g-pstyle0">$150,000 or more</p>
+		</div>
+		<div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:20.6829%;margin-top:-12.8px;left:82.0647%;width:126px;">
+			<p class="g-pstyle1">Home and Kitchen</p>
+		</div>
+		<div id="g-ai0-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:34.5601%;margin-top:-18.9px;left:2.7487%;width:198px;">
+			<p class="g-pstyle0">$100,000 - $149,999</p>
+		</div>
+		<div id="g-ai0-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:41.9686%;margin-top:-12.8px;left:85.9702%;width:82px;">
+			<p class="g-pstyle1">Electronics</p>
+		</div>
+		<div id="g-ai0-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:49.5601%;margin-top:-18.9px;left:2.7487%;width:179px;">
+			<p class="g-pstyle0">$75,000 - $99,999</p>
+		</div>
+		<div id="g-ai0-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:56.8258%;margin-top:-12.8px;left:74.8975%;width:166px;">
+			<p class="g-pstyle1">Beauty and Personal Care</p>
+		</div>
+		<div id="g-ai0-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:62.4173%;margin-top:-18.9px;left:2.7487%;width:180px;">
+			<p class="g-pstyle0">$50,000 - $74,999</p>
+		</div>
+		<div id="g-ai0-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:66.2543%;margin-top:-12.8px;left:73.2017%;width:181px;">
+			<p class="g-pstyle1">Clothing, Shoes, and Jewelry</p>
+		</div>
+		<div id="g-ai0-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:73.8458%;margin-top:-18.9px;left:2.7487%;width:178px;">
+			<p class="g-pstyle0">$25,000 - $49,999</p>
+		</div>
+		<div id="g-ai0-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:74.5291%;margin-top:-10.7px;left:90.579%;width:48px;">
+			<p class="g-pstyle2">Food</p>
+		</div>
+		<div id="g-ai0-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:79.54%;margin-top:-12.8px;left:86.1752%;width:90px;">
+			<p class="g-pstyle1">Pet Supplies</p>
+		</div>
+		<div id="g-ai0-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:82.3972%;margin-top:-12.8px;left:90.6685%;width:55px;">
+			<p class="g-pstyle1">Books</p>
+		</div>
+		<div id="g-ai0-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:83.5601%;margin-top:-18.9px;left:2.7487%;width:178px;">
+			<p class="g-pstyle0">Less than $25,000</p>
+		</div>
+		<div id="g-ai0-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.2543%;margin-top:-12.8px;left:80.3201%;width:138px;">
+			<p class="g-pstyle1">Sports and Outdoors</p>
+		</div>
+		<div id="g-ai0-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:88.1115%;margin-top:-12.8px;left:82.9934%;width:114px;">
+			<p class="g-pstyle1">Toys and Games</p>
+		</div>
+		<div id="g-ai0-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:90.6829%;margin-top:-12.8px;left:85.192%;width:101px;">
+			<p class="g-pstyle1">Office Product</p>
+		</div>
+	</div>
+
+	<!-- Artboard: medium -->
+	<div id="g-together-medium" class="g-artboard" style="width:490px; height:490px;" data-aspect-ratio="1" data-min-width="490" data-max-width="699">
+<div style=""></div>
+		<img id="g-together-medium-img" class="g-together-medium-img g-aiImg" alt="" src="together-medium.png"/>
+		<div id="g-ai1-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:14.4452%;margin-top:-13.8px;left:2.262%;width:127px;">
+			<p class="g-pstyle0">$150,000 or more</p>
+		</div>
+		<div id="g-ai1-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:18.4056%;margin-top:-9.2px;left:82.2581%;width:96px;">
+			<p class="g-pstyle1">Home and Kitchen</p>
+		</div>
+		<div id="g-ai1-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:32.8125%;margin-top:-13.8px;left:2.262%;width:146px;">
+			<p class="g-pstyle0">$100,000 - $149,999</p>
+		</div>
+		<div id="g-ai1-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:40.4464%;margin-top:-9.2px;left:86.197%;width:64px;">
+			<p class="g-pstyle1">Electronics</p>
+		</div>
+		<div id="g-ai1-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.3227%;margin-top:-13.8px;left:2.262%;width:133px;">
+			<p class="g-pstyle0">$75,000 - $99,999</p>
+		</div>
+		<div id="g-ai1-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:55.7526%;margin-top:-9.2px;left:75.0295%;width:124px;">
+			<p class="g-pstyle1">Beauty and Personal Care</p>
+		</div>
+		<div id="g-ai1-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:61.588%;margin-top:-13.8px;left:2.262%;width:133px;">
+			<p class="g-pstyle0">$50,000 - $74,999</p>
+		</div>
+		<div id="g-ai1-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:65.5485%;margin-top:-9.2px;left:73.3191%;width:134px;">
+			<p class="g-pstyle1">Clothing, Shoes, and Jewelry</p>
+		</div>
+		<div id="g-ai1-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:73.4247%;margin-top:-13.8px;left:2.262%;width:132px;">
+			<p class="g-pstyle0">$25,000 - $49,999</p>
+		</div>
+		<div id="g-ai1-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:74.1924%;margin-top:-7.5px;left:90.8454%;width:40px;">
+			<p class="g-pstyle2">Food</p>
+		</div>
+		<div id="g-ai1-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:79.426%;margin-top:-9.2px;left:86.4039%;width:70px;">
+			<p class="g-pstyle1">Pet Supplies</p>
+		</div>
+		<div id="g-ai1-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:82.2832%;margin-top:-9.2px;left:90.9355%;width:45px;">
+			<p class="g-pstyle1">Books</p>
+		</div>
+		<div id="g-ai1-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:83.4247%;margin-top:-13.8px;left:2.262%;width:132px;">
+			<p class="g-pstyle0">Less than $25,000</p>
+		</div>
+		<div id="g-ai1-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.3444%;margin-top:-9.2px;left:80.4986%;width:104px;">
+			<p class="g-pstyle1">Sports and Outdoors</p>
+		</div>
+		<div id="g-ai1-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:88.4056%;margin-top:-9.2px;left:83.1948%;width:87px;">
+			<p class="g-pstyle1">Toys and Games</p>
+		</div>
+		<div id="g-ai1-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:90.8546%;margin-top:-9.2px;left:85.4121%;width:78px;">
+			<p class="g-pstyle1">Office Product</p>
+		</div>
+	</div>
+
+	<!-- Artboard: mobile -->
+	<div id="g-together-mobile" class="g-artboard" style="max-width: 375px;max-height: 471px" data-aspect-ratio="0.797" data-min-width="0" data-max-width="489">
+<div style="padding: 0 0 125.5467% 0;"></div>
+		<img id="g-together-mobile-img" class="g-together-mobile-img g-aiImg" alt="" src="together-mobile.png"/>
+		<div id="g-ai2-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:16.2136%;margin-top:-11.3px;left:1.9906%;width:103px;">
+			<p class="g-pstyle0">$150,000 or more</p>
+		</div>
+		<div id="g-ai2-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:19.6239%;margin-top:-7.4px;left:82.5138%;width:79px;">
+			<p class="g-pstyle1">Home and Kitchen</p>
+		</div>
+		<div id="g-ai2-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:32.3563%;margin-top:-11.3px;left:1.9906%;width:117px;">
+			<p class="g-pstyle0">$100,000 - $149,999</p>
+		</div>
+		<div id="g-ai2-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:38.9527%;margin-top:-7.4px;left:86.4786%;width:54px;">
+			<p class="g-pstyle1">Electronics</p>
+		</div>
+		<div id="g-ai2-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.9502%;margin-top:-11.3px;left:1.9906%;width:107px;">
+			<p class="g-pstyle0">$75,000 - $99,999</p>
+		</div>
+		<div id="g-ai2-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:52.5466%;margin-top:-7.4px;left:75.2375%;width:100px;">
+			<p class="g-pstyle1">Beauty and Personal Care</p>
+		</div>
+		<div id="g-ai2-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:57.6324%;margin-top:-11.3px;left:1.9906%;width:108px;">
+			<p class="g-pstyle0">$50,000 - $74,999</p>
+		</div>
+		<div id="g-ai2-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:61.0427%;margin-top:-7.4px;left:73.5159%;width:108px;">
+			<p class="g-pstyle1">Clothing, Shoes, and Jewelry</p>
+		</div>
+		<div id="g-ai2-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:67.8278%;margin-top:-11.3px;left:1.9906%;width:107px;">
+			<p class="g-pstyle0">$25,000 - $49,999</p>
+		</div>
+		<div id="g-ai2-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:68.3786%;margin-top:-6.9px;left:91.1578%;width:36px;">
+			<p class="g-pstyle2">Food</p>
+		</div>
+		<div id="g-ai2-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:72.9374%;margin-top:-7.4px;left:86.6867%;width:59px;">
+			<p class="g-pstyle1">Pet Supplies</p>
+		</div>
+		<div id="g-ai2-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:75.6986%;margin-top:-7.4px;left:91.2484%;width:40px;">
+			<p class="g-pstyle1">Books</p>
+		</div>
+		<div id="g-ai2-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:76.7488%;margin-top:-11.3px;left:1.9906%;width:107px;">
+			<p class="g-pstyle0">Less than $25,000</p>
+		</div>
+		<div id="g-ai2-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:78.2475%;margin-top:-7.4px;left:80.7427%;width:85px;">
+			<p class="g-pstyle1">Sports and Outdoors</p>
+		</div>
+		<div id="g-ai2-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:81.0087%;margin-top:-7.4px;left:83.4565%;width:72px;">
+			<p class="g-pstyle1">Toys and Games</p>
+		</div>
+		<div id="g-ai2-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:83.1328%;margin-top:-7.4px;left:85.6888%;width:65px;">
+			<p class="g-pstyle1">Office Product</p>
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	(function (containerId, opts) {
+		var nameSpace = opts.namespace || '';
+		var containers = findContainers(containerId);
+		containers.forEach(resize);
+
+		function resize(container) {
+			var onResize = throttle(update, 200);
+			var waiting = !!window.IntersectionObserver;
+			var observer;
+			update();
+
+			document.addEventListener('DOMContentLoaded', update);
+			window.addEventListener('resize', onResize);
+
+			// NYT Scoop-specific code
+			if (opts.setup) {
+				opts.setup(container).on('cleanup', cleanup);
+			}
+
+			function cleanup() {
+				document.removeEventListener('DOMContentLoaded', update);
+				window.removeEventListener('resize', onResize);
+				if (observer) observer.disconnect();
+			}
+
+			function update() {
+				var artboards = selectChildren('.' + nameSpace + 'artboard[data-min-width]', container),
+						width = Math.round(container.getBoundingClientRect().width);
+
+				// Set artboard visibility based on container width
+				artboards.forEach(function(el) {
+					var minwidth = el.getAttribute('data-min-width'),
+							maxwidth = el.getAttribute('data-max-width');
+					if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+						if (!waiting) {
+							selectChildren('.' + nameSpace + 'aiImg', el).forEach(updateImgSrc);
+							selectChildren('video', el).forEach(updateVideoSrc);
+						}
+						el.style.display = 'block';
+					} else {
+						el.style.display = 'none';
+					}
+				});
+
+				// Initialize lazy loading on first call
+				if (waiting && !observer) {
+					if (elementInView(container)) {
+						waiting = false;
+						update();
+					} else {
+						observer = new IntersectionObserver(onIntersectionChange, {rootMargin: "800px"});
+						observer.observe(container);
+					}
+				}
+			}
+
+			function onIntersectionChange(entries) {
+				// There may be multiple entries relating to the same container
+				// (captured at different times)
+				var isIntersecting = entries.reduce(function(memo, entry) {
+					return memo || entry.isIntersecting;
+				}, false);
+				if (isIntersecting) {
+					waiting = false;
+					// update: don't remove -- we need the observer to trigger an update
+					// when a hidden map becomes visible after user interaction
+					// (e.g. when an accordion menu or tab opens)
+					// observer.disconnect();
+					// observer = null;
+					update();
+				}
+			}
+		}
+
+		function findContainers(id) {
+			// support duplicate ids on the page
+			return selectChildren('.ai2html-responsive', document).filter(function(el) {
+				if (el.getAttribute('id') != id) return false;
+				if (el.classList.contains('ai2html-resizer')) return false;
+				el.classList.add('ai2html-resizer');
+				return true;
+			});
+		}
+
+		// Replace blank placeholder image with actual image
+		function updateImgSrc(img) {
+			var src = img.getAttribute('data-src');
+			if (src && img.getAttribute('src') != src) {
+				img.setAttribute('src', src);
+			}
+		}
+
+		function updateVideoSrc(el) {
+			var src = el.getAttribute('data-src');
+			if (src && !el.hasAttribute('src')) {
+				el.setAttribute('src', src);
+			}
+		}
+
+		function elementInView(el) {
+			var bounds = el.getBoundingClientRect();
+			return bounds.top < window.innerHeight && bounds.bottom > 0;
+		}
+
+		function selectChildren(selector, parent) {
+			return parent ? Array.prototype.slice.call(parent.querySelectorAll(selector)) : [];
+		}
+
+		// based on underscore.js
+		function throttle(func, wait) {
+			var timeout = null, previous = 0;
+			function run() {
+					previous = Date.now();
+					timeout = null;
+					func();
+			}
+			return function() {
+				var remaining = wait - (Date.now() - previous);
+				if (remaining <= 0 || remaining > wait) {
+					clearTimeout(timeout);
+					run();
+				} else if (!timeout) {
+					timeout = setTimeout(run, remaining);
+				}
+			};
+		}
+	})("g-together-box", {namespace: "g-", setup: window.setupInteractive || window.getComponent});
+</script>
+<!-- End ai2html - 2025-03-04 23:06 -->
+</div>
+</div>
+
+<div class="chart-wrapper">
+<div id="g-bar_chart-box" class="ai2html ai2html-responsive">
+<!-- Generated by ai2html v0.121.1 - 2025-03-05 00:07 -->
+<!-- ai file: bar_chart.ai -->
+<style media="screen,print">
+	#g-bar_chart-box ,
+	#g-bar_chart-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-bar_chart-box p {
+		margin:0;
+	}
+	#g-bar_chart-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-bar_chart-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-bar_chart-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-bar_chart-box .g-aiPointText p { white-space: nowrap; }
+	#g-bar_chart-full {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-bar_chart-full p {
+		font-family:AkayaTelivigala-Regular;
+		font-weight:regular;
+		line-height:15px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:13px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-bar_chart-full .g-pstyle0 {
+		font-weight:700;
+		line-height:23px;
+		height:23px;
+		font-size:19px;
+	}
+	#g-bar_chart-full .g-pstyle1 {
+		font-weight:700;
+		height:15px;
+	}
+	#g-bar_chart-full .g-pstyle2 {
+		font-weight:500;
+		line-height:11px;
+		height:11px;
+		font-size:9px;
+	}
+	#g-bar_chart-medium {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-bar_chart-medium p {
+		font-family:AkayaTelivigala-Regular;
+		font-weight:regular;
+		line-height:12px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:10px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-bar_chart-medium .g-pstyle0 {
+		font-weight:700;
+		line-height:17px;
+		height:17px;
+		font-size:15px;
+	}
+	#g-bar_chart-medium .g-pstyle1 {
+		font-weight:700;
+		height:12px;
+	}
+	#g-bar_chart-medium .g-pstyle2 {
+		font-weight:500;
+		line-height:8px;
+		height:8px;
+		font-size:7px;
+	}
+	#g-bar_chart-mobile {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-bar_chart-mobile p {
+		font-family:AkayaTelivigala-Regular;
+		font-weight:regular;
+		line-height:9px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:8px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-bar_chart-mobile .g-pstyle0 {
+		font-weight:700;
+		line-height:14px;
+		height:14px;
+		font-size:12px;
+	}
+	#g-bar_chart-mobile .g-pstyle1 {
+		font-weight:700;
+		height:9px;
+	}
+	#g-bar_chart-mobile .g-pstyle2 {
+		font-weight:500;
+		line-height:7px;
+		height:7px;
+		font-size:6px;
+	}
+
+</style>
+
+<div id="g-bar_chart-box" class="ai2html ai2html-responsive">
+
+	<!-- Artboard: full -->
+	<div id="g-bar_chart-full" class="g-artboard" style="width:700px; height:700px;" data-aspect-ratio="1" data-min-width="700">
+<div style=""></div>
+		<img id="g-bar_chart-full-img" class="g-bar_chart-full-img g-aiImg" alt="" src="bar_chart-full.png"/>
+		<div id="g-ai0-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:8.6474%;margin-top:-17.5px;left:2.22%;width:163px;">
+			<p class="g-pstyle0">$100,000 - $149,999</p>
+		</div>
+		<div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:8.6474%;margin-top:-17.5px;left:33.3169%;width:141px;">
+			<p class="g-pstyle0">$150,000 or more</p>
+		</div>
+		<div id="g-ai0-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:8.6474%;margin-top:-17.5px;left:64.037%;width:148px;">
+			<p class="g-pstyle0">$25,000 - $49,999</p>
+		</div>
+		<div id="g-ai0-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.076%;margin-top:-17.5px;left:2.2199%;width:159px;">
+			<p class="g-pstyle0">$50,000 - $74,999</p>
+		</div>
+		<div id="g-ai0-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.076%;margin-top:-17.5px;left:33.2701%;width:148px;">
+			<p class="g-pstyle0">$75,000 - $99,999</p>
+		</div>
+		<div id="g-ai0-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.076%;margin-top:-17.5px;left:64.037%;width:147px;">
+			<p class="g-pstyle0">Less than $25,000</p>
+		</div>
+		<div id="g-ai0-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:54.6221%;margin-top:-11.4px;left:81.6541%;width:138px;">
+			<p class="g-pstyle1">Beauty and Personal Care</p>
+		</div>
+		<div id="g-ai0-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:57.1935%;margin-top:-11.4px;left:81.6541%;width:48px;">
+			<p class="g-pstyle1">Books</p>
+		</div>
+		<div id="g-ai0-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:59.9078%;margin-top:-11.4px;left:81.6541%;width:113px;">
+			<p class="g-pstyle1">Clothing, Shoes, and</p>
+		</div>
+		<div id="g-ai0-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:61.4792%;margin-top:-11.4px;left:81.6541%;width:57px;">
+			<p class="g-pstyle1">Jewelry</p>
+		</div>
+		<div id="g-ai0-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:64.6221%;margin-top:-11.4px;left:81.6541%;width:70px;">
+			<p class="g-pstyle1">Electronics</p>
+		</div>
+		<div id="g-ai0-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:67.3364%;margin-top:-11.4px;left:81.6541%;width:43px;">
+			<p class="g-pstyle1">Food</p>
+		</div>
+		<div id="g-ai0-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:70.0506%;margin-top:-11.4px;left:81.6541%;width:106px;">
+			<p class="g-pstyle1">Home and Kitchen</p>
+		</div>
+		<div id="g-ai0-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:72.7649%;margin-top:-11.4px;left:81.6541%;width:85px;">
+			<p class="g-pstyle1">Office Product</p>
+		</div>
+		<div id="g-ai0-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:75.4792%;margin-top:-11.4px;left:81.6541%;width:77px;">
+			<p class="g-pstyle1">Pet Supplies</p>
+		</div>
+		<div id="g-ai0-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:78.0506%;margin-top:-11.4px;left:81.6541%;width:115px;">
+			<p class="g-pstyle1">Sports and Outdoors</p>
+		</div>
+		<div id="g-ai0-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:80.7649%;margin-top:-11.4px;left:81.6541%;width:96px;">
+			<p class="g-pstyle1">Toys and Games</p>
+		</div>
+		<div id="g-ai0-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.7355%;margin-top:-7.1px;left:2.1844%;width:26px;">
+			<p class="g-pstyle2">0</p>
+		</div>
+	</div>
+
+	<!-- Artboard: medium -->
+	<div id="g-bar_chart-medium" class="g-artboard" style="width:490px; height:490px;" data-aspect-ratio="1" data-min-width="490" data-max-width="699">
+<div style=""></div>
+		<img id="g-bar_chart-medium-img" class="g-bar_chart-medium-img g-aiImg" alt="" src="bar_chart-medium.png"/>
+		<div id="g-ai1-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:4.6416%;margin-top:-12.7px;left:1.2741%;width:122px;">
+			<p class="g-pstyle0">$100,000 - $149,999</p>
+		</div>
+		<div id="g-ai1-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:4.6416%;margin-top:-12.7px;left:32.9349%;width:107px;">
+			<p class="g-pstyle0">$150,000 or more</p>
+		</div>
+		<div id="g-ai1-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:4.6416%;margin-top:-12.7px;left:64.2118%;width:112px;">
+			<p class="g-pstyle0">$25,000 - $49,999</p>
+		</div>
+		<div id="g-ai1-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:47.0905%;margin-top:-12.7px;left:1.2741%;width:120px;">
+			<p class="g-pstyle0">$50,000 - $74,999</p>
+		</div>
+		<div id="g-ai1-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:47.0905%;margin-top:-12.7px;left:32.8872%;width:112px;">
+			<p class="g-pstyle0">$75,000 - $99,999</p>
+		</div>
+		<div id="g-ai1-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:47.0905%;margin-top:-12.7px;left:64.2118%;width:111px;">
+			<p class="g-pstyle0">Less than $25,000</p>
+		</div>
+		<div id="g-ai1-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:54.0468%;margin-top:-8.8px;left:82.1482%;width:105px;">
+			<p class="g-pstyle1">Beauty and Personal Care</p>
+		</div>
+		<div id="g-ai1-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:56.9039%;margin-top:-8.8px;left:82.1482%;width:41px;">
+			<p class="g-pstyle1">Books</p>
+		</div>
+		<div id="g-ai1-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:59.9651%;margin-top:-8.8px;left:82.1482%;width:87px;">
+			<p class="g-pstyle1">Clothing, Shoes, and</p>
+		</div>
+		<div id="g-ai1-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:61.5978%;margin-top:-8.8px;left:82.1482%;width:47px;">
+			<p class="g-pstyle1">Jewelry</p>
+		</div>
+		<div id="g-ai1-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:65.0672%;margin-top:-8.8px;left:82.1482%;width:56px;">
+			<p class="g-pstyle1">Electronics</p>
+		</div>
+		<div id="g-ai1-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:67.9243%;margin-top:-8.8px;left:82.1482%;width:37px;">
+			<p class="g-pstyle1">Food</p>
+		</div>
+		<div id="g-ai1-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:70.7814%;margin-top:-8.8px;left:82.1482%;width:82px;">
+			<p class="g-pstyle1">Home and Kitchen</p>
+		</div>
+		<div id="g-ai1-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:73.6386%;margin-top:-8.8px;left:82.1482%;width:67px;">
+			<p class="g-pstyle1">Office Product</p>
+		</div>
+		<div id="g-ai1-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:76.6998%;margin-top:-8.8px;left:82.1482%;width:61px;">
+			<p class="g-pstyle1">Pet Supplies</p>
+		</div>
+		<div id="g-ai1-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:79.557%;margin-top:-8.8px;left:82.1482%;width:88px;">
+			<p class="g-pstyle1">Sports and Outdoors</p>
+		</div>
+		<div id="g-ai1-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:82.4141%;margin-top:-8.8px;left:82.1482%;width:75px;">
+			<p class="g-pstyle1">Toys and Games</p>
+		</div>
+		<div id="g-ai1-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:86.765%;margin-top:-5.1px;left:1.2378%;width:25px;">
+			<p class="g-pstyle2">0</p>
+		</div>
+	</div>
+
+	<!-- Artboard: mobile -->
+	<div id="g-bar_chart-mobile" class="g-artboard" style="max-width: 375px;max-height: 471px" data-aspect-ratio="0.797" data-min-width="0" data-max-width="489">
+<div style="padding: 0 0 125.5467% 0;"></div>
+		<img id="g-bar_chart-mobile-img" class="g-bar_chart-mobile-img g-aiImg" alt="" src="bar_chart-mobile.png"/>
+		<div id="g-ai2-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:10.0494%;margin-top:-10.3px;left:1.1029%;width:99px;">
+			<p class="g-pstyle0">$100,000 - $149,999</p>
+		</div>
+		<div id="g-ai2-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:10.0494%;margin-top:-10.3px;left:32.8573%;width:87px;">
+			<p class="g-pstyle0">$150,000 or more</p>
+		</div>
+		<div id="g-ai2-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:10.0494%;margin-top:-10.3px;left:64.2268%;width:91px;">
+			<p class="g-pstyle0">$25,000 - $49,999</p>
+		</div>
+		<div id="g-ai2-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.0961%;margin-top:-10.3px;left:1.1029%;width:97px;">
+			<p class="g-pstyle0">$50,000 - $74,999</p>
+		</div>
+		<div id="g-ai2-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.0961%;margin-top:-10.3px;left:32.8096%;width:91px;">
+			<p class="g-pstyle0">$75,000 - $99,999</p>
+		</div>
+		<div id="g-ai2-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.0961%;margin-top:-10.3px;left:64.2268%;width:91px;">
+			<p class="g-pstyle0">Less than $25,000</p>
+		</div>
+		<div id="g-ai2-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:50.9151%;margin-top:-6.7px;left:82.2167%;width:86px;">
+			<p class="g-pstyle1">Beauty and Personal Care</p>
+		</div>
+		<div id="g-ai2-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:53.464%;margin-top:-6.7px;left:82.2167%;width:36px;">
+			<p class="g-pstyle1">Books</p>
+		</div>
+		<div id="g-ai2-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:55.8004%;margin-top:-6.7px;left:82.2167%;width:72px;">
+			<p class="g-pstyle1">Clothing, Shoes, and</p>
+		</div>
+		<div id="g-ai2-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:57.0749%;margin-top:-6.7px;left:82.2167%;width:41px;">
+			<p class="g-pstyle1">Jewelry</p>
+		</div>
+		<div id="g-ai2-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:60.0485%;margin-top:-6.7px;left:82.2167%;width:48px;">
+			<p class="g-pstyle1">Electronics</p>
+		</div>
+		<div id="g-ai2-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:62.385%;margin-top:-6.7px;left:82.2167%;width:33px;">
+			<p class="g-pstyle1">Food</p>
+		</div>
+		<div id="g-ai2-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:64.7214%;margin-top:-6.7px;left:82.2167%;width:68px;">
+			<p class="g-pstyle1">Home and Kitchen</p>
+		</div>
+		<div id="g-ai2-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:67.2703%;margin-top:-6.7px;left:82.2167%;width:57px;">
+			<p class="g-pstyle1">Office Product</p>
+		</div>
+		<div id="g-ai2-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:69.6067%;margin-top:-6.7px;left:82.2167%;width:52px;">
+			<p class="g-pstyle1">Pet Supplies</p>
+		</div>
+		<div id="g-ai2-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:71.9432%;margin-top:-6.7px;left:82.2167%;width:73px;">
+			<p class="g-pstyle1">Sports and Outdoors</p>
+		</div>
+		<div id="g-ai2-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:74.2796%;margin-top:-6.7px;left:82.2167%;width:62px;">
+			<p class="g-pstyle1">Toys and Games</p>
+		</div>
+		<div id="g-ai2-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:77.992%;margin-top:-4.2px;left:1.0667%;width:24px;">
+			<p class="g-pstyle2">0</p>
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	(function (containerId, opts) {
+		var nameSpace = opts.namespace || '';
+		var containers = findContainers(containerId);
+		containers.forEach(resize);
+
+		function resize(container) {
+			var onResize = throttle(update, 200);
+			var waiting = !!window.IntersectionObserver;
+			var observer;
+			update();
+
+			document.addEventListener('DOMContentLoaded', update);
+			window.addEventListener('resize', onResize);
+
+			// NYT Scoop-specific code
+			if (opts.setup) {
+				opts.setup(container).on('cleanup', cleanup);
+			}
+
+			function cleanup() {
+				document.removeEventListener('DOMContentLoaded', update);
+				window.removeEventListener('resize', onResize);
+				if (observer) observer.disconnect();
+			}
+
+			function update() {
+				var artboards = selectChildren('.' + nameSpace + 'artboard[data-min-width]', container),
+						width = Math.round(container.getBoundingClientRect().width);
+
+				// Set artboard visibility based on container width
+				artboards.forEach(function(el) {
+					var minwidth = el.getAttribute('data-min-width'),
+							maxwidth = el.getAttribute('data-max-width');
+					if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+						if (!waiting) {
+							selectChildren('.' + nameSpace + 'aiImg', el).forEach(updateImgSrc);
+							selectChildren('video', el).forEach(updateVideoSrc);
+						}
+						el.style.display = 'block';
+					} else {
+						el.style.display = 'none';
+					}
+				});
+
+				// Initialize lazy loading on first call
+				if (waiting && !observer) {
+					if (elementInView(container)) {
+						waiting = false;
+						update();
+					} else {
+						observer = new IntersectionObserver(onIntersectionChange, {rootMargin: "800px"});
+						observer.observe(container);
+					}
+				}
+			}
+
+			function onIntersectionChange(entries) {
+				// There may be multiple entries relating to the same container
+				// (captured at different times)
+				var isIntersecting = entries.reduce(function(memo, entry) {
+					return memo || entry.isIntersecting;
+				}, false);
+				if (isIntersecting) {
+					waiting = false;
+					// update: don't remove -- we need the observer to trigger an update
+					// when a hidden map becomes visible after user interaction
+					// (e.g. when an accordion menu or tab opens)
+					// observer.disconnect();
+					// observer = null;
+					update();
+				}
+			}
+		}
+
+		function findContainers(id) {
+			// support duplicate ids on the page
+			return selectChildren('.ai2html-responsive', document).filter(function(el) {
+				if (el.getAttribute('id') != id) return false;
+				if (el.classList.contains('ai2html-resizer')) return false;
+				el.classList.add('ai2html-resizer');
+				return true;
+			});
+		}
+
+		// Replace blank placeholder image with actual image
+		function updateImgSrc(img) {
+			var src = img.getAttribute('data-src');
+			if (src && img.getAttribute('src') != src) {
+				img.setAttribute('src', src);
+			}
+		}
+
+		function updateVideoSrc(el) {
+			var src = el.getAttribute('data-src');
+			if (src && !el.hasAttribute('src')) {
+				el.setAttribute('src', src);
+			}
+		}
+
+		function elementInView(el) {
+			var bounds = el.getBoundingClientRect();
+			return bounds.top < window.innerHeight && bounds.bottom > 0;
+		}
+
+		function selectChildren(selector, parent) {
+			return parent ? Array.prototype.slice.call(parent.querySelectorAll(selector)) : [];
+		}
+
+		// based on underscore.js
+		function throttle(func, wait) {
+			var timeout = null, previous = 0;
+			function run() {
+					previous = Date.now();
+					timeout = null;
+					func();
+			}
+			return function() {
+				var remaining = wait - (Date.now() - previous);
+				if (remaining <= 0 || remaining > wait) {
+					clearTimeout(timeout);
+					run();
+				} else if (!timeout) {
+					timeout = setTimeout(run, remaining);
+				}
+			};
+		}
+	})("g-bar_chart-box", {namespace: "g-", setup: window.setupInteractive || window.getComponent});
+</script>
+<!-- End ai2html - 2025-03-05 00:07 -->
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="content">
+        <p>To compare their purchasing patterns, I took the following steps:</p>
+        <li>Consolidated over 1,000 product titles into 10 broader categories for easier analysis.</li>
+        <br>
+        <li>Calculated the total number of orders within each category, grouped by income level.</li>
+        <br>
+        <li>Normalized the data by dividing the total orders by the number of people in each income 
+            group to ensure a fair comparison.</li>
+        
+    </div>
+
+    <section id="scrolly-ai2html" class="scrolly-container">
+        <div class="sticky-thing">
+
+            <!-- ai2html goes below this line-->
+
+
+
+
+
+
+
+
+
+
+
+            <div class="full-width">
+                <div class="charts-layout">
+                    <!-- Group 1: Chart 1 and Chart 2 -->
+                    <div class="chart-group">
+                        <div class="chart-wrapper">
+                        <div id="g-low_income-box" class="ai2html ai2html-responsive">
+                <!-- Generated by ai2html v0.121.1 - 2025-03-05 01:52 -->
+                <!-- ai file: low_income.ai -->
+                <style media="screen,print">
+                    #g-low_income-box ,
+                    #g-low_income-box .g-artboard {
+                        margin:0 auto;
+                    }
+                    #g-low_income-box p {
+                        margin:0;
+                    }
+                    #g-low_income-box .g-aiAbs {
+                        position:absolute;
+                    }
+                    #g-low_income-box .g-aiImg {
+                        position:absolute;
+                        top:0;
+                        display:block;
+                        width:100% !important;
+                    }
+                    #g-low_income-box .g-aiSymbol {
+                        position: absolute;
+                        box-sizing: border-box;
+                    }
+                    #g-low_income-box .g-aiPointText p { white-space: nowrap; }
+                    #g-low_income-full {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-low_income-full p {
+                        font-family:arial,helvetica,sans-serif;
+                        font-weight:regular;
+                        line-height:17px;
+                        height:auto;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:14px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        position:static;
+                    }
+                    #g-low_income-full .g-pstyle0 {
+                        font-weight:bold;
+                        line-height:14px;
+                        height:14px;
+                        font-size:12px;
+                    }
+                    #g-low_income-full .g-pstyle1 {
+                        font-weight:bold;
+                        height:17px;
+                    }
+                    #g-low_income-full .g-pstyle2 {
+                        font-weight:bold;
+                        line-height:25px;
+                        height:25px;
+                        font-size:21px;
+                    }
+                    #g-low_income-medium {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-low_income-medium p {
+                        font-family:arial,helvetica,sans-serif;
+                        font-weight:regular;
+                        line-height:11px;
+                        height:auto;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:9px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        position:static;
+                    }
+                    #g-low_income-medium .g-pstyle0 {
+                        font-weight:bold;
+                        line-height:10px;
+                        height:10px;
+                        font-size:8px;
+                    }
+                    #g-low_income-medium .g-pstyle1 {
+                        font-weight:bold;
+                        height:11px;
+                    }
+                    #g-low_income-medium .g-pstyle2 {
+                        font-weight:bold;
+                        line-height:17px;
+                        height:17px;
+                        font-size:14px;
+                    }
+                    #g-low_income-mobile {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-low_income-mobile p {
+                        font-family:arial,helvetica,sans-serif;
+                        font-weight:regular;
+                        line-height:9px;
+                        height:auto;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:8px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        position:static;
+                    }
+                    #g-low_income-mobile .g-pstyle0 {
+                        font-weight:bold;
+                        line-height:8px;
+                        height:8px;
+                        font-size:6px;
+                    }
+                    #g-low_income-mobile .g-pstyle1 {
+                        font-weight:bold;
+                        height:9px;
+                    }
+                    #g-low_income-mobile .g-pstyle2 {
+                        font-weight:bold;
+                        line-height:14px;
+                        height:14px;
+                        font-size:11px;
+                    }
+
+                </style>
+
+                <div id="g-low_income-box" class="ai2html ai2html-responsive">
+
+                    <!-- Artboard: full -->
+                    <div id="g-low_income-full" class="g-artboard" style="width:700px; height:700px;" data-aspect-ratio="1" data-min-width="700">
+                <div style=""></div>
+                        <img id="g-low_income-full-img" class="g-low_income-full-img g-aiImg" alt="" src="low_income-full.png"/>
+                        <div id="g-ai0-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:5.3438%;margin-top:-8.4px;left:2.2182%;width:105px;">
+                            <p class="g-pstyle0">Office Product</p>
+                        </div>
+                        <div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:5.8772%;margin-top:-10.1px;left:24.2655%;width:216px;">
+                            <p class="g-pstyle1">Clothing, Shoes, and Jewelry</p>
+                        </div>
+                        <div id="g-ai0-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:5.8772%;margin-top:-10.1px;left:61.7859%;width:196px;">
+                            <p class="g-pstyle1">Beauty and Personal Care</p>
+                        </div>
+                        <div id="g-ai0-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:13.3437%;margin-top:-8.4px;left:2.2043%;width:142px;">
+                            <p class="g-pstyle0">Sports and Outdoors</p>
+                        </div>
+                        <div id="g-ai0-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:20.1629%;margin-top:-10.1px;left:2.1742%;width:133px;">
+                            <p class="g-pstyle1">Toys and Games</p>
+                        </div>
+                        <div id="g-ai0-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:30.3058%;margin-top:-10.1px;left:2.1742%;width:65px;">
+                            <p class="g-pstyle1">Books</p>
+                        </div>
+                        <div id="g-ai0-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:35.5658%;margin-top:-15px;left:24.5845%;width:206px;">
+                            <p class="g-pstyle2">Home and Kitchen</p>
+                        </div>
+                        <div id="g-ai0-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:47.9152%;margin-top:-8.4px;left:2.2471%;width:94px;">
+                            <p class="g-pstyle0">Pet Supplies</p>
+                        </div>
+                        <div id="g-ai0-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:67.4487%;margin-top:-10.1px;left:2.8693%;width:56px;">
+                            <p class="g-pstyle1">Food</p>
+                        </div>
+                        <div id="g-ai0-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:69.2801%;margin-top:-15px;left:24.6652%;width:135px;">
+                            <p class="g-pstyle2">Electronics</p>
+                        </div>
+                    </div>
+
+                    <!-- Artboard: medium -->
+                    <div id="g-low_income-medium" class="g-artboard" style="width:490px; height:490px;" data-aspect-ratio="1" data-min-width="490" data-max-width="699">
+                <div style=""></div>
+                        <img id="g-low_income-medium-img" class="g-low_income-medium-img g-aiImg" alt="" src="low_income-medium.png"/>
+                        <div id="g-ai1-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:5.509%;margin-top:-6px;left:4.2795%;width:78px;">
+                            <p class="g-pstyle0">Office Product</p>
+                        </div>
+                        <div id="g-ai1-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:6.087%;margin-top:-6.8px;left:25.517%;width:153px;">
+                            <p class="g-pstyle1">Clothing, Shoes, and Jewelry</p>
+                        </div>
+                        <div id="g-ai1-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:6.087%;margin-top:-6.8px;left:61.659%;width:139px;">
+                            <p class="g-pstyle1">Beauty and Personal Care</p>
+                        </div>
+                        <div id="g-ai1-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:13.2641%;margin-top:-6px;left:4.2662%;width:103px;">
+                            <p class="g-pstyle0">Sports and Outdoors</p>
+                        </div>
+                        <div id="g-ai1-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:19.7604%;margin-top:-6.8px;left:4.2371%;width:97px;">
+                            <p class="g-pstyle1">Toys and Games</p>
+                        </div>
+                        <div id="g-ai1-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:29.5564%;margin-top:-6.8px;left:4.2371%;width:51px;">
+                            <p class="g-pstyle1">Books</p>
+                        </div>
+                        <div id="g-ai1-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:34.5387%;margin-top:-10.2px;left:25.8243%;width:146px;">
+                            <p class="g-pstyle2">Home and Kitchen</p>
+                        </div>
+                        <div id="g-ai1-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:46.5293%;margin-top:-6px;left:4.3074%;width:71px;">
+                            <p class="g-pstyle0">Pet Supplies</p>
+                        </div>
+                        <div id="g-ai1-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:65.2706%;margin-top:-6.8px;left:4.9067%;width:45px;">
+                            <p class="g-pstyle1">Food</p>
+                        </div>
+                        <div id="g-ai1-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:67.1918%;margin-top:-10.2px;left:25.902%;width:98px;">
+                            <p class="g-pstyle2">Electronics</p>
+                        </div>
+                    </div>
+
+                    <!-- Artboard: mobile -->
+                    <div id="g-low_income-mobile" class="g-artboard" style="max-width: 375px;max-height: 471px" data-aspect-ratio="0.797" data-min-width="0" data-max-width="489">
+                <div style="padding: 0 0 125.5467% 0;"></div>
+                        <img id="g-low_income-mobile-img" class="g-low_income-mobile-img g-aiImg" alt="" src="low_income-mobile.png"/>
+                        <div id="g-ai2-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:2.7543%;margin-top:-5px;left:2.2182%;width:66px;">
+                            <p class="g-pstyle0">Office Product</p>
+                        </div>
+                        <div id="g-ai2-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:3.2134%;margin-top:-5.1px;left:24.2656%;width:126px;">
+                            <p class="g-pstyle1">Clothing, Shoes, and Jewelry</p>
+                        </div>
+                        <div id="g-ai2-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:3.2134%;margin-top:-5.1px;left:61.7859%;width:115px;">
+                            <p class="g-pstyle1">Beauty and Personal Care</p>
+                        </div>
+                        <div id="g-ai2-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:9.1264%;margin-top:-5px;left:2.2042%;width:86px;">
+                            <p class="g-pstyle0">Sports and Outdoors</p>
+                        </div>
+                        <div id="g-ai2-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:14.4709%;margin-top:-5.1px;left:2.1742%;width:81px;">
+                            <p class="g-pstyle1">Toys and Games</p>
+                        </div>
+                        <div id="g-ai2-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:22.5422%;margin-top:-5.1px;left:2.1742%;width:45px;">
+                            <p class="g-pstyle1">Books</p>
+                        </div>
+                        <div id="g-ai2-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:26.6447%;margin-top:-8.4px;left:24.5844%;width:121px;">
+                            <p class="g-pstyle2">Home and Kitchen</p>
+                        </div>
+                        <div id="g-ai2-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:36.739%;margin-top:-5px;left:2.2471%;width:61px;">
+                            <p class="g-pstyle0">Pet Supplies</p>
+                        </div>
+                        <div id="g-ai2-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:52.0665%;margin-top:-5.1px;left:2.8693%;width:40px;">
+                            <p class="g-pstyle1">Food</p>
+                        </div>
+                        <div id="g-ai2-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:53.6201%;margin-top:-8.4px;left:24.6651%;width:83px;">
+                            <p class="g-pstyle2">Electronics</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script type="text/javascript">
+                    (function (containerId, opts) {
+                        var nameSpace = opts.namespace || '';
+                        var containers = findContainers(containerId);
+                        containers.forEach(resize);
+
+                        function resize(container) {
+                            var onResize = throttle(update, 200);
+                            var waiting = !!window.IntersectionObserver;
+                            var observer;
+                            update();
+
+                            document.addEventListener('DOMContentLoaded', update);
+                            window.addEventListener('resize', onResize);
+
+                            // NYT Scoop-specific code
+                            if (opts.setup) {
+                                opts.setup(container).on('cleanup', cleanup);
+                            }
+
+                            function cleanup() {
+                                document.removeEventListener('DOMContentLoaded', update);
+                                window.removeEventListener('resize', onResize);
+                                if (observer) observer.disconnect();
+                            }
+
+                            function update() {
+                                var artboards = selectChildren('.' + nameSpace + 'artboard[data-min-width]', container),
+                                        width = Math.round(container.getBoundingClientRect().width);
+
+                                // Set artboard visibility based on container width
+                                artboards.forEach(function(el) {
+                                    var minwidth = el.getAttribute('data-min-width'),
+                                            maxwidth = el.getAttribute('data-max-width');
+                                    if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                                        if (!waiting) {
+                                            selectChildren('.' + nameSpace + 'aiImg', el).forEach(updateImgSrc);
+                                            selectChildren('video', el).forEach(updateVideoSrc);
+                                        }
+                                        el.style.display = 'block';
+                                    } else {
+                                        el.style.display = 'none';
+                                    }
+                                });
+
+                                // Initialize lazy loading on first call
+                                if (waiting && !observer) {
+                                    if (elementInView(container)) {
+                                        waiting = false;
+                                        update();
+                                    } else {
+                                        observer = new IntersectionObserver(onIntersectionChange, {rootMargin: "800px"});
+                                        observer.observe(container);
+                                    }
+                                }
+                            }
+
+                            function onIntersectionChange(entries) {
+                                // There may be multiple entries relating to the same container
+                                // (captured at different times)
+                                var isIntersecting = entries.reduce(function(memo, entry) {
+                                    return memo || entry.isIntersecting;
+                                }, false);
+                                if (isIntersecting) {
+                                    waiting = false;
+                                    // update: don't remove -- we need the observer to trigger an update
+                                    // when a hidden map becomes visible after user interaction
+                                    // (e.g. when an accordion menu or tab opens)
+                                    // observer.disconnect();
+                                    // observer = null;
+                                    update();
+                                }
+                            }
+                        }
+
+                        function findContainers(id) {
+                            // support duplicate ids on the page
+                            return selectChildren('.ai2html-responsive', document).filter(function(el) {
+                                if (el.getAttribute('id') != id) return false;
+                                if (el.classList.contains('ai2html-resizer')) return false;
+                                el.classList.add('ai2html-resizer');
+                                return true;
+                            });
+                        }
+
+                        // Replace blank placeholder image with actual image
+                        function updateImgSrc(img) {
+                            var src = img.getAttribute('data-src');
+                            if (src && img.getAttribute('src') != src) {
+                                img.setAttribute('src', src);
+                            }
+                        }
+
+                        function updateVideoSrc(el) {
+                            var src = el.getAttribute('data-src');
+                            if (src && !el.hasAttribute('src')) {
+                                el.setAttribute('src', src);
+                            }
+                        }
+
+                        function elementInView(el) {
+                            var bounds = el.getBoundingClientRect();
+                            return bounds.top < window.innerHeight && bounds.bottom > 0;
+                        }
+
+                        function selectChildren(selector, parent) {
+                            return parent ? Array.prototype.slice.call(parent.querySelectorAll(selector)) : [];
+                        }
+
+                        // based on underscore.js
+                        function throttle(func, wait) {
+                            var timeout = null, previous = 0;
+                            function run() {
+                                    previous = Date.now();
+                                    timeout = null;
+                                    func();
+                            }
+                            return function() {
+                                var remaining = wait - (Date.now() - previous);
+                                if (remaining <= 0 || remaining > wait) {
+                                    clearTimeout(timeout);
+                                    run();
+                                } else if (!timeout) {
+                                    timeout = setTimeout(run, remaining);
+                                }
+                            };
+                        }
+                    })("g-low_income-box", {namespace: "g-", setup: window.setupInteractive || window.getComponent});
+                </script>
+                <!-- End ai2html - 2025-03-05 01:52 -->
+                </div>
+                </div>
+                </div>
+
+                <div class="chart-wrapper">
+                <div id="g-high_income-box" class="ai2html ai2html-responsive">
+                <!-- Generated by ai2html v0.121.1 - 2025-03-05 01:57 -->
+                <!-- ai file: high_income.ai -->
+                <style media="screen,print">
+                    #g-high_income-box ,
+                    #g-high_income-box .g-artboard {
+                        margin:0 auto;
+                    }
+                    #g-high_income-box p {
+                        margin:0;
+                    }
+                    #g-high_income-box .g-aiAbs {
+                        position:absolute;
+                    }
+                    #g-high_income-box .g-aiImg {
+                        position:absolute;
+                        top:0;
+                        display:block;
+                        width:100% !important;
+                    }
+                    #g-high_income-box .g-aiSymbol {
+                        position: absolute;
+                        box-sizing: border-box;
+                    }
+                    #g-high_income-box .g-aiPointText p { white-space: nowrap; }
+                    #g-high_income-full {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-high_income-full p {
+                        font-family:arial,helvetica,sans-serif;
+                        font-weight:regular;
+                        line-height:22px;
+                        height:auto;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:18px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        position:static;
+                    }
+                    #g-high_income-full .g-pstyle0 {
+                        font-weight:bold;
+                        height:22px;
+                    }
+                    #g-high_income-full .g-pstyle1 {
+                        font-weight:bold;
+                        line-height:25px;
+                        height:25px;
+                        font-size:21px;
+                    }
+                    #g-high_income-full .g-pstyle2 {
+                        font-weight:bold;
+                        line-height:17px;
+                        height:17px;
+                        font-size:14px;
+                        text-align:center;
+                    }
+                    #g-high_income-full .g-pstyle3 {
+                        font-weight:bold;
+                        line-height:17px;
+                        height:17px;
+                        font-size:14px;
+                    }
+                    #g-high_income-medium {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-high_income-medium p {
+                        font-family:arial,helvetica,sans-serif;
+                        font-weight:regular;
+                        line-height:14px;
+                        height:auto;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:12px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        position:static;
+                    }
+                    #g-high_income-medium .g-pstyle0 {
+                        font-weight:bold;
+                        height:14px;
+                    }
+                    #g-high_income-medium .g-pstyle1 {
+                        font-weight:bold;
+                        line-height:17px;
+                        height:17px;
+                        font-size:14px;
+                    }
+                    #g-high_income-medium .g-pstyle2 {
+                        font-weight:bold;
+                        line-height:12px;
+                        height:12px;
+                        font-size:10px;
+                        text-align:center;
+                    }
+                    #g-high_income-medium .g-pstyle3 {
+                        font-weight:bold;
+                        line-height:11px;
+                        height:11px;
+                        font-size:9px;
+                    }
+                    #g-high_income-mobile {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-high_income-mobile p {
+                        font-family:arial,helvetica,sans-serif;
+                        font-weight:regular;
+                        line-height:11px;
+                        height:auto;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:10px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        position:static;
+                    }
+                    #g-high_income-mobile .g-pstyle0 {
+                        font-weight:bold;
+                        height:11px;
+                    }
+                    #g-high_income-mobile .g-pstyle1 {
+                        font-weight:bold;
+                        line-height:13px;
+                        height:13px;
+                        font-size:11px;
+                    }
+                    #g-high_income-mobile .g-pstyle2 {
+                        font-weight:bold;
+                        line-height:9px;
+                        height:9px;
+                        font-size:8px;
+                        text-align:center;
+                    }
+                    #g-high_income-mobile .g-pstyle3 {
+                        font-weight:bold;
+                        line-height:9px;
+                        height:9px;
+                        font-size:7px;
+                    }
+
+                </style>
+
+                <div id="g-high_income-box" class="ai2html ai2html-responsive">
+
+                    <!-- Artboard: full -->
+                    <div id="g-high_income-full" class="g-artboard" style="width:700px; height:700px;" data-aspect-ratio="1" data-min-width="700">
+                <div style=""></div>
+                        <img id="g-high_income-full-img" class="g-high_income-full-img g-aiImg" alt="" src="high_income-full.png"/>
+                        <div id="g-ai0-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:3.8728%;margin-top:-13.1px;left:82.702%;width:66px;">
+                            <p class="g-pstyle0">Food</p>
+                        </div>
+                        <div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:5.2801%;margin-top:-15px;left:26.3448%;width:135px;">
+                            <p class="g-pstyle1">Electronics</p>
+                        </div>
+                        <div id="g-ai0-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:5.3013%;margin-top:-13.1px;left:2.6877%;width:124px;">
+                            <p class="g-pstyle0">Beauty and </p>
+                        </div>
+                        <div id="g-ai0-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:8.4442%;margin-top:-13.1px;left:2.6877%;width:143px;">
+                            <p class="g-pstyle0">Personal Care</p>
+                        </div>
+                        <div id="g-ai0-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="transform: matrix(0,1,-1,0,0,0);transform-origin: 50% 54.9306625577812%;-webkit-transform: matrix(0,1,-1,0,0,0);-webkit-transform-origin: 50% 54.9306625577812%;-ms-transform: matrix(0,1,-1,0,0,0);-ms-transform-origin: 50% 54.9306625577812%;top:48.0201%;margin-top:-10.1px;left:95.7961%;margin-left:-53px;width:106px;">
+                            <p class="g-pstyle2">Pet Supplies</p>
+                        </div>
+                        <div id="g-ai0-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="transform: matrix(0,1,-1,0,0,0);transform-origin: 50% 54.9306625577812%;-webkit-transform: matrix(0,1,-1,0,0,0);-webkit-transform-origin: 50% 54.9306625577812%;-ms-transform: matrix(0,1,-1,0,0,0);-ms-transform-origin: 50% 54.9306625577812%;top:49.3058%;margin-top:-10.1px;left:81.4794%;margin-left:-59px;width:118px;">
+                            <p class="g-pstyle2">Office Product</p>
+                        </div>
+                        <div id="g-ai0-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.9944%;margin-top:-15px;left:26.5591%;width:206px;">
+                            <p class="g-pstyle1">Home and Kitchen</p>
+                        </div>
+                        <div id="g-ai0-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.1373%;margin-top:-15px;left:2.302%;width:86px;">
+                            <p class="g-pstyle1">Books</p>
+                        </div>
+                        <div id="g-ai0-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:61.5871%;margin-top:-13.1px;left:1.4591%;width:169px;">
+                            <p class="g-pstyle0">Clothing, Shoes, </p>
+                        </div>
+                        <div id="g-ai0-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:64.7299%;margin-top:-13.1px;left:1.4591%;width:125px;">
+                            <p class="g-pstyle0">and Jewelry</p>
+                        </div>
+                        <div id="g-ai0-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:70.0201%;margin-top:-10.1px;left:80.8877%;width:99px;">
+                            <p class="g-pstyle3">Sports and </p>
+                        </div>
+                        <div id="g-ai0-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:72.4487%;margin-top:-10.1px;left:80.8877%;width:85px;">
+                            <p class="g-pstyle3">Outdoors</p>
+                        </div>
+                        <div id="g-ai0-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:88.4487%;margin-top:-10.1px;left:80.8305%;width:86px;">
+                            <p class="g-pstyle3">Toys and </p>
+                        </div>
+                        <div id="g-ai0-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:90.8772%;margin-top:-10.1px;left:80.8305%;width:69px;">
+                            <p class="g-pstyle3">Games</p>
+                        </div>
+                    </div>
+
+                    <!-- Artboard: medium -->
+                    <div id="g-high_income-medium" class="g-artboard" style="width:490px; height:490px;" data-aspect-ratio="1" data-min-width="490" data-max-width="699">
+                <div style=""></div>
+                        <img id="g-high_income-medium-img" class="g-high_income-medium-img g-aiImg" alt="" src="high_income-medium.png"/>
+                        <div id="g-ai1-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:4.155%;margin-top:-8.4px;left:82.794%;width:53px;">
+                            <p class="g-pstyle0">Food</p>
+                        </div>
+                        <div id="g-ai1-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:5.3237%;margin-top:-10.1px;left:26.4812%;width:101px;">
+                            <p class="g-pstyle1">Electronics</p>
+                        </div>
+                        <div id="g-ai1-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:5.3795%;margin-top:-8.4px;left:2.8428%;width:93px;">
+                            <p class="g-pstyle0">Beauty and </p>
+                        </div>
+                        <div id="g-ai1-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:8.4407%;margin-top:-8.4px;left:2.8428%;width:107px;">
+                            <p class="g-pstyle0">Personal Care</p>
+                        </div>
+                        <div id="g-ai1-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="transform: matrix(0,1,-1,0,0,0);transform-origin: 50% 57.0982947455982%;-webkit-transform: matrix(0,1,-1,0,0,0);-webkit-transform-origin: 50% 57.0982947455982%;-ms-transform: matrix(0,1,-1,0,0,0);-ms-transform-origin: 50% 57.0982947455982%;top:45.9273%;margin-top:-7px;left:95.914%;margin-left:-39px;width:78px;">
+                            <p class="g-pstyle2">Pet Supplies</p>
+                        </div>
+                        <div id="g-ai1-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="transform: matrix(0,1,-1,0,0,0);transform-origin: 50% 57.0982947455982%;-webkit-transform: matrix(0,1,-1,0,0,0);-webkit-transform-origin: 50% 57.0982947455982%;-ms-transform: matrix(0,1,-1,0,0,0);-ms-transform-origin: 50% 57.0982947455982%;top:47.1518%;margin-top:-7px;left:81.6151%;margin-left:-43px;width:86px;">
+                            <p class="g-pstyle2">Office Product</p>
+                        </div>
+                        <div id="g-ai1-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:43.8951%;margin-top:-10.1px;left:26.6954%;width:151px;">
+                            <p class="g-pstyle1">Home and Kitchen</p>
+                        </div>
+                        <div id="g-ai1-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.9359%;margin-top:-10.1px;left:2.4574%;width:67px;">
+                            <p class="g-pstyle1">Books</p>
+                        </div>
+                        <div id="g-ai1-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:58.6449%;margin-top:-8.4px;left:1.6151%;width:125px;">
+                            <p class="g-pstyle0">Clothing, Shoes, </p>
+                        </div>
+                        <div id="g-ai1-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:61.7061%;margin-top:-8.4px;left:1.6151%;width:94px;">
+                            <p class="g-pstyle0">and Jewelry</p>
+                        </div>
+                        <div id="g-ai1-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:66.6784%;margin-top:-6.7px;left:80.9811%;width:76px;">
+                            <p class="g-pstyle3">Sports and </p>
+                        </div>
+                        <div id="g-ai1-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:68.9233%;margin-top:-6.7px;left:80.9811%;width:66px;">
+                            <p class="g-pstyle3">Outdoors</p>
+                        </div>
+                        <div id="g-ai1-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.0253%;margin-top:-6.7px;left:80.9239%;width:67px;">
+                            <p class="g-pstyle3">Toys and </p>
+                        </div>
+                        <div id="g-ai1-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:86.2702%;margin-top:-6.7px;left:80.9239%;width:55px;">
+                            <p class="g-pstyle3">Games</p>
+                        </div>
+                    </div>
+
+                    <!-- Artboard: mobile -->
+                    <div id="g-high_income-mobile" class="g-artboard" style="max-width: 375px;max-height: 471px" data-aspect-ratio="0.797" data-min-width="0" data-max-width="489">
+                <div style="padding: 0 0 125.5467% 0;"></div>
+                        <img id="g-high_income-mobile-img" class="g-high_income-mobile-img g-aiImg" alt="" src="high_income-mobile.png"/>
+                        <div id="g-ai2-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:4.3329%;margin-top:-6.4px;left:82.8927%;width:46px;">
+                            <p class="g-pstyle0">Food</p>
+                        </div>
+                        <div id="g-ai2-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:5.2852%;margin-top:-7.9px;left:26.4432%;width:83px;">
+                            <p class="g-pstyle1">Electronics</p>
+                        </div>
+                        <div id="g-ai2-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:5.3949%;margin-top:-6.4px;left:2.7474%;width:77px;">
+                            <p class="g-pstyle0">Beauty and </p>
+                        </div>
+                        <div id="g-ai2-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:7.9438%;margin-top:-6.4px;left:2.7474%;width:87px;">
+                            <p class="g-pstyle0">Personal Care</p>
+                        </div>
+                        <div id="g-ai2-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="transform: matrix(0,1,-1,0,0,0);transform-origin: 50% 59.7338403041825%;-webkit-transform: matrix(0,1,-1,0,0,0);-webkit-transform-origin: 50% 59.7338403041825%;-ms-transform: matrix(0,1,-1,0,0,0);-ms-transform-origin: 50% 59.7338403041825%;top:39.1115%;margin-top:-5.1px;left:96.0604%;margin-left:-33.5px;width:67px;">
+                            <p class="g-pstyle2">Pet Supplies</p>
+                        </div>
+                        <div id="g-ai2-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="transform: matrix(0,1,-1,0,0,0);transform-origin: 50% 59.7338403041825%;-webkit-transform: matrix(0,1,-1,0,0,0);-webkit-transform-origin: 50% 59.7338403041825%;-ms-transform: matrix(0,1,-1,0,0,0);-ms-transform-origin: 50% 59.7338403041825%;top:40.1735%;margin-top:-5.1px;left:81.6711%;margin-left:-36.5px;width:73px;">
+                            <p class="g-pstyle2">Office Product</p>
+                        </div>
+                        <div id="g-ai2-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:37.5707%;margin-top:-7.9px;left:26.6578%;width:121px;">
+                            <p class="g-pstyle1">Home and Kitchen</p>
+                        </div>
+                        <div id="g-ai2-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:39.2699%;margin-top:-7.9px;left:2.3609%;width:56px;">
+                            <p class="g-pstyle1">Books</p>
+                        </div>
+                        <div id="g-ai2-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:49.7875%;margin-top:-6.4px;left:1.5167%;width:101px;">
+                            <p class="g-pstyle0">Clothing, Shoes, </p>
+                        </div>
+                        <div id="g-ai2-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:52.3363%;margin-top:-6.4px;left:1.5167%;width:77px;">
+                            <p class="g-pstyle0">and Jewelry</p>
+                        </div>
+                        <div id="g-ai2-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:56.4121%;margin-top:-5.6px;left:81.0755%;width:63px;">
+                            <p class="g-pstyle3">Sports and </p>
+                        </div>
+                        <div id="g-ai2-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:58.3238%;margin-top:-5.6px;left:81.0755%;width:56px;">
+                            <p class="g-pstyle3">Outdoors</p>
+                        </div>
+                        <div id="g-ai2-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:71.068%;margin-top:-5.6px;left:81.0182%;width:57px;">
+                            <p class="g-pstyle3">Toys and </p>
+                        </div>
+                        <div id="g-ai2-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:72.9797%;margin-top:-5.6px;left:81.0182%;width:47px;">
+                            <p class="g-pstyle3">Games</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script type="text/javascript">
+                    (function (containerId, opts) {
+                        var nameSpace = opts.namespace || '';
+                        var containers = findContainers(containerId);
+                        containers.forEach(resize);
+
+                        function resize(container) {
+                            var onResize = throttle(update, 200);
+                            var waiting = !!window.IntersectionObserver;
+                            var observer;
+                            update();
+
+                            document.addEventListener('DOMContentLoaded', update);
+                            window.addEventListener('resize', onResize);
+
+                            // NYT Scoop-specific code
+                            if (opts.setup) {
+                                opts.setup(container).on('cleanup', cleanup);
+                            }
+
+                            function cleanup() {
+                                document.removeEventListener('DOMContentLoaded', update);
+                                window.removeEventListener('resize', onResize);
+                                if (observer) observer.disconnect();
+                            }
+
+                            function update() {
+                                var artboards = selectChildren('.' + nameSpace + 'artboard[data-min-width]', container),
+                                        width = Math.round(container.getBoundingClientRect().width);
+
+                                // Set artboard visibility based on container width
+                                artboards.forEach(function(el) {
+                                    var minwidth = el.getAttribute('data-min-width'),
+                                            maxwidth = el.getAttribute('data-max-width');
+                                    if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                                        if (!waiting) {
+                                            selectChildren('.' + nameSpace + 'aiImg', el).forEach(updateImgSrc);
+                                            selectChildren('video', el).forEach(updateVideoSrc);
+                                        }
+                                        el.style.display = 'block';
+                                    } else {
+                                        el.style.display = 'none';
+                                    }
+                                });
+
+                                // Initialize lazy loading on first call
+                                if (waiting && !observer) {
+                                    if (elementInView(container)) {
+                                        waiting = false;
+                                        update();
+                                    } else {
+                                        observer = new IntersectionObserver(onIntersectionChange, {rootMargin: "800px"});
+                                        observer.observe(container);
+                                    }
+                                }
+                            }
+
+                            function onIntersectionChange(entries) {
+                                // There may be multiple entries relating to the same container
+                                // (captured at different times)
+                                var isIntersecting = entries.reduce(function(memo, entry) {
+                                    return memo || entry.isIntersecting;
+                                }, false);
+                                if (isIntersecting) {
+                                    waiting = false;
+                                    // update: don't remove -- we need the observer to trigger an update
+                                    // when a hidden map becomes visible after user interaction
+                                    // (e.g. when an accordion menu or tab opens)
+                                    // observer.disconnect();
+                                    // observer = null;
+                                    update();
+                                }
+                            }
+                        }
+
+                        function findContainers(id) {
+                            // support duplicate ids on the page
+                            return selectChildren('.ai2html-responsive', document).filter(function(el) {
+                                if (el.getAttribute('id') != id) return false;
+                                if (el.classList.contains('ai2html-resizer')) return false;
+                                el.classList.add('ai2html-resizer');
+                                return true;
+                            });
+                        }
+
+                        // Replace blank placeholder image with actual image
+                        function updateImgSrc(img) {
+                            var src = img.getAttribute('data-src');
+                            if (src && img.getAttribute('src') != src) {
+                                img.setAttribute('src', src);
+                            }
+                        }
+
+                        function updateVideoSrc(el) {
+                            var src = el.getAttribute('data-src');
+                            if (src && !el.hasAttribute('src')) {
+                                el.setAttribute('src', src);
+                            }
+                        }
+
+                        function elementInView(el) {
+                            var bounds = el.getBoundingClientRect();
+                            return bounds.top < window.innerHeight && bounds.bottom > 0;
+                        }
+
+                        function selectChildren(selector, parent) {
+                            return parent ? Array.prototype.slice.call(parent.querySelectorAll(selector)) : [];
+                        }
+
+                        // based on underscore.js
+                        function throttle(func, wait) {
+                            var timeout = null, previous = 0;
+                            function run() {
+                                    previous = Date.now();
+                                    timeout = null;
+                                    func();
+                            }
+                            return function() {
+                                var remaining = wait - (Date.now() - previous);
+                                if (remaining <= 0 || remaining > wait) {
+                                    clearTimeout(timeout);
+                                    run();
+                                } else if (!timeout) {
+                                    timeout = setTimeout(run, remaining);
+                                }
+                            };
+                        }
+                    })("g-high_income-box", {namespace: "g-", setup: window.setupInteractive || window.getComponent});
+                </script>
+                <!-- End ai2html - 2025-03-05 01:57 -->
+                </div>
+                </div>
+                </div>
+                
+                
+                <br>
+                <br>
+                <br>
+
+                <!-- Group 2: Chart 3 and Chart 4 -->
+                <div class="charts-layout">
+                <div class="chart-group">
+                <div class="chart-wrapper">
+                <div id="g-low_income_most-box" class="ai2html ai2html-responsive">
+
+
+                <!-- Generated by ai2html v0.121.1 - 2025-03-05 02:21 -->
+                <!-- ai file: low_income_most.ai -->
+                <style media="screen,print">
+                    #g-low_income_most-box ,
+                    #g-low_income_most-box .g-artboard {
+                        margin:0 auto;
+                    }
+                    #g-low_income_most-box p {
+                        margin:0;
+                    }
+                    #g-low_income_most-box .g-aiAbs {
+                        position:absolute;
+                    }
+                    #g-low_income_most-box .g-aiImg {
+                        position:absolute;
+                        top:0;
+                        display:block;
+                        width:100% !important;
+                    }
+                    #g-low_income_most-box .g-aiSymbol {
+                        position: absolute;
+                        box-sizing: border-box;
+                    }
+                    #g-low_income_most-box .g-aiPointText p { white-space: nowrap; }
+                    #g-low_income_most-full {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-low_income_most-full p {
+                        font-family:arial,helvetica,sans-serif;
+                        font-weight:regular;
+                        line-height:25px;
+                        height:auto;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:21px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        position:static;
+                    }
+                    #g-low_income_most-full .g-pstyle0 {
+                        font-weight:bold;
+                        height:25px;
+                    }
+                    #g-low_income_most-medium {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-low_income_most-medium p {
+                        font-family:arial,helvetica,sans-serif;
+                        font-weight:regular;
+                        line-height:18px;
+                        height:auto;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:15px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        position:static;
+                    }
+                    #g-low_income_most-medium .g-pstyle0 {
+                        font-weight:bold;
+                        height:18px;
+                    }
+                    #g-low_income_most-mobile {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-low_income_most-mobile p {
+                        font-family:arial,helvetica,sans-serif;
+                        font-weight:regular;
+                        line-height:13px;
+                        height:auto;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:11px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        position:static;
+                    }
+                    #g-low_income_most-mobile .g-pstyle0 {
+                        font-weight:bold;
+                        height:13px;
+                    }
+
+                </style>
+
+                <div id="g-low_income_most-box" class="ai2html ai2html-responsive">
+
+                    <!-- Artboard: full -->
+                    <div id="g-low_income_most-full" class="g-artboard" style="width:700px; height:700px;" data-aspect-ratio="1" data-min-width="700">
+                <div style=""></div>
+                        <img id="g-low_income_most-full-img" class="g-low_income_most-full-img g-aiImg" alt="" src="low_income_most-full.png"/>
+                        <div id="g-ai0-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:33.423%;margin-top:-15px;left:25.0193%;width:206px;">
+                            <p class="g-pstyle0">Home and Kitchen</p>
+                        </div>
+                        <div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:67.5658%;margin-top:-15px;left:24.8002%;width:135px;">
+                            <p class="g-pstyle0">Electronics</p>
+                        </div>
+                    </div>
+
+                    <!-- Artboard: medium -->
+                    <div id="g-low_income_most-medium" class="g-artboard" style="width:490px; height:490px;" data-aspect-ratio="1" data-min-width="490" data-max-width="699">
+                <div style=""></div>
+                        <img id="g-low_income_most-medium-img" class="g-low_income_most-medium-img g-aiImg" alt="" src="low_income_most-medium.png"/>
+                        <div id="g-ai1-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:32.9777%;margin-top:-10.6px;left:24.2032%;width:153px;">
+                            <p class="g-pstyle0">Home and Kitchen</p>
+                        </div>
+                        <div id="g-ai1-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:67.0594%;margin-top:-10.6px;left:23.9816%;width:102px;">
+                            <p class="g-pstyle0">Electronics</p>
+                        </div>
+                    </div>
+
+                    <!-- Artboard: mobile -->
+                    <div id="g-low_income_most-mobile" class="g-artboard" style="max-width: 375px;max-height: 471px" data-aspect-ratio="0.797" data-min-width="0" data-max-width="489">
+                <div style="padding: 0 0 125.5467% 0;"></div>
+                        <img id="g-low_income_most-mobile-img" class="g-low_income_most-mobile-img g-aiImg" alt="" src="low_income_most-mobile.png"/>
+                        <div id="g-ai2-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:27.3488%;margin-top:-7.8px;left:25.0859%;width:121px;">
+                            <p class="g-pstyle0">Home and Kitchen</p>
+                        </div>
+                        <div id="g-ai2-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:53.8994%;margin-top:-7.8px;left:24.8664%;width:83px;">
+                            <p class="g-pstyle0">Electronics</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script type="text/javascript">
+                    (function (containerId, opts) {
+                        var nameSpace = opts.namespace || '';
+                        var containers = findContainers(containerId);
+                        containers.forEach(resize);
+
+                        function resize(container) {
+                            var onResize = throttle(update, 200);
+                            var waiting = !!window.IntersectionObserver;
+                            var observer;
+                            update();
+
+                            document.addEventListener('DOMContentLoaded', update);
+                            window.addEventListener('resize', onResize);
+
+                            // NYT Scoop-specific code
+                            if (opts.setup) {
+                                opts.setup(container).on('cleanup', cleanup);
+                            }
+
+                            function cleanup() {
+                                document.removeEventListener('DOMContentLoaded', update);
+                                window.removeEventListener('resize', onResize);
+                                if (observer) observer.disconnect();
+                            }
+
+                            function update() {
+                                var artboards = selectChildren('.' + nameSpace + 'artboard[data-min-width]', container),
+                                        width = Math.round(container.getBoundingClientRect().width);
+
+                                // Set artboard visibility based on container width
+                                artboards.forEach(function(el) {
+                                    var minwidth = el.getAttribute('data-min-width'),
+                                            maxwidth = el.getAttribute('data-max-width');
+                                    if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                                        if (!waiting) {
+                                            selectChildren('.' + nameSpace + 'aiImg', el).forEach(updateImgSrc);
+                                            selectChildren('video', el).forEach(updateVideoSrc);
+                                        }
+                                        el.style.display = 'block';
+                                    } else {
+                                        el.style.display = 'none';
+                                    }
+                                });
+
+                                // Initialize lazy loading on first call
+                                if (waiting && !observer) {
+                                    if (elementInView(container)) {
+                                        waiting = false;
+                                        update();
+                                    } else {
+                                        observer = new IntersectionObserver(onIntersectionChange, {rootMargin: "800px"});
+                            observer.observe(container);
+                        }
+                    }
+                }
+
+                function onIntersectionChange(entries) {
+                    // There may be multiple entries relating to the same container
+                    // (captured at different times)
+                    var isIntersecting = entries.reduce(function(memo, entry) {
+                        return memo || entry.isIntersecting;
+                    }, false);
+                    if (isIntersecting) {
+                        waiting = false;
+                        // update: don't remove -- we need the observer to trigger an update
+                        // when a hidden map becomes visible after user interaction
+                        // (e.g. when an accordion menu or tab opens)
+                        // observer.disconnect();
+                        // observer = null;
+                        update();
+                    }
+                }
+            }
+
+            function findContainers(id) {
+                // support duplicate ids on the page
+                return selectChildren('.ai2html-responsive', document).filter(function(el) {
+                    if (el.getAttribute('id') != id) return false;
+                    if (el.classList.contains('ai2html-resizer')) return false;
+                    el.classList.add('ai2html-resizer');
+                    return true;
+                });
+            }
+
+            // Replace blank placeholder image with actual image
+            function updateImgSrc(img) {
+                var src = img.getAttribute('data-src');
+                if (src && img.getAttribute('src') != src) {
+                    img.setAttribute('src', src);
+                }
+            }
+
+            function updateVideoSrc(el) {
+                var src = el.getAttribute('data-src');
+                if (src && !el.hasAttribute('src')) {
+                    el.setAttribute('src', src);
+                }
+            }
+
+            function elementInView(el) {
+                var bounds = el.getBoundingClientRect();
+                return bounds.top < window.innerHeight && bounds.bottom > 0;
+            }
+
+            function selectChildren(selector, parent) {
+                return parent ? Array.prototype.slice.call(parent.querySelectorAll(selector)) : [];
+            }
+
+            // based on underscore.js
+            function throttle(func, wait) {
+                var timeout = null, previous = 0;
+                function run() {
+                        previous = Date.now();
+                        timeout = null;
+                        func();
+                }
+                return function() {
+                    var remaining = wait - (Date.now() - previous);
+                    if (remaining <= 0 || remaining > wait) {
+                        clearTimeout(timeout);
+                        run();
+                    } else if (!timeout) {
+                        timeout = setTimeout(run, remaining);
+                    }
+                };
+            }
+        })("g-low_income_most-box", {namespace: "g-", setup: window.setupInteractive || window.getComponent});
+    </script>
+    <!-- End ai2html - 2025-03-05 02:21 -->
+    </div>
+    </div>
+    </div>
+
+    <div class="chart-wrapper">
+    <div id="g-high_income_most-box" class="ai2html ai2html-responsive">
+
+
+    <!-- Generated by ai2html v0.121.1 - 2025-03-05 02:28 -->
+    <!-- ai file: high_income_most.ai -->
+    <style media="screen,print">
+        #g-high_income_most-box ,
+        #g-high_income_most-box .g-artboard {
+            margin:0 auto;
+        }
+        #g-high_income_most-box p {
+            margin:0;
+        }
+        #g-high_income_most-box .g-aiAbs {
+            position:absolute;
+        }
+        #g-high_income_most-box .g-aiImg {
+            position:absolute;
+            top:0;
+            display:block;
+            width:100% !important;
+        }
+        #g-high_income_most-box .g-aiSymbol {
+            position: absolute;
+            box-sizing: border-box;
+        }
+        #g-high_income_most-box .g-aiPointText p { white-space: nowrap; }
+        #g-high_income_most-full {
+            position:relative;
+            overflow:hidden;
+        }
+        #g-high_income_most-full p {
+            font-family:arial,helvetica,sans-serif;
+            font-weight:regular;
+            line-height:25px;
+            height:auto;
+            opacity:1;
+            letter-spacing:0em;
+            font-size:21px;
+            text-align:left;
+            color:rgb(0,0,0);
+            text-transform:none;
+            padding-bottom:0;
+            padding-top:0;
+            mix-blend-mode:normal;
+            font-style:normal;
+            position:static;
+        }
+        #g-high_income_most-full .g-pstyle0 {
+            font-weight:bold;
+            height:25px;
+        }
+        #g-high_income_most-medium {
+            position:relative;
+            overflow:hidden;
+        }
+        #g-high_income_most-medium p {
+            font-family:arial,helvetica,sans-serif;
+            font-weight:regular;
+            line-height:18px;
+            height:auto;
+            opacity:1;
+            letter-spacing:0em;
+            font-size:15px;
+            text-align:left;
+            color:rgb(0,0,0);
+            text-transform:none;
+            padding-bottom:0;
+            padding-top:0;
+            mix-blend-mode:normal;
+            font-style:normal;
+            position:static;
+        }
+        #g-high_income_most-medium .g-pstyle0 {
+            font-weight:bold;
+            height:18px;
+        }
+        #g-high_income_most-mobile {
+            position:relative;
+            overflow:hidden;
+        }
+        #g-high_income_most-mobile p {
+            font-family:arial,helvetica,sans-serif;
+            font-weight:regular;
+            line-height:13px;
+            height:auto;
+            opacity:1;
+            letter-spacing:0em;
+            font-size:10px;
+            text-align:left;
+            color:rgb(0,0,0);
+            text-transform:none;
+            padding-bottom:0;
+            padding-top:0;
+            mix-blend-mode:normal;
+            font-style:normal;
+            position:static;
+        }
+        #g-high_income_most-mobile .g-pstyle0 {
+            font-weight:bold;
+            height:13px;
+        }
+
+    </style>
+
+    <div id="g-high_income_most-box" class="ai2html ai2html-responsive">
+
+        <!-- Artboard: full -->
+        <div id="g-high_income_most-full" class="g-artboard" style="width:700px; height:700px;" data-aspect-ratio="1" data-min-width="700">
+    <div style=""></div>
+            <img id="g-high_income_most-full-img" class="g-high_income_most-full-img g-aiImg" alt="" src="high_income_most-full.png"/>
+            <div id="g-ai0-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:4.8516%;margin-top:-15px;left:27.1915%;width:135px;">
+                <p class="g-pstyle0">Electronics</p>
+            </div>
+            <div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:44.2801%;margin-top:-15px;left:27.0869%;width:206px;">
+                <p class="g-pstyle0">Home and Kitchen</p>
+            </div>
+        </div>
+
+        <!-- Artboard: medium -->
+        <div id="g-high_income_most-medium" class="g-artboard" style="width:490px; height:490px;" data-aspect-ratio="1" data-min-width="490" data-max-width="699">
+    <div style=""></div>
+            <img id="g-high_income_most-medium-img" class="g-high_income_most-medium-img g-aiImg" alt="" src="high_income_most-medium.png"/>
+            <div id="g-ai1-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:6.4434%;margin-top:-10.6px;left:27.4422%;width:101px;">
+                <p class="g-pstyle0">Electronics</p>
+            </div>
+            <div id="g-ai1-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.8312%;margin-top:-10.6px;left:27.3378%;width:151px;">
+                <p class="g-pstyle0">Home and Kitchen</p>
+            </div>
+        </div>
+
+        <!-- Artboard: mobile -->
+        <div id="g-high_income_most-mobile" class="g-artboard" style="max-width: 375px;max-height: 471px" data-aspect-ratio="0.797" data-min-width="0" data-max-width="489">
+    <div style="padding: 0 0 125.5467% 0;"></div>
+            <img id="g-high_income_most-mobile-img" class="g-high_income_most-mobile-img g-aiImg" alt="" src="high_income_most-mobile.png"/>
+            <div id="g-ai2-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:4.24%;margin-top:-8px;left:27.2641%;width:83px;">
+                <p class="g-pstyle0">Electronics</p>
+            </div>
+            <div id="g-ai2-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:33.3394%;margin-top:-8px;left:27.1591%;width:121px;">
+                <p class="g-pstyle0">Home and Kitchen</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        (function (containerId, opts) {
+            var nameSpace = opts.namespace || '';
+            var containers = findContainers(containerId);
+            containers.forEach(resize);
+
+            function resize(container) {
+                var onResize = throttle(update, 200);
+                var waiting = !!window.IntersectionObserver;
+                var observer;
+                update();
+
+                document.addEventListener('DOMContentLoaded', update);
+                window.addEventListener('resize', onResize);
+
+                // NYT Scoop-specific code
+                if (opts.setup) {
+                    opts.setup(container).on('cleanup', cleanup);
+                }
+
+                function cleanup() {
+                    document.removeEventListener('DOMContentLoaded', update);
+                    window.removeEventListener('resize', onResize);
+                    if (observer) observer.disconnect();
+                }
+
+                function update() {
+                    var artboards = selectChildren('.' + nameSpace + 'artboard[data-min-width]', container),
+                            width = Math.round(container.getBoundingClientRect().width);
+
+                    // Set artboard visibility based on container width
+                    artboards.forEach(function(el) {
+                        var minwidth = el.getAttribute('data-min-width'),
+                                maxwidth = el.getAttribute('data-max-width');
+                        if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                            if (!waiting) {
+                                selectChildren('.' + nameSpace + 'aiImg', el).forEach(updateImgSrc);
+                                selectChildren('video', el).forEach(updateVideoSrc);
+                            }
+                            el.style.display = 'block';
+                        } else {
+                            el.style.display = 'none';
+                        }
+                    });
+
+                    // Initialize lazy loading on first call
+                    if (waiting && !observer) {
+                        if (elementInView(container)) {
+                            waiting = false;
+                            update();
+                        } else {
+                            observer = new IntersectionObserver(onIntersectionChange, {rootMargin: "800px"});
+                            observer.observe(container);
+                        }
+                    }
+                }
+
+                function onIntersectionChange(entries) {
+                    // There may be multiple entries relating to the same container
+                    // (captured at different times)
+                    var isIntersecting = entries.reduce(function(memo, entry) {
+                        return memo || entry.isIntersecting;
+                    }, false);
+                    if (isIntersecting) {
+                        waiting = false;
+                        // update: don't remove -- we need the observer to trigger an update
+                        // when a hidden map becomes visible after user interaction
+                        // (e.g. when an accordion menu or tab opens)
+                        // observer.disconnect();
+                        // observer = null;
+                        update();
+                    }
+                }
+            }
+
+            function findContainers(id) {
+                // support duplicate ids on the page
+                return selectChildren('.ai2html-responsive', document).filter(function(el) {
+                    if (el.getAttribute('id') != id) return false;
+                    if (el.classList.contains('ai2html-resizer')) return false;
+                    el.classList.add('ai2html-resizer');
+                    return true;
+                });
+            }
+
+            // Replace blank placeholder image with actual image
+            function updateImgSrc(img) {
+                var src = img.getAttribute('data-src');
+                if (src && img.getAttribute('src') != src) {
+                    img.setAttribute('src', src);
+                }
+            }
+
+            function updateVideoSrc(el) {
+                var src = el.getAttribute('data-src');
+                if (src && !el.hasAttribute('src')) {
+                    el.setAttribute('src', src);
+                }
+            }
+
+            function elementInView(el) {
+                var bounds = el.getBoundingClientRect();
+                return bounds.top < window.innerHeight && bounds.bottom > 0;
+            }
+
+            function selectChildren(selector, parent) {
+                return parent ? Array.prototype.slice.call(parent.querySelectorAll(selector)) : [];
+            }
+
+            // based on underscore.js
+            function throttle(func, wait) {
+                var timeout = null, previous = 0;
+                function run() {
+                        previous = Date.now();
+                        timeout = null;
+                        func();
+                }
+                return function() {
+                    var remaining = wait - (Date.now() - previous);
+                    if (remaining <= 0 || remaining > wait) {
+                        clearTimeout(timeout);
+                        run();
+                    } else if (!timeout) {
+                        timeout = setTimeout(run, remaining);
+                    }
+                };
+            }
+        })("g-high_income_most-box", {namespace: "g-", setup: window.setupInteractive || window.getComponent});
+    </script>
+    <!-- End ai2html - 2025-03-05 02:28 -->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- ai2html goes above this line -->
+
+        </div>
+        <div class="steps-container">
+            <div class="step" id="step-one">
+                <div>
+                    <p>Interestingly, the differences among the income levels in the patterns may not as big as you would imagine.</p>
+                    <p>People with lower income (left: below $25,000 per year) has almost the same preferences with that of higher income groups (right: $150,000 or more).</p>
+                </div>
+            </div>
+            <div class="step" id="step-two">
+                <p>Electronics and Home and Kitchen are the most popular choices among all income lovels. </p>
+            </div>
+            <div class="step" id="step-three">
+                <p>Few variations are observed acorss different income levels.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <p> In addition, the data shows that people not only exhibit similar patterns in purchasing 
+            frequencies across different income levels but also share comparable total expenditure 
+            patterns across categories. This suggests that income level may not be the primary factor 
+            influencing people's purchasing behavior.
+
+        </p>
+        <figure>
+            <img
+                src="Amazon.jpg">
+            <figcaption>Amazon App</figcaption>
+        </figure>
+        <p>What's more interesting, with a range of age from 18 to 65, the data shows that people of 
+            different age groups have similar purchasing behavior patterns regarless of their age.
+        </p>
+        
+        <p>
+            When categorizing the products, this article used the broad categories provided by Amazon. This might suggest that Amazon has crafted its target audience very effectively.
+        <p>
+    </div>
+    <div class="footer">
+        <div class="content">
+            <p>Yiren Lu
+                <br>
+                Last updated on 2025-03-05
+            </p>
+        </div>
+        
+    </div>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+
+        function hideNote() {
+            // annotation: #path-1, #text-1, #path-2, #text-2
+            d3.select("#path-1").classed('hidden', true)
+            d3.select("#text-1").classed('hidden', true)
+            d3.select("#path-2").classed('hidden', true)
+            d3.select("#text-2").classed('hidden', true)
+        }
+
+        /* Scrollytelling code goes under here */
+        hideNote()
+
+        d3.select("#step-one").on('stepout', function (e) {
+            if (e.detail.direction === 'up') {
+                // undo the changes from step one
+                hideNote()
+            }
+        })
+
+        d3.select("#step-one").on('stepin', function (e) {
+            console.log("Got to step one")
+            // undo changes from step two
+            d3.selectAll("[data-name='africa'] path").style('stroke', 'none')
+
+            // do changes for step one
+            d3.select("#path-1").classed('hidden', false)
+            d3.select("#text-1").classed('hidden', false)
+            d3.select("#path-2").classed('hidden', false)
+            d3.select("#text-2").classed('hidden', false)
+        })
+
+        d3.select("#step-two").on('stepin', function (e) {
+
+            // undo changes from step one
+            hideNote()
+
+            // do changes for step two
+            console.log("Got to step two")
+            d3.selectAll("[data-name='africa'] path").style('stroke', 'black')
+        })
+
+        d3.select("#step-three").on('stepin', function (e) {
+            // undo changes from step two
+            d3.selectAll("[data-name='africa'] path").style('stroke', 'none')
+        })
+
+
+    </script>
+
+
+
+    <script>
+        /*************
+        
+        This is the JavaScript that makes the scrolly work 
+        
+        *************/
+
+        /* 
+        This part attaches a scroll to the element with id="scrolly-ai2html"    
+        */
+        (() => {
+            const scroller = scrollama()
+
+            scroller
+                .setup({
+                    parent: document.querySelector("#scrolly-ai2html"),
+                    step: ".step",
+                    offset: 0.6,
+                    debug: false,
+                })
+                .onStepEnter(function ({ element, index, direction }) {
+                    const event = new CustomEvent("stepin", { detail: { direction: direction } })
+                    element.dispatchEvent(event)
+                })
+                .onStepExit(function ({ element, index, direction }) {
+                    const event = new CustomEvent("stepout", { detail: { direction: direction } })
+                    if (direction === "up" && element.previousElementSibling) {
+                        const event = new CustomEvent("stepin", { detail: { direction: direction } })
+                        element.previousElementSibling.dispatchEvent(event)
+                    }
+                })
+
+            window.addEventListener("resize", scroller.resize)
+        })()
+
+    </script>
+    <style>
+        /* Change this to adjust the padding between steps */
+        .step {
+            margin-bottom: 70vh;
+        }
+    </style>
+
+    <script type="text/javascript">
+            (function () {
+                // only want one resizer on the page
+                if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+                document.documentElement.className += " g-resizer-v3-init";
+                // require IE9+
+                if (!("querySelector" in document)) return;
+                function resizer() {
+                    var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+                        widthById = {};
+                    elements.forEach(function (el) {
+                        var parent = el.parentNode,
+                            width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                            minwidth = el.getAttribute("data-min-width"),
+                            maxwidth = el.getAttribute("data-max-width");
+                        widthById[parent.id] = width;
+
+                        if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                            el.style.display = "block";
+                        } else {
+                            el.style.display = "none";
+                        }
+                    });
+                    try {
+                        if (window.parent && window.parent.$) {
+                            window.parent.$("body").trigger("resizedcontent", [window]);
+                        }
+                        if (window.require) {
+                            require(['foundation/main'], function () {
+                                require(['shared/interactive/instances/app-communicator'], function (AppCommunicator) {
+                                    AppCommunicator.triggerResize();
+                                });
+                            });
+                        }
+                    } catch (e) { console.log(e); }
+                }
+
+                document.addEventListener('DOMContentLoaded', resizer);
+                // feel free to replace throttle with _.throttle, if available
+                window.addEventListener('resize', throttle(resizer, 200));
+
+                function throttle(func, wait) {
+                    // from underscore.js
+                    var _now = Date.now || function () { return new Date().getTime(); },
+                        context, args, result, timeout = null, previous = 0;
+                    var later = function () {
+                        previous = _now();
+                        timeout = null;
+                        result = func.apply(context, args);
+                        if (!timeout) context = args = null;
+                    };
+                    return function () {
+                        var now = _now(), remaining = wait - (now - previous);
+                        context = this;
+                        args = arguments;
+                        if (remaining <= 0 || remaining > wait) {
+                            if (timeout) {
+                                clearTimeout(timeout);
+                                timeout = null;
+                            }
+                            previous = now;
+                            result = func.apply(context, args);
+                            if (!timeout) context = args = null;
+                        } else if (!timeout && options && options.trailing !== false) {
+                            timeout = setTimeout(later, remaining);
+                        }
+                        return result;
+                    };
+                }
+
+
+            })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 700 700">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        fill: #af6d75;
+      }
+
+      .st2 {
+        fill: #e0c1c1;
+      }
+
+      .st3 {
+        fill: #f7e8e4;
+      }
+
+      .st4 {
+        fill: #ebd2d1;
+      }
+
+      .st5 {
+        fill: #fff5f0;
+      }
+
+      .st6 {
+        fill: #e1c2c2;
+      }
+
+      .st7 {
+        clip-path: url(#clippath-1);
+      }
+
+      .st8 {
+        clip-path: url(#clippath-3);
+      }
+
+      .st9 {
+        clip-path: url(#clippath-4);
+      }
+
+      .st10 {
+        clip-path: url(#clippath-2);
+      }
+
+      .st11 {
+        clip-path: url(#clippath-7);
+      }
+
+      .st12 {
+        clip-path: url(#clippath-6);
+      }
+
+      .st13 {
+        clip-path: url(#clippath-9);
+      }
+
+      .st14 {
+        clip-path: url(#clippath-8);
+      }
+
+      .st15 {
+        clip-path: url(#clippath-5);
+      }
+
+      .st16 {
+        fill: #fff;
+      }
+
+      .st17 {
+        fill: #fdf2ed;
+      }
+
+      .st18 {
+        font-size: 21px;
+      }
+
+      .st18, .st19, .st20 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+        isolation: isolate;
+      }
+
+      .st19 {
+        font-size: 14px;
+      }
+
+      .st21 {
+        clip-path: url(#clippath);
+      }
+
+      .st20 {
+        font-size: 12px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" x="12" y="12" width="150" height="50"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="st0" x="12" y="64" width="150" height="51"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="st0" x="12" y="117" width="150" height="66"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="st0" x="12" y="185" width="150" height="124"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <rect class="st0" x="12" y="311" width="150" height="127"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <rect class="st0" x="12" y="440" width="150" height="248"/>
+    </clipPath>
+    <clipPath id="clippath-6">
+      <rect class="st0" x="164" y="12" width="258" height="198"/>
+    </clipPath>
+    <clipPath id="clippath-7">
+      <rect class="st0" x="424" y="12" width="264" height="198"/>
+    </clipPath>
+    <clipPath id="clippath-8">
+      <rect class="st0" x="164" y="212" width="524" height="237"/>
+    </clipPath>
+    <clipPath id="clippath-9">
+      <rect class="st0" x="164" y="451" width="524" height="237"/>
+    </clipPath>
+  </defs>
+  <rect id="background" class="st16" width="700" height="700"/>
+  <rect id="path0" class="st5" x="12" y="12" width="150" height="50"/>
+  <g class="st21">
+    <text class="st20" transform="translate(15.5 25.9)"><tspan x="0" y="0">Office Product</tspan></text>
+  </g>
+  <rect id="path1" class="st5" x="12" y="64" width="150" height="51"/>
+  <g class="st7">
+    <text class="st20" transform="translate(15.4 81.7)"><tspan x="0" y="0">Sports and Outdoors</tspan></text>
+  </g>
+  <rect id="path2" class="st17" x="12" y="117" width="150" height="66"/>
+  <g class="st10">
+    <text class="st19" transform="translate(15.2 130.5)"><tspan x="0" y="0">Toys and Games</tspan></text>
+  </g>
+  <rect id="path3" class="st3" x="12" y="185" width="150" height="124"/>
+  <g class="st8">
+    <text class="st19" transform="translate(15.2 201.2)"><tspan x="0" y="0">Books</tspan></text>
+    <text/>
+    <text/>
+  </g>
+  <rect id="path4" class="st3" x="12" y="311" width="150" height="127"/>
+  <g class="st9">
+    <text class="st20" transform="translate(15.7 324.2)"><tspan x="0" y="0">Pet Supplies</tspan></text>
+  </g>
+  <rect id="path5" class="st4" x="12" y="440" width="150" height="248"/>
+  <g class="st15">
+    <text class="st19" transform="translate(20.1 460.8)"><tspan x="0" y="0">Food</tspan></text>
+  </g>
+  <rect id="path6" class="st6" x="164" y="12" width="258" height="198"/>
+  <g class="st12">
+    <text class="st19" transform="translate(169.9 30.3)"><tspan x="0" y="0">Clothing, Shoes, and Jewelry</tspan></text>
+  </g>
+  <rect id="path7" class="st2" x="424" y="12" width="264" height="198"/>
+  <g class="st11">
+    <text class="st19" transform="translate(432.5 30.3)"><tspan x="0" y="0">Beauty and Personal Care</tspan></text>
+  </g>
+  <rect id="path8" class="st1" x="164" y="212" width="524" height="237"/>
+  <g class="st14">
+    <text class="st18" transform="translate(172.1 239.3)"><tspan x="0" y="0">Home and Kitchen</tspan></text>
+  </g>
+  <rect id="path9" class="st1" x="164" y="451" width="524" height="237"/>
+  <g class="st13">
+    <text class="st18" transform="translate(172.7 475.8)"><tspan x="0" y="0">Electronics</tspan></text>
+  </g>
+</svg>
