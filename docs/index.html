@@ -18,6 +18,15 @@
             font-size: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-rendering: optimizeLegibility;
+            background-color: black;
+        }
+
+        ul {
+            color: aqua;
+        }
+
+        li {
+            color: aqua;
         }
 
         .content {
@@ -25,8 +34,36 @@
             margin: auto;
         }
 
+        steps-container {
+            background-color: #80808080;
+        }
+
         .header {
             padding: 3em 0;
+            color: aquamarine;
+
+        }
+
+        .with-image-bg {
+            background-image: url('amazon_header.jpg');
+        }
+
+        .with-image-bg,
+        .with-video-bg {
+            position: relative;
+            background-size: cover;
+            margin-bottom: 2em;
+
+            /* Center everything inside */
+            min-height: 70svh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* White text with a shadow */
+            color: white;
+            text-shadow: 0px 0px 30px black,
+                0px 0px 10px rgba(0, 0, 0, 0.5);
         }
 
         a {
@@ -34,7 +71,7 @@
         }
 
         .footer {
-            background: #f4f4f4;
+            background: #80808080;
             text-align: center;
             font-size: 0.8em;
             margin-top: 4em;
@@ -62,6 +99,7 @@
 
         .subhead {
             font-family: 'Lora', Georgia, serif;
+            color: aquamarine;
         }
 
         iframe,
@@ -74,6 +112,7 @@
             line-height: 1.6;
             margin: 0;
             padding-bottom: 1.2em;
+            color: aqua;
         }
 
         .full-width figure {
@@ -177,11 +216,12 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="header">
-            <h1>What are richer people buying online?</h1>
-            <p class="subhead">An analysis of over a million purchases on Amazon.</p>
-        </div>
+        <div class="content">
+            <div class="header">
+                <h1>What are richer people buying online?</h1>
+                <p class="subhead">An analysis of over a million purchases on Amazon.</p>
+            </div>
+    
         <div class="byline">
             <p>By <a href="https://yiren54610.github.io/MVP/">Yiren Lu</a></p>
         </div>
@@ -2568,7 +2608,7 @@
             <!-- ai2html goes above this line -->
 
         </div>
-        <div class="steps-container">
+        <div class="steps-container" >
             <div class="step" id="step-one">
                 <div>
                     <p>Interestingly, the differences among the income levels in the patterns may not as big as you would imagine.</p>
