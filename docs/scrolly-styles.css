@@ -8,7 +8,7 @@
     top: 0;
     transform: translate(0px, 0px);
     z-index: 1;
-    height: 380svh;
+    height: auto;
     width: 100vw;
     margin: 0;
     overflow: hidden;
@@ -18,28 +18,34 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    min-height: 150vh;
 }
 
-        /* Adjust for medium screens */
-        @media only screen and (min-width: 600px) {
-            .sticky-thing {
-                height: 280svh;
-            }
-        }
+/* Height adjustments for different screens */
+@media (min-width: 600px) {
+    .sticky-thing {
+        min-height: 220vh; /* Medium screens */
+    }
+}
 
-        /* Full height for large screens */
-        @media only screen and (min-width: 1200px) {
-            .sticky-thing {
-                height: 360svh; /* Your preferred full-screen height */
-            }
-        }
+@media (min-width: 900px) {
+    .sticky-thing {
+        min-height: 300vh; /* Large screens */
+    }
+}
 
-        /* Optional: Fine-tune for very small screens */
-        @media only screen and (max-width: 400px) {
-            .sticky-thing {
-                height: 90svh;
-            }
-        }
+@media (min-width: 1200px) {
+    .sticky-thing {
+        min-height: 380svh; /* Your preferred full-screen height */
+    }
+}
+
+/* Very small screens */
+@media (max-width: 400px) {
+    .sticky-thing {
+        min-height: 120vh;
+    }
+}
 
 .sticky-thing > img {
     width: 100%;
