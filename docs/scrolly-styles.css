@@ -21,29 +21,31 @@
     min-height: 150vh;
 }
 
-/* Height adjustments for different screens */
-@media (min-width: 600px) {
-    .sticky-thing {
-        min-height: 220vh; /* Medium screens */
-    }
-}
+/* When it's less than 700 pixels wide, do normal scrollytelling */
 
-@media (min-width: 900px) {
-    .sticky-thing {
-        min-height: 300vh; /* Large screens */
+@media only screen and (min-width: 700px) {
+    .scrolly-container.side-by-side {
+        display: flex;
     }
-}
 
-@media (min-width: 1200px) {
-    .sticky-thing {
-        min-height: 380svh; /* Your preferred full-screen height */
+    .scrolly-container.side-by-side>div {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 0.75em;
     }
-}
 
-/* Very small screens */
-@media (max-width: 400px) {
-    .sticky-thing {
-        min-height: 120vh;
+    .scrolly-container.side-by-side .scrolly-overlay {
+        margin-top: 70vh;
+        order: 0;
+        /* Change these to adjust sizing options */
+        min-width: 15rem;
+        max-width: 20rem;
+    }
+
+    .scrolly-container.side-by-side .sticky-thing {
+        order: 1;
+        flex-grow: 2;
     }
 }
 

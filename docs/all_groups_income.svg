@@ -1,542 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 600">
-  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
-  <defs>
-    <style>
-      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st20, .st21, .st22, .st23, .st24, .st25, .st26, .st27, .st28, .st29, .st30, .st31, .st32, .st33, .st34, .st35, .st36, .st37, .st38, .st39, .st40, .st41, .st42, .st43, .st44, .st45, .st46, .st47, .st48, .st49, .st50, .st51, .st52, .st53, .st54, .st55, .st56, .st57, .st58, .st59, .st60 {
-        fill: none;
-      }
-
-      .st1 {
-        stroke-width: 2.1px;
-      }
-
-      .st1, .st2, .st26, .st30, .st49, .st50, .st51, .st53, .st54, .st56 {
-        stroke: #e0f3a1;
-      }
-
-      .st2 {
-        stroke-width: 1.2px;
-      }
-
-      .st3 {
-        stroke-width: 11.8px;
-      }
-
-      .st3, .st4, .st6, .st7, .st8, .st11, .st13, .st14, .st15, .st60 {
-        stroke: #cab2d6;
-      }
-
-      .st4 {
-        stroke-width: 13.1px;
-      }
-
-      .st5 {
-        stroke-width: 1.6px;
-      }
-
-      .st5, .st24, .st25, .st36, .st37, .st38, .st40, .st41, .st52, .st55 {
-        stroke: #a6cee3;
-      }
-
-      .st6 {
-        stroke-width: 34.5px;
-      }
-
-      .st7 {
-        stroke-width: 28.6px;
-      }
-
-      .st8 {
-        stroke-width: 6.5px;
-      }
-
-      .st9 {
-        stroke-width: 1.2px;
-      }
-
-      .st9, .st10, .st12, .st42, .st43, .st44, .st45, .st46, .st47, .st48 {
-        stroke: #fedd8d;
-      }
-
-      .st10 {
-        stroke-width: 1.4px;
-      }
-
-      .st11 {
-        stroke-width: 2.8px;
-      }
-
-      .st12 {
-        stroke-width: 1.3px;
-      }
-
-      .st13 {
-        stroke-width: 4px;
-      }
-
-      .st14 {
-        stroke-width: 3px;
-      }
-
-      .st15 {
-        stroke-width: 3.2px;
-      }
-
-      .st16 {
-        stroke-width: 8.9px;
-      }
-
-      .st16, .st17, .st18, .st19, .st20, .st21, .st27, .st28, .st29, .st39 {
-        stroke: #fb9a99;
-      }
-
-      .st17 {
-        stroke-width: 13.4px;
-      }
-
-      .st18 {
-        stroke-width: 4.2px;
-      }
-
-      .st19 {
-        stroke-width: 4.2px;
-      }
-
-      .st20 {
-        stroke-width: 4.2px;
-      }
-
-      .st21 {
-        stroke-width: 3.5px;
-      }
-
-      .st22 {
-        stroke-width: 16.1px;
-      }
-
-      .st22, .st23, .st31, .st32, .st33, .st34, .st35, .st57, .st58, .st59 {
-        stroke: #f5f1c3;
-      }
-
-      .st23 {
-        stroke-width: 16.1px;
-      }
-
-      .st61 {
-        font-family: Arial-BoldMT, Arial;
-        font-size: 9.9px;
-        font-weight: 700;
-      }
-
-      .st61, .st62 {
-        isolation: isolate;
-      }
-
-      .st24 {
-        stroke-width: 2.3px;
-      }
-
-      .st25 {
-        stroke-width: 2.2px;
-      }
-
-      .st26 {
-        stroke-width: 3.4px;
-      }
-
-      .st27 {
-        stroke-width: 31px;
-      }
-
-      .st28 {
-        stroke-width: 42.5px;
-      }
-
-      .st29 {
-        stroke-width: 14.4px;
-      }
-
-      .st63 {
-        mix-blend-mode: multiply;
-      }
-
-      .st30 {
-        stroke-width: 1.9px;
-      }
-
-      .st31 {
-        stroke-width: 2.5px;
-      }
-
-      .st32 {
-        stroke-width: 2.4px;
-      }
-
-      .st33 {
-        stroke-width: 6.8px;
-      }
-
-      .st34 {
-        stroke-width: 6.7px;
-      }
-
-      .st35 {
-        stroke-width: 4.9px;
-      }
-
-      .st36 {
-        stroke-width: 5.2px;
-      }
-
-      .st37 {
-        stroke-width: 10.3px;
-      }
-
-      .st38 {
-        stroke-width: 11px;
-      }
-
-      .st39 {
-        stroke-width: 2px;
-      }
-
-      .st40 {
-        stroke-width: 3.2px;
-      }
-
-      .st41 {
-        stroke-width: 3.2px;
-      }
-
-      .st42 {
-        stroke-width: 19.7px;
-      }
-
-      .st43 {
-        stroke-width: 17.9px;
-      }
-
-      .st44 {
-        stroke-width: 8.1px;
-      }
-
-      .st45 {
-        stroke-width: 7.3px;
-      }
-
-      .st46 {
-        stroke-width: 4.4px;
-      }
-
-      .st47 {
-        stroke-width: 2.4px;
-      }
-
-      .st48 {
-        stroke-width: 3.2px;
-      }
-
-      .st49 {
-        stroke-width: 2.5px;
-      }
-
-      .st50 {
-        stroke-width: 9.7px;
-      }
-
-      .st51 {
-        stroke-width: 5.3px;
-      }
-
-      .st52 {
-        stroke-width: 27.9px;
-      }
-
-      .st53 {
-        stroke-width: 9.5px;
-      }
-
-      .st54 {
-        stroke-width: 25.6px;
-      }
-
-      .st55 {
-        stroke-width: 22.4px;
-      }
-
-      .st56 {
-        stroke-width: 20.5px;
-      }
-
-      .st57 {
-        stroke-width: 1.3px;
-      }
-
-      .st58 {
-        stroke-width: 1px;
-      }
-
-      .st59 {
-        stroke-width: 1px;
-      }
-
-      .st60 {
-        stroke-width: 2.1px;
-      }
-    </style>
-  </defs>
-  <g class="st62">
-    <g id="Layer_1">
-      <rect id="background" class="st0" width="700" height="600"/>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 700 600">
+  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+  <g isolation="isolate">
+    <g id="Layer_11" data-name="Layer_1">
+      <rect id="background" x="-2.55" width="700" height="600" fill="none"/>
       <g>
-        <rect x="680.1" y="14.2" width="5" height="165.1"/>
-        <rect x="680.1" y="184.3" width="5" height="135.5"/>
-        <rect x="9.7" y="14.2" width="5" height="127.4"/>
-        <rect x="9.7" y="146.6" width="5" height="108.9"/>
-        <rect x="9.7" y="260.5" width="5" height="88.7"/>
-        <rect x="9.7" y="354.2" width="5" height="81.2"/>
-        <rect x="9.7" y="440.3" width="5" height="66.4"/>
-        <rect x="680.1" y="324.8" width="5" height="61.4"/>
-        <rect x="680.1" y="391.1" width="5" height="59.8"/>
-        <rect x="9.7" y="511.7" width="5" height="58.5"/>
-        <rect x="680.1" y="455.9" width="5" height="35"/>
-        <rect x="680.1" y="495.9" width="5" height="20.3"/>
-        <rect x="680.1" y="521.1" width="5" height="17.9"/>
-        <rect x="680.1" y="544" width="5" height="13.5"/>
-        <rect x="680.1" y="562.4" width="5" height="13.5"/>
-        <rect x="680.1" y="580.9" width="5" height="9.1"/>
+        <rect x="677.55" y="14.2" width="5" height="165.1"/>
+        <rect x="677.55" y="184.3" width="5" height="135.5"/>
+        <rect x="7.15" y="14.2" width="5" height="127.4"/>
+        <rect x="7.15" y="146.6" width="5" height="108.9"/>
+        <rect x="7.15" y="260.5" width="5" height="88.7"/>
+        <rect x="7.15" y="354.2" width="5" height="81.2"/>
+        <rect x="7.15" y="440.3" width="5" height="66.4"/>
+        <rect x="677.55" y="324.8" width="5" height="61.4"/>
+        <rect x="677.55" y="391.1" width="5" height="59.8"/>
+        <rect x="7.15" y="511.7" width="5" height="58.5"/>
+        <rect x="677.55" y="455.9" width="5" height="35"/>
+        <rect x="677.55" y="495.9" width="5" height="20.3"/>
+        <rect x="677.55" y="521.1" width="5" height="17.9"/>
+        <rect x="677.55" y="544" width="5" height="13.5"/>
+        <rect x="677.55" y="562.4" width="5" height="13.5"/>
+        <rect x="677.55" y="580.9" width="5" height="9.1"/>
       </g>
       <g>
-        <g class="st63">
-          <path class="st3" d="M14.7,215.1c332.7,0,332.7,129.9,665.5,129.9"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,215.1c332.7,0,332.7,129.9,665.5,129.9" fill="none" stroke="#cab2d6" stroke-width="11.8"/>
         </g>
-        <g class="st63">
-          <path class="st15" d="M14.7,246c332.7,0,332.7,280.9,665.5,280.9"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,246c332.7,0,332.7,280.9,665.5,280.9" fill="none" stroke="#cab2d6" stroke-width="3.2"/>
         </g>
-        <g class="st63">
-          <path class="st4" d="M14.7,227.4c332.7,0,332.7,183.5,665.5,183.5"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,227.4c332.7,0,332.7,183.5,665.5,183.5" fill="none" stroke="#cab2d6" stroke-width="13.1"/>
         </g>
-        <g class="st63">
-          <path class="st7" d="M14.7,195c332.7,0,332.7,34.2,665.5,34.2"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,195c332.7,0,332.7,34.2,665.5,34.2" fill="none" stroke="#cab2d6" stroke-width="28.6"/>
         </g>
-        <g class="st63">
-          <path class="st8" d="M14.7,237.1c332.7,0,332.7,230.8,665.5,230.8"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,237.1c332.7,0,332.7,230.8,665.5,230.8" fill="none" stroke="#cab2d6" stroke-width="6.5"/>
         </g>
-        <g class="st63">
-          <path class="st6" d="M14.7,163.7c332.7,0,332.7-90.2,665.5-90.2"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,163.7c332.7,0,332.7-90.2,665.5-90.2" fill="none" stroke="#cab2d6" stroke-width="34.5"/>
         </g>
-        <g class="st63">
-          <path class="st60" d="M14.7,254.4c332.7,0,332.7,329.5,665.5,329.5"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,254.4c332.7,0,332.7,329.5,665.5,329.5" fill="none" stroke="#cab2d6" stroke-width="2.1"/>
         </g>
-        <g class="st63">
-          <path class="st13" d="M14.7,242.4c332.7,0,332.7,259.7,665.5,259.7"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,242.4c332.7,0,332.7,259.7,665.5,259.7" fill="none" stroke="#cab2d6" stroke-width="4"/>
         </g>
-        <g class="st63">
-          <path class="st11" d="M14.7,249c332.7,0,332.7,300.5,665.5,300.5"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,249c332.7,0,332.7,300.5,665.5,300.5" fill="none" stroke="#cab2d6" stroke-width="2.8"/>
         </g>
-        <g class="st63">
-          <path class="st14" d="M14.7,251.9c332.7,0,332.7,315.5,665.5,315.5"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,251.9c332.7,0,332.7,315.5,665.5,315.5" fill="none" stroke="#cab2d6" stroke-width="3"/>
         </g>
-        <g class="st63">
-          <path class="st29" d="M14.7,94.3c332.7,0,332.7,237.6,665.5,237.6"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,94.3c332.7,0,332.7,237.6,665.5,237.6" fill="none" stroke="#fb9a99" stroke-width="14.4"/>
         </g>
-        <g class="st63">
-          <path class="st18" d="M14.7,129.9c332.7,0,332.7,393.4,665.5,393.4"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,129.9c332.7,0,332.7,393.4,665.5,393.4" fill="none" stroke="#fb9a99" stroke-width="4.2"/>
         </g>
-        <g class="st63">
-          <path class="st17" d="M14.7,108.1c332.7,0,332.7,289.6,665.5,289.6"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,108.1c332.7,0,332.7,289.6,665.5,289.6" fill="none" stroke="#fb9a99" stroke-width="13.4"/>
         </g>
-        <g class="st63">
-          <path class="st27" d="M14.7,71.8c332.7,0,332.7,127.9,665.5,127.9"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,71.8c332.7,0,332.7,127.9,665.5,127.9" fill="none" stroke="#fb9a99" stroke-width="31"/>
         </g>
-        <g class="st63">
-          <path class="st16" d="M14.7,119.2c332.7,0,332.7,341.1,665.5,341.1"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,119.2c332.7,0,332.7,341.1,665.5,341.1" fill="none" stroke="#fb9a99" stroke-width="8.9"/>
         </g>
-        <g class="st63">
-          <path class="st28" d="M14.7,35.3h665.5"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,35.3h665.5" fill="none" stroke="#fb9a99" stroke-width="42.5"/>
         </g>
-        <g class="st63">
-          <path class="st39" d="M14.7,140.6c332.7,0,332.7,441.3,665.5,441.3"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,140.6c332.7,0,332.7,441.3,665.5,441.3" fill="none" stroke="#fb9a99" stroke-width="2"/>
         </g>
-        <g class="st63">
-          <path class="st20" d="M14.7,125.7c332.7,0,332.7,372.3,665.5,372.3"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,125.7c332.7,0,332.7,372.3,665.5,372.3" fill="none" stroke="#fb9a99" stroke-width="4.2"/>
         </g>
-        <g class="st63">
-          <path class="st19" d="M14.7,134c332.7,0,332.7,412,665.5,412"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,134c332.7,0,332.7,412,665.5,412" fill="none" stroke="#fb9a99" stroke-width="4.2"/>
         </g>
-        <g class="st63">
-          <path class="st21" d="M14.7,137.8c332.7,0,332.7,426.3,665.5,426.3"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,137.8c332.7,0,332.7,426.3,665.5,426.3" fill="none" stroke="#fb9a99" stroke-width="3.5"/>
         </g>
-        <g class="st63">
-          <path class="st44" d="M14.7,481.6c332.7,0,332.7-106.3,665.5-106.3"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,481.6c332.7,0,332.7-106.3,665.5-106.3" fill="none" stroke="#fedd8d" stroke-width="8.1"/>
         </g>
-        <g class="st63">
-          <path class="st47" d="M14.7,501.6c332.7,0,332.7,33.8,665.5,33.8"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,501.6c332.7,0,332.7,33.8,665.5,33.8" fill="none" stroke="#fedd8d" stroke-width="2.4"/>
         </g>
-        <g class="st63">
-          <path class="st45" d="M14.7,489.3c332.7,0,332.7-48.6,665.5-48.6"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,489.3c332.7,0,332.7-48.6,665.5-48.6" fill="none" stroke="#fedd8d" stroke-width="7.3"/>
         </g>
-        <g class="st63">
-          <path class="st43" d="M14.7,468.7c332.7,0,332.7-173.8,665.5-173.8"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,468.7c332.7,0,332.7-173.8,665.5-173.8" fill="none" stroke="#fedd8d" stroke-width="17.9"/>
         </g>
-        <g class="st63">
-          <path class="st46" d="M14.7,495.1c332.7,0,332.7-11.2,665.5-11.2"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,495.1c332.7,0,332.7-11.2,665.5-11.2" fill="none" stroke="#fedd8d" stroke-width="4.4"/>
         </g>
-        <g class="st63">
-          <path class="st42" d="M14.7,450.1c332.7,0,332.7-296.5,665.5-296.5"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,450.1c332.7,0,332.7-296.5,665.5-296.5" fill="none" stroke="#fedd8d" stroke-width="19.7"/>
         </g>
-        <g class="st63">
-          <path class="st9" d="M14.7,506.1c332.7,0,332.7,82.3,665.5,82.3"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,506.1c332.7,0,332.7,82.3,665.5,82.3" fill="none" stroke="#fedd8d" stroke-width="1.2"/>
         </g>
-        <g class="st63">
-          <path class="st48" d="M14.7,498.9c332.7,0,332.7,13.3,665.5,13.3"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,498.9c332.7,0,332.7,13.3,665.5,13.3" fill="none" stroke="#fedd8d" stroke-width="3.2"/>
         </g>
-        <g class="st63">
-          <path class="st12" d="M14.7,503.5c332.7,0,332.7,52.4,665.5,52.4"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,503.5c332.7,0,332.7,52.4,665.5,52.4" fill="none" stroke="#fedd8d" stroke-width="1.3"/>
         </g>
-        <g class="st63">
-          <path class="st10" d="M14.7,504.8c332.7,0,332.7,69.1,665.5,69.1"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,504.8c332.7,0,332.7,69.1,665.5,69.1" fill="none" stroke="#fedd8d" stroke-width="1.4"/>
         </g>
-        <g class="st63">
-          <path class="st50" d="M14.7,404.7c332.7,0,332.7-38.2,665.5-38.2"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,404.7c332.7,0,332.7-38.2,665.5-38.2" fill="none" stroke="#e0f3a1" stroke-width="9.7"/>
         </g>
-        <g class="st63">
-          <path class="st49" d="M14.7,428.8c332.7,0,332.7,104.1,665.5,104.1"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,428.8c332.7,0,332.7,104.1,665.5,104.1" fill="none" stroke="#e0f3a1" stroke-width="2.5"/>
         </g>
-        <g class="st63">
-          <path class="st53" d="M14.7,414.3c332.7,0,332.7,18.1,665.5,18.1"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,414.3c332.7,0,332.7,18.1,665.5,18.1" fill="none" stroke="#e0f3a1" stroke-width="9.5"/>
         </g>
-        <g class="st63">
-          <path class="st56" d="M14.7,389.7c332.7,0,332.7-113.9,665.5-113.9"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,389.7c332.7,0,332.7-113.9,665.5-113.9" fill="none" stroke="#e0f3a1" stroke-width="20.5"/>
         </g>
-        <g class="st63">
-          <path class="st51" d="M14.7,421.6c332.7,0,332.7,57.4,665.5,57.4"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,421.6c332.7,0,332.7,57.4,665.5,57.4" fill="none" stroke="#e0f3a1" stroke-width="5.3"/>
         </g>
-        <g class="st63">
-          <path class="st54" d="M14.7,366.9c332.7,0,332.7-235.8,665.5-235.8"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,366.9c332.7,0,332.7-235.8,665.5-235.8" fill="none" stroke="#e0f3a1" stroke-width="25.6"/>
         </g>
-        <g class="st63">
-          <path class="st2" d="M14.7,434.7c332.7,0,332.7,152.5,665.5,152.5"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,434.7c332.7,0,332.7,152.5,665.5,152.5" fill="none" stroke="#e0f3a1" stroke-width="1.2"/>
         </g>
-        <g class="st63">
-          <path class="st26" d="M14.7,425.9c332.7,0,332.7,83,665.5,83"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,425.9c332.7,0,332.7,83,665.5,83" fill="none" stroke="#e0f3a1" stroke-width="3.4"/>
         </g>
-        <g class="st63">
-          <path class="st30" d="M14.7,431.1c332.7,0,332.7,123.1,665.5,123.1"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,431.1c332.7,0,332.7,123.1,665.5,123.1" fill="none" stroke="#e0f3a1" stroke-width="1.9"/>
         </g>
-        <g class="st63">
-          <path class="st1" d="M14.7,433.1c332.7,0,332.7,139.1,665.5,139.1"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,433.1c332.7,0,332.7,139.1,665.5,139.1" fill="none" stroke="#e0f3a1" stroke-width="2.1"/>
         </g>
-        <g class="st63">
-          <path class="st38" d="M14.7,315.9c332.7,0,332.7,40.4,665.5,40.4"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,315.9c332.7,0,332.7,40.4,665.5,40.4" fill="none" stroke="#a6cee3" stroke-width="11"/>
         </g>
-        <g class="st63">
-          <path class="st41" d="M14.7,341.5c332.7,0,332.7,188.6,665.5,188.6"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,341.5c332.7,0,332.7,188.6,665.5,188.6" fill="none" stroke="#a6cee3" stroke-width="3.2"/>
         </g>
-        <g class="st63">
-          <path class="st37" d="M14.7,326.5c332.7,0,332.7,96,665.5,96"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,326.5c332.7,0,332.7,96,665.5,96" fill="none" stroke="#a6cee3" stroke-width="10.3"/>
         </g>
-        <g class="st63">
-          <path class="st55" d="M14.7,299.3c332.7,0,332.7-44.7,665.5-44.7"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,299.3c332.7,0,332.7-44.7,665.5-44.7" fill="none" stroke="#a6cee3" stroke-width="22.4"/>
         </g>
-        <g class="st63">
-          <path class="st36" d="M14.7,334.2c332.7,0,332.7,139.6,665.5,139.6"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,334.2c332.7,0,332.7,139.6,665.5,139.6" fill="none" stroke="#a6cee3" stroke-width="5.2"/>
         </g>
-        <g class="st63">
-          <path class="st52" d="M14.7,274.3c332.7,0,332.7-169.8,665.5-169.8"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,274.3c332.7,0,332.7-169.8,665.5-169.8" fill="none" stroke="#a6cee3" stroke-width="27.9"/>
         </g>
-        <g class="st63">
-          <path class="st5" d="M14.7,348.4c332.7,0,332.7,237.4,665.5,237.4"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,348.4c332.7,0,332.7,237.4,665.5,237.4" fill="none" stroke="#a6cee3" stroke-width="1.6"/>
         </g>
-        <g class="st63">
-          <path class="st40" d="M14.7,338.4c332.7,0,332.7,167.3,665.5,167.3"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,338.4c332.7,0,332.7,167.3,665.5,167.3" fill="none" stroke="#a6cee3" stroke-width="3.2"/>
         </g>
-        <g class="st63">
-          <path class="st24" d="M14.7,344.3c332.7,0,332.7,207.8,665.5,207.8"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,344.3c332.7,0,332.7,207.8,665.5,207.8" fill="none" stroke="#a6cee3" stroke-width="2.3"/>
         </g>
-        <g class="st63">
-          <path class="st25" d="M14.7,346.5c332.7,0,332.7,223.5,665.5,223.5"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,346.5c332.7,0,332.7,223.5,665.5,223.5" fill="none" stroke="#a6cee3" stroke-width="2.2"/>
         </g>
-        <g class="st63">
-          <path class="st33" d="M14.7,547c332.7,0,332.7-164.3,665.5-164.3"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,547c332.7,0,332.7-164.3,665.5-164.3" fill="none" stroke="#f5f1c3" stroke-width="6.8"/>
         </g>
-        <g class="st63">
-          <path class="st32" d="M14.7,565.6c332.7,0,332.7-27.8,665.5-27.8"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,565.6c332.7,0,332.7-27.8,665.5-27.8" fill="none" stroke="#f5f1c3" stroke-width="2.4"/>
         </g>
-        <g class="st63">
-          <path class="st34" d="M14.7,553.7c332.7,0,332.7-106.1,665.5-106.1"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,553.7c332.7,0,332.7-106.1,665.5-106.1" fill="none" stroke="#f5f1c3" stroke-width="6.7"/>
         </g>
-        <g class="st63">
-          <path class="st23" d="M14.7,535.7c332.7,0,332.7-223.9,665.5-223.9"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,535.7c332.7,0,332.7-223.9,665.5-223.9" fill="none" stroke="#f5f1c3" stroke-width="16.1"/>
         </g>
-        <g class="st63">
-          <path class="st35" d="M14.7,559.5c332.7,0,332.7-71,665.5-71"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,559.5c332.7,0,332.7-71,665.5-71" fill="none" stroke="#f5f1c3" stroke-width="4.9"/>
         </g>
-        <g class="st63">
-          <path class="st22" d="M14.7,519.7c332.7,0,332.7-348.3,665.5-348.3"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,519.7c332.7,0,332.7-348.3,665.5-348.3" fill="none" stroke="#f5f1c3" stroke-width="16.1"/>
         </g>
-        <g class="st63">
-          <path class="st58" d="M14.7,569.6c332.7,0,332.7,19.9,665.5,19.9"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,569.6c332.7,0,332.7,19.9,665.5,19.9" fill="none" stroke="#f5f1c3"/>
         </g>
-        <g class="st63">
-          <path class="st31" d="M14.7,563.1c332.7,0,332.7-48.2,665.5-48.2"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,563.1c332.7,0,332.7-48.2,665.5-48.2" fill="none" stroke="#f5f1c3" stroke-width="2.5"/>
         </g>
-        <g class="st63">
-          <path class="st59" d="M14.7,567.3c332.7,0,332.7-10.3,665.5-10.3"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,567.3c332.7,0,332.7-10.3,665.5-10.3" fill="none" stroke="#f5f1c3"/>
         </g>
-        <g class="st63">
-          <path class="st57" d="M14.7,568.5c332.7,0,332.7,6.8,665.5,6.8"/>
+        <g mix-blend-mode="multiply">
+          <path d="M12.15,568.5c332.7,0,332.7,6.8,665.5,6.8" fill="none" stroke="#f5f1c3" stroke-width="1.3"/>
         </g>
       </g>
       <g>
-        <g class="st62">
-          <text class="st61" transform="translate(589 96.2)"><tspan x="0" y="0">Home and Kitchen</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(586.45 96.2)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">Home and Kitchen</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(622.6 251.5)"><tspan x="0" y="0">Electronics</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(620.05 251.5)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">Electronics</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(18.6 77.4)"><tspan x="0" y="0">$150,000 or more</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(16.05 77.4)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">$150,000 or more</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(18.6 200.5)"><tspan x="0" y="0">$100,000 - $149,999</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(16.05 200.5)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">$100,000 - $149,999</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(18.6 304.3)"><tspan x="0" y="0">$75,000 - $99,999</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(16.05 304.3)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">$75,000 - $99,999</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(18.6 394.2)"><tspan x="0" y="0">$50,000 - $74,999</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(16.05 394.2)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">$50,000 - $74,999</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(18.6 473)"><tspan x="0" y="0">$25,000 - $49,999</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(16.05 473)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">$25,000 - $49,999</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(553 354.9)"><tspan x="0" y="0">Beauty and Personal Care</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(550.45 354.9)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">Beauty and Personal Care</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(538.2 420.5)"><tspan x="0" y="0">Clothing, Shoes, and Jewelry</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(535.65 420.5)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">Clothing, Shoes, and Jewelry</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(18.6 540.4)"><tspan x="0" y="0">Less than $25,000</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(16.05 540.4)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">Less than $25,000</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(651.9 472.9)"><tspan x="0" y="0">Food</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(649.35 472.9)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">Food</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(616.5 505.5)"><tspan x="0" y="0">Pet Supplies</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(613.95 505.5)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">Pet Supplies</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(645.8 529.6)"><tspan x="0" y="0">Books</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(643.25 529.6)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">Books</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(576.8 550.2)"><tspan x="0" y="0">Sports and Outdoors</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(574.25 550.2)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">Sports and Outdoors</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(597.4 568.7)"><tspan x="0" y="0">Toys and Games</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(594.85 568.7)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">Toys and Games</tspan></text>
+          </g>
         </g>
-        <g class="st62">
-          <text class="st61" transform="translate(607.7 584.9)"><tspan x="0" y="0">Office Product</tspan></text>
+        <g isolation="isolate">
+          <g isolation="isolate">
+            <text transform="translate(605.15 584.9)" font-family="Arial-BoldMT, Arial" font-size="9.9" font-weight="700" isolation="isolate"><tspan x="0" y="0">Office Product</tspan></text>
+          </g>
         </g>
       </g>
     </g>
